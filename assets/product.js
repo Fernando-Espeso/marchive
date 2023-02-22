@@ -29,7 +29,6 @@ class ProductVariants extends HTMLElement {
     this.options = fieldsets.map((fieldset) => {
       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked)?.value
     })
-
     this.querySelectorAll('input:not(checked)').forEach((radio) => {
       const elementoToDeselect = radio.parentElement
       if (elementoToDeselect) {
