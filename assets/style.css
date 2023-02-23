@@ -214,29 +214,9 @@ a{
 }
 /* MAIN
 ================================================== */
-header {
-  z-index: 1000;
-  top: 0px;
-  backdrop-filter: blur(20px);
-  /* position: sticky; */
-  position: fixed; /* Make it stick/fixed */
-  top: 0; /* Stay on top */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
-}
 footer{
   position: fixed;
   bottom: 40px;
-}
-.menu{
-  align-items: center;
-  padding:15px 20px 15px 20px;
-  display:flex;
-  width:100vw;
-  color: black;
-  position: sticky;
-  top: 0px;
-  z-index:100;
 }
 /* SHOP
 ================================================== */
@@ -331,12 +311,6 @@ span.box {
 .thumbnail img{
   width: 100%;
 }
-
-
-
-
-
-
 .sold-out{
   color:#9B9B9B;
   padding:2px;
