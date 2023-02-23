@@ -346,7 +346,7 @@ header{
   grid-template-columns: repeat(4, 1fr);
   display:grid;
 }
-.product.dropped .info-product{
+.product.dropped .product-info{
   grid-column: span 3;
 }
 .product:hover .main-information {
