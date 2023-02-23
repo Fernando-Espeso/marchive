@@ -446,7 +446,12 @@ span.box {
   height: fit-content;
 }
 .gallery{
+  display: grid;
+  row-gap:12px;
   grid-column: span 6;
+}
+.gallery .thumb{
+  
 }
 div#related {
   grid-column: span 3;
