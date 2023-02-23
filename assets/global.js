@@ -19,8 +19,25 @@ document.addEventListener("DOMContentLoaded", function(){
       lazyImageObserver.observe(lazyImage);
     });
   }
-$('.link').click(function(){
-     $(this).toggleClass("active");
-     $(".link").removeClass("active");
-});
+  document.addEventListener('DOMContentLoaded', function(){
+        var w = window.innerWidth,
+        h = window.innerHeight;
+        document.documentElement.style.setProperty('--h', h + 'px');
+
+  });
+
+  window.addEventListener("resize", onResizeFunction);
+  function onResizeFunction (e){
+    var w = window.innerWidth,
+    h = window.innerHeight;
+    document.documentElement.style.setProperty('--h', h + 'px');
+  }
+  
+  $( document ).ready(function() {
+    $('.link').click(function(){
+       $(this).toggleClass("active");
+       $(".link").removeClass("active");
+    });
+  });
+
 });
