@@ -338,9 +338,10 @@ img{
   width:100%;
 }
 .product{
+  height: fit-content;
   position:relative;
   display:grid;
-  height: 100%;
+  row-gap:10px;
   display: grid;
   grid-column:span 4;
 }
