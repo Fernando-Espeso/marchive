@@ -32,11 +32,10 @@ document.addEventListener("DOMContentLoaded", function(){
     h = window.innerHeight;
     document.documentElement.style.setProperty('--h', h + 'px');
   }
-  
-  $( document ).ready(function() {
+
+  $(document).ready(function() {
     $('.link').click(function(){
        $(this).toggleClass("active");
-       $(".link").removeClass("active");
     });
   });
 
