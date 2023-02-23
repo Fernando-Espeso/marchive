@@ -280,6 +280,9 @@ header{
   padding: 2px;
   width: 100%;
 }
+.dropdown>div:hover{
+  background-color: black;
+}
 .cart-part{
   grid-column: span 2;
 }
