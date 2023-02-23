@@ -1,14 +1,11 @@
-<div id="main-product" class="main">
+<div id="single-product">
     <div class="product_info">
-          <!--PRODUCT INFO-->
           <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
-
           {%- if product.has_only_default_variant -%}
           class="product-simple"
           {%- elsif variants > 1 -%}
           class="product-variants"
           {%- endif -%}>
-
           <div id="bag" >
             <div class="title">
               <div>{{ product.title }}</div>
@@ -17,13 +14,12 @@
                     {{ product.metafields.descriptors.subtitle }}
                 </div>
               {% endunless %}
-			</div>
+			      </div>
             <div class="information">
                 <div class="project_info">
                   <span> {{ product.content | replace: '_16x16', '' | replace: '_32x32', '' | replace: '_50x50', '' | replace: '_100x100', '' | replace: '_160x160', '' | replace: '_240x240', '' | replace: '_480x480', '' | replace: '_600x600', '' | replace: '_1024x1024', '' }}</span>
                 </div>
             </div>
-
             <div id="product-price"></div>
                        {% if product.compare_at_price > product.price %}
                           <span class="sale">ON SALE</span>
@@ -49,9 +45,7 @@
                     {{ product.metafields.custom.extra }}
                 </div>
               {% endunless %}
-
           </div>
-
     </form>
     </div>
     <!--GALLERY-->
