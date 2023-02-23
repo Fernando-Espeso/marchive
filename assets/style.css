@@ -268,7 +268,7 @@ header{
   grid-column: span 2;
 }
 .dropdown>div{
-  border:0.5px bottom black;
+  border-bottom:0.5px black;
   padding: 2px;
   width: 100%;
 }
