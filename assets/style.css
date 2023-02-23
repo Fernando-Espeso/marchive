@@ -280,10 +280,12 @@ img{
 .main-information:nth-child(odd) {
     grid-column: span 1;
     display: grid;
+    background-color: red;
 }
 .main-information:nth-child(even) {
     grid-column: span 3;
     display: grid;
+    background-color: blue;
 }
 .thumbnail{
   height:auto;
