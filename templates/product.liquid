@@ -65,6 +65,7 @@
               {% for media in product.media %}
               {% endfor %}
     </div>
+    {% include 'related' %}
 </div>
 <!-- {% assign variants = 0 %}
 {% for option in product.options %}
@@ -73,7 +74,7 @@
 {% endif %}
 {% endfor %} -->
 
-{% include 'related' %}
+
 <script>
   //PRODUCT FUNCTIONS
   var selectCallback = function(variant, selector){
