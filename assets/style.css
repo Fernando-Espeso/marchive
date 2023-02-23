@@ -276,7 +276,6 @@ img{
   border-top: 0.5px solid;
   border-right: 0.5px solid;
   border-left: 0.5px solid;
-  row-gap:0px!important;
 }
 .product:hover .info-product {
   border-bottom: 0.5px solid;
@@ -291,7 +290,6 @@ img{
   border: 1px solid grey;
 }
 .main-information {
-  row-gap:0.5px!important;
   grid-template-columns: repeat(1,1fr);
   display: grid;
   grid-gap:12px;
