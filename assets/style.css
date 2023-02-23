@@ -239,6 +239,19 @@ header{
   grid-template-columns: repeat(8, 1fr);
   grid-column: 3/ span 7;
 }
+.drop{
+  grid-template-columns: repeat(2, 1fr);
+  grid-column:span 2;
+}
+.link{
+  color: white;
+  background-color: red;
+  grid-column: span 1;
+}
+.dropdrowm{
+  background-color: grey;
+  grid-column: span 2;
+}
 .cart{}
 
 .product{
