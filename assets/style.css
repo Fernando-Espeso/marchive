@@ -297,6 +297,7 @@ img{
   grid-gap:12px;
 }
 .info-product {
+  border-bottom: 0.5px solid transparent;
   grid-column: span 1;
   row-gap:0px!important;
   grid-template-columns: repeat(4,1fr);
