@@ -295,6 +295,7 @@ img{
   display: grid;
 }
 .info-product>div:nth-child(even) {
+  border-left: 0.5px solid;
   grid-column: span 3;
   padding-left: 5px;
   display: grid;
