@@ -1,65 +1,69 @@
 <div id="single-product">
     <div class="product_info">
-          <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+      <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
           {%- if product.has_only_default_variant -%}
           class="product-simple"
           {%- elsif variants > 1 -%}
           class="product-variants"
           {%- endif -%}>
-          <div id="bag" >
-            <div class="title">
-              <div>{{ product.title }}</div>
-              {% unless product.metafields.descriptors.subtitle == blank %}
-                <div class="subtitle">
-                    {{ product.metafields.descriptors.subtitle }}
-                </div>
-              {% endunless %}
-			      </div>
-            <div class="information">
-                <div class="project_info">
-                  <span> {{ product.content | replace: '_16x16', '' | replace: '_32x32', '' | replace: '_50x50', '' | replace: '_100x100', '' | replace: '_160x160', '' | replace: '_240x240', '' | replace: '_480x480', '' | replace: '_600x600', '' | replace: '_1024x1024', '' }}</span>
-                </div>
-            </div>
-            <div id="product-price"></div>
-                       {% if product.compare_at_price > product.price %}
-                          <span class="sale">ON SALE</span>
-                       {% else %}
-                       {% endif %}
-               {% if product.available %}
-                        {% else %}
-             <div class="sale">out of stock</div>
-                        {% endif %}
-            <div class="variations">
-                        <select id="product-select" name="id">
-                          {% for variant in product.variants %}
-                          <option value="{{ variant.id }}">CHOOSE SIZE:</option>
-                          {% endfor %}
-                        </select>
-                        {% if product.available %}
-                            <button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
-                        {% else %}
-                        {% endif %}
-            </div>
-             {% unless product.metafields.custom.extra == blank %}
+          <div id="bag">
+              <div class="title">
+                <div>{{ product.title }}</div>
+                {% unless product.metafields.descriptors.subtitle == blank %}
+                  <div class="subtitle">
+                      {{ product.metafields.descriptors.subtitle }}
+                  </div>
+                {% endunless %}
+  			      </div>
+              <div id="product-price"></div>
+              {% if product.compare_at_price > product.price %}
+                  <span class="sale">ON SALE</span>
+              {% else %}
+              {% endif %}
+              {% if product.available %}
+              {% else %}
+               <div class="sale">out of stock</div>
+              {% endif %}
+              <div class="variations">
+                          <select id="product-select" name="id">
+                            {% for variant in product.variants %}
+                            <option value="{{ variant.id }}">CHOOSE SIZE:</option>
+                            {% endfor %}
+                          </select>
+                          {% if product.available %}
+                              <button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
+                          {% else %}
+                          {% endif %}
+              </div>
+              {% unless product.metafields.custom.extra == blank %}
                 <div class="extra">
-                    {{ product.metafields.custom.extra }}
-                </div>
+                      {{ product.metafields.custom.extra }}
+                  </div>
               {% endunless %}
           </div>
-    </form>
+      </form>
+      <div class="nav-info">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="information">
+          <div class="project_info">
+            <span> {{ product.content | replace: '_16x16', '' | replace: '_32x32', '' | replace: '_50x50', '' | replace: '_100x100', '' | replace: '_160x160', '' | replace: '_240x240', '' | replace: '_480x480', '' | replace: '_600x600', '' | replace: '_1024x1024', '' }}</span>
+          </div>
+      </div>
     </div>
-    <!--GALLERY-->
     <div class="slider">
-             {% for media in product.media %}
+          {% for media in product.media %}
           <div class="slide">
-                  {% case media.media_type %}
-                      {% when 'video' %}
-                      {{ media | video_tag:loop: true, autoplay: true, muted:true}}
-                  {% endcase %}
-                  {% case media.media_type %}
-                      {% when 'image' %}
-                      <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
-                  {% endcase %}
+              {% case media.media_type %}
+              {% when 'video' %}
+                  {{ media | video_tag:loop: true, autoplay: true, muted:true}}
+              {% endcase %}
+              {% case media.media_type %}
+              {% when 'image' %}
+                  <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
+              {% endcase %}
            </div>
               {% endfor %}
               {% for media in product.media %}
@@ -73,8 +77,6 @@
 {% assign variants = variants | plus: 1 %}
 {% endif %}
 {% endfor %} -->
-
-
 <script>
   //PRODUCT FUNCTIONS
   var selectCallback = function(variant, selector){

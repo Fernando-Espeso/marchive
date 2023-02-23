@@ -460,11 +460,11 @@ div#related >.product:first-child{
 footer{
 position: relative;
 width: 100vw;
-height: 292px;
+height: auto;
 left: 0px;
 font-size: 12px;
 grid-gap:20px;
-padding:0px 20px 0px 20px;
+padding:12px 20px 0px 20px;
 display:grid;
 grid-template-columns:repeat(12, 1fr);
 align-items: end;
