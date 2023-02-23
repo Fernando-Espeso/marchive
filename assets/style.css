@@ -267,6 +267,7 @@ header{
   grid-column:span 2;
 }
 .link{
+  back-drop-filter:blur(20px);
   padding-left: 5px!important;
   cursor: pointer;
   padding: 2px;
@@ -282,6 +283,7 @@ header{
   color: var(--white);
 }
 .link-about{
+  back-drop-filter:blur(20px);
   padding: 2px;
   height: fit-content;
   grid-column: span 1;
