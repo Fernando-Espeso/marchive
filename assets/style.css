@@ -273,7 +273,7 @@ img{
   grid-column:span 4;
 }
 .main-information {
-  row-gap:0px!importan;
+  row-gap:0px!important;
   grid-template-columns: repeat(4,1fr);
   display: grid;
   grid-gap:12px;
