@@ -260,13 +260,11 @@ header{
   grid-column: 4/ span 7;
 }
 .drop{
-  height: fit-content;
   display: none;
+  height: fit-content;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column:span 2;
-}
-.drop.dropped{
-  display: grid;
 }
 .link{
   padding-left: 5px!important;
