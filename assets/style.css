@@ -280,6 +280,10 @@ header{
   background-color: var(--black);
   color: var(--white);;
 }
+.hov:hover{
+  background-color: var(--black);
+  color: var(--white);;
+}
 .link-about:hover{
   background-color: var(--black);
   color: var(--white);
