@@ -273,12 +273,16 @@ img{
   grid-column:span 4;
 }
 .main-information {
+  border-top: 0.5px solid;
+  border-right: 0.5px solid;
+  border-left: 0.5px solid;
   row-gap:0px!important;
   grid-template-columns: repeat(1,1fr);
   display: grid;
   grid-gap:12px;
 }
 .info-product {
+  border-bottom: 0.5px solid;
   grid-column: span 1;
   row-gap:0px!important;
   grid-template-columns: repeat(4,1fr);
