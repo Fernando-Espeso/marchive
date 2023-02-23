@@ -65,7 +65,7 @@
                             {% endfor %}
                           </select> -->
                           {% if product.available %}
-                              <button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
+                              <div class="addtocart hov"></div><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
                           {% else %}
                           {% endif %}
               </div>

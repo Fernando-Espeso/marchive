@@ -472,6 +472,10 @@ div#related >.product:first-child{
   position: sticky;
   top: 100px;
 }
+.addtocart{
+  border:0.5px solid var(--black);
+  padding: 2px 5px 2px 5px;
+}
 }
 /* FOOTER
 ================================================== */
