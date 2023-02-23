@@ -274,6 +274,7 @@ header{
   display: flex;
   justify-content: space-between;
 }
+
 .baggie{
   padding: 2px;
 }
