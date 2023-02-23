@@ -167,6 +167,9 @@ fernandoepeso.info
   {%- endif -%}
   {{ content_for_layout }}
   <footer>
+    {% for link in linklists.footer.links %}
+    <li {% if link.active %}class="active"{% endif %}><a class="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a></li>
+    {% endfor %}
   </footer>
   {%- if template contains 'product' -%}
     {{ 'global-product.js' | asset_url | script_tag }}
