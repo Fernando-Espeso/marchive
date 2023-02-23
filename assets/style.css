@@ -297,7 +297,6 @@ img{
   grid-gap:12px;
 }
 .info-product {
-  border-bottom: 0.5px solid;
   grid-column: span 1;
   row-gap:0px!important;
   grid-template-columns: repeat(4,1fr);
@@ -305,6 +304,7 @@ img{
   grid-gap:12px;
 }
 .info-product>div:nth-child(odd) {
+  color: grey;
   padding: 2px;
   grid-column: span 1;
   padding-left: 5px;
@@ -312,7 +312,6 @@ img{
 }
 .info-product>div:nth-child(even) {
   padding: 2px;
-  border-left: 0.5px solid;
   grid-column: span 3;
   padding-left: 5px;
   display: grid;
