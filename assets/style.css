@@ -273,6 +273,7 @@ img{
   grid-column:span 4;
 }
 .main-information {
+    row-gap:0px;
     grid-template-columns: repeat(4,1fr);
     display: grid;
     grid-gap:12px;
@@ -280,12 +281,10 @@ img{
 .main-information>div:nth-child(odd) {
     grid-column: span 1;
     display: grid;
-    background-color: red;
 }
 .main-information>div:nth-child(even) {
     grid-column: span 3;
     display: grid;
-    background-color: blue;
 }
 .thumbnail{
   height:auto;
