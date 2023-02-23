@@ -1,39 +1,5 @@
 <div id="single-product">
     <div class="product_info">
-      <div class="main-information">
-        <div class="info-product">
-          <div>Designer</div>
-          <div class="hov">Alexander Wang</div>
-        </div>
-        <div class="info-product">
-          <div>Era</div>
-          <div>1820</div>
-        </div>
-        <div class="info-product">
-          <div>Item</div>
-          <div class="hov"><a href="{{ product.url }}">{{ product.title}}</a></div>
-        </div>
-        <div class="info-product">
-          <div><a>Price</a></div>
-          <div class="product-price">
-               {% if product.available %}
-                {% if product.price_varies %}
-                  <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
-                {% else %}
-                  {% if product.compare_at_price > product.price %}
-                  <s>{{ product.compare_at_price | money }}</s>
-                <span class="red">{{ product.price | money }}</span>
-                  {% else %}
-                <span>{{ product.price | money }}</span>
-
-                  {% endif %}
-                {% endif %}
-              {% else %}
-                <span>{{ product.price | money }}</span>
-              {% endif %}
-            </div>
-        </div>
-      </div>
       <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
           {%- if product.has_only_default_variant -%}
           class="product-simple"
@@ -76,13 +42,48 @@
               {% endunless %}
           </div>
       </form>
+      <div class="main-information">
+        <div class="info-product">
+          <div>Designer</div>
+          <div class="hov">Alexander Wang</div>
+        </div>
+        <div class="info-product">
+          <div>Era</div>
+          <div>1820</div>
+        </div>
+        <div class="info-product">
+          <div>Item</div>
+          <div class="hov"><a href="{{ product.url }}">{{ product.title}}</a></div>
+        </div>
+        <div class="info-product">
+          <div><a>Price</a></div>
+          <div class="product-price">
+               {% if product.available %}
+                {% if product.price_varies %}
+                  <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
+                {% else %}
+                  {% if product.compare_at_price > product.price %}
+                  <s>{{ product.compare_at_price | money }}</s>
+                <span class="red">{{ product.price | money }}</span>
+                  {% else %}
+                <span>{{ product.price | money }}</span>
+
+                  {% endif %}
+                {% endif %}
+              {% else %}
+                <span>{{ product.price | money }}</span>
+              {% endif %}
+            </div>
+        </div>
+      </div>
       <div class="nav-info">
         <div class="hov">Description</div>
         <div class="hov">Size</div>
         <div class="hov">Condition</div>
         <div class="size">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
         <div class="size">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-        
+        <div class="size">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+
       </div>
       <div class="information">
           <div class="project_info">
