@@ -1,9 +1,8 @@
 <div id="related">
-
-                      {%- assign current_product = product.id -%}
-                        {%- for product in collections.all.products -%}
-                          {%- if product.id != current_product and product.available -%}
-                                {% include 'product-body' %}
-            			   {%- endif -%}
-            			 {%- endfor -%}
+  {%- assign current_product = product.id -%}
+    {%- for product in collections.all.products -%}
+      {%- if product.id != current_product and product.available -%}
+        {% include 'product-body' %}
+      {%- endif -%}
+    {%- endfor -%}
 </div>

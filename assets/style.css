@@ -247,7 +247,7 @@ header{
   position: sticky;
   grid-template-columns: repeat(12, 1fr);
   display: grid;
-  padding:20px;
+  padding: 20px 20px 0px 20px;
   grid-gap:12px;
 }
 .logo{
@@ -429,7 +429,7 @@ span.box {
 /* PRODUCT PAGE
 ================================================== */
 #single-product{
-  padding: 20px;
+  padding: 12px 20px 0px 20px;
   grid-gap:12px;
   flex-grow: 1;
   display: grid;
