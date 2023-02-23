@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
       lazyImageObserver.observe(lazyImage);
     });
   }
-$('link').click(function(){
+$('.link').click(function(){
      $(this).toggleClass("active");
      $(".link").removeClass("active");
 });
