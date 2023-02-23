@@ -213,7 +213,7 @@ footer{
   grid-gap:12px;
   flex-grow: 1;
   display: grid;
-  grid-template-columns: repeat(16,1fr);
+  grid-template-columns: repeat(12,1fr);
 }
 .product.active-size,
 .product.active-color{
