@@ -237,7 +237,6 @@ footer{
 img{
   width:100%;
 }
-
 header{
   z-index: 1;
   top: 0px;
@@ -248,6 +247,7 @@ header{
   grid-gap:12px;
 }
 .logo{
+  grid-column: span 3;
 }
 .logo svg{
   fill:var(--black)!important;
