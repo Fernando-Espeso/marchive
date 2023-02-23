@@ -346,17 +346,9 @@ img{
 }
 .thumbnail{
   height:auto;
-  overflow:hidden;
-  position:relative;
-}
-.thumbnail:hover #none{
-  display: none;
 }
 .thumbnail img{
   width: 100%;
-}
-.row {
-  padding: 10px 20px 10px 20px;
 }
 .sold-out{
   color:#9B9B9B;
