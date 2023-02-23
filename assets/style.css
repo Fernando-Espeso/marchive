@@ -454,6 +454,9 @@ div#related >.product{
 }
 div#related >.product:first-child{
   display: grid!important;
+  position: sticky;
+  top: 100px;
+}
 }
 /* FOOTER
 ================================================== */
