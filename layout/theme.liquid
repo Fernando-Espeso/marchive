@@ -129,9 +129,6 @@ fernandoepeso.info
             {% endfor %} -->
     </div>
     <div class="cart-part">
-            {% for link in linklists.top-bar.links %}
-            <li class="nain" {% if link.active %}class="active"{% endif %}><a href="{{ link.url }}">{{ link.title }}</a></li>
-            {% endfor %}
             <li>
               <a id="cart" {% if template == 'cart' %}  style="color:green;"{% endif %} href="/cart">
                 BAG <span class="cart-total">
