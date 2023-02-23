@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function(){
       lazyImageObserver.observe(lazyImage);
     });
   }
+  });
+  
   document.addEventListener('DOMContentLoaded', function(){
         var w = window.innerWidth,
         h = window.innerHeight;
@@ -31,13 +33,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
   window.addEventListener("resize", onResizeFunction);
   function onResizeFunction (e){
-    var w = window.innerWidth,
-    h = window.innerHeight;
-    document.documentElement.style.setProperty('--h', h + 'px');
+        var w = window.innerWidth,
+        h = window.innerHeight;
+        document.documentElement.style.setProperty('--h', h + 'px');
 
-    m = document.getElementById("header").offsetHeight;
-    document.documentElement.style.setProperty('--m', m + 'px');
-
+        m = document.getElementById("header").offsetHeight;
+        document.documentElement.style.setProperty('--m', m + 'px');
   }
 
   $(document).ready(function() {
@@ -50,4 +51,3 @@ document.addEventListener("DOMContentLoaded", function(){
       $("#products").toggleClass("dropped");
     });
   });
-});
