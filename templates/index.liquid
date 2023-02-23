@@ -1,5 +1,8 @@
+<div class="banner_main">
+    {% section 'home_entrance' %}
+</div>
 <div id="main-collection" class="main">
-    {% for product in collection.products %}
+    {% for product in collections.products limit:  4 %}
          {% include 'product-body' %}
     {% endfor %}
 </div>
