@@ -342,6 +342,10 @@ header{
   display: grid;
   grid-column:span 4;
 }
+.product.dropped{
+  grid-template-columns: repeat(4, 1fr);
+  display:grid;
+}
 .product:hover .main-information {
   border-top: 0.5px solid var(--black);
   border-right: 0.5px solid var(--black);
