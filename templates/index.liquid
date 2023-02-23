@@ -1,5 +1,5 @@
 {%- for product in collections.all.products -%}
   {%- if product.id != current_product and product.available -%}
-    {% include 'product-body' %}
+    {% include 'product-body-random' %}
   {%- endif -%}
 {%- endfor -%}
