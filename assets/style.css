@@ -279,9 +279,11 @@ img{
 }
 .main-information:nth-child(odd) {
     grid-column: span 1;
+    display: grid;
 }
 .main-information:nth-child(even) {
     grid-column: span 3;
+    display: grid;
 }
 .thumbnail{
   height:auto;
