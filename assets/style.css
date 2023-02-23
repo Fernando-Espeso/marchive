@@ -453,7 +453,7 @@ div#related >.product{
   display: none;
 }
 div#related >.product:first-child{
-  display: block!important;
+  display: grid!important;
 }
 /* FOOTER
 ================================================== */
