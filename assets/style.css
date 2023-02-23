@@ -234,7 +234,9 @@ header{
 .logo svg{
   fill:black!important;
 }
-.menu{}
+.menu{
+  grid-column:span 4/ span 9;
+}
 .cart{}
 
 .product{
