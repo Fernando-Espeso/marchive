@@ -59,11 +59,11 @@
                <div class="sale">Out of stock</div>
               {% endif %}
               <div class="variations">
-                          <select id="product-select" name="id">
+                          <!-- <select id="product-select" name="id">
                             {% for variant in product.variants %}
                             <option value="{{ variant.id }}">CHOOSE SIZE:</option>
                             {% endfor %}
-                          </select>
+                          </select> -->
                           {% if product.available %}
                               <button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
                           {% else %}
