@@ -1,5 +1,39 @@
 <div id="single-product">
     <div class="product_info">
+      <div class="main-information">
+        <div class="info-product">
+          <div>Designer</div>
+          <div class="hov">Alexander Wang</div>
+        </div>
+        <div class="info-product">
+          <div>Era</div>
+          <div>1820</div>
+        </div>
+        <div class="info-product">
+          <div>Item</div>
+          <div class="hov"><a href="{{ product.url }}">{{ product.title}}</a></div>
+        </div>
+        <div class="info-product">
+          <div><a>Price</a></div>
+          <div class="product-price">
+               {% if product.available %}
+                {% if product.price_varies %}
+                  <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
+                {% else %}
+                  {% if product.compare_at_price > product.price %}
+                  <s>{{ product.compare_at_price | money }}</s>
+                <span class="red">{{ product.price | money }}</span>
+                  {% else %}
+                <span>{{ product.price | money }}</span>
+
+                  {% endif %}
+                {% endif %}
+              {% else %}
+                <span>{{ product.price | money }}</span>
+              {% endif %}
+            </div>
+        </div>
+      </div>
       <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
           {%- if product.has_only_default_variant -%}
           class="product-simple"
