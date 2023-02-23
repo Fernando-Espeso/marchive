@@ -235,7 +235,7 @@ header{
   fill:black!important;
 }
 .menu{
-  grid-column:span 4/ span 9;
+  grid-column: 3/ span 7;
 }
 .cart{}
 
