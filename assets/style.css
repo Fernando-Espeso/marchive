@@ -171,7 +171,8 @@ select:disabled{
   border: none !important;
 }
 .active{
-  color:grey;
+  color:var(--white);
+  background-color: var(--black)
 }
 .thumbnail{
   position: relative;
