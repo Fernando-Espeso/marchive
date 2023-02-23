@@ -277,12 +277,12 @@ img{
     display: grid;
     grid-gap:12px;
 }
-.main-information:nth-child(odd) {
+.main-information>div:nth-child(odd) {
     grid-column: span 1;
     display: grid;
     background-color: red;
 }
-.main-information:nth-child(even) {
+.main-information>div:nth-child(even) {
     grid-column: span 3;
     display: grid;
     background-color: blue;
