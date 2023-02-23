@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     $('.switch-view').click(function(){
-      $(".product").addClass("dropped");
+      $(".product").toggleClass("dropped");
     });
   });
 });
