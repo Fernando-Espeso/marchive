@@ -266,6 +266,7 @@ header{
   grid-column:span 2;
 }
 .link{
+  cursor: pointer;
   padding: 2px;
   grid-column: span 1;
   border:0.5px solid black;
