@@ -343,6 +343,7 @@ header{
   grid-column:span 4;
 }
 .product.dropped{
+  grid-gap:12px;
   grid-template-columns: repeat(4, 1fr);
   display:grid;
 }
