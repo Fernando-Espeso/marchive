@@ -275,7 +275,6 @@ img{
 .product:hover .main-information {
   border-top: 0.5px solid;
   border-right: 0.5px solid;
-  border-left: 0.5px solid;
 }
 .product:hover .info-product {
   border-bottom: 0.5px solid;
