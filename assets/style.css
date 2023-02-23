@@ -235,11 +235,13 @@ header{
   fill:black!important;
 }
 .menu{
+  grid-gap:12px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-column: 3/ span 7;
 }
 .drop{
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column:span 2;
 }
@@ -248,7 +250,7 @@ header{
   background-color: red;
   grid-column: span 1;
 }
-.dropdrowm{
+.dropdown{
   background-color: grey;
   grid-column: span 2;
 }
