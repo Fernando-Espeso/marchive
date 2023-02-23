@@ -248,18 +248,16 @@ header{
 .link{
   padding: 2px;
   color: white;
-  background-color: red;
   grid-column: span 1;
   border:0.5px solid;
 }
 .link-about{
   color: white;
-  background-color: red;
   grid-column: span 1;
   border:0.5px solid;
 }
 .dropdown{
-  background-color: grey;
+  background-color: white;
   grid-column: span 2;
 }
 .cart{}
