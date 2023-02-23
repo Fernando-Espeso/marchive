@@ -325,7 +325,7 @@ z-index:101;
   grid-template-columns: repeat(12,1fr);
 }
 #products{
-  griud-gap:12px;
+  grid-gap:12px;
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(16,1fr);
