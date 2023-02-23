@@ -63,7 +63,7 @@
         <div class="row">
           <div class="main-information">
             <div class="product-title">
-            <a href="{{ product.url }}">{{ product.title}}</a>
+                <a href="{{ product.url }}">{{ product.title}}</a>
             </div>
             <div class="product-price">
 
@@ -83,27 +83,7 @@
               <span>{{ product.price | money }}</span>
 
             {% endif %}
-
             </div>
-            <div class="product-sizes">
-              {% for option in product.options_with_values %}
-                {%- for value in option.values -%}
-                  {% unless option.name == "Color" %}
-                    {%- liquid
-                      assign optionNumber = 'option' | append: option.position
-                      assign optionVariant = false
-                      for variant in product.variants
-                        if variant[optionNumber] == value
-                          assign optionVariant = variant
-                          break
-                        endif
-                      endfor
-                    -%}
-                    <div class="product-size-value {% if optionVariant.available == false %} unavailable {% endif %}"> {{ value }} </div>
-                  {% endunless %}
-                {% endfor %}
-              {% endfor %}
-            </div></div>
         </div>
     </div>
 </div>
