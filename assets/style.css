@@ -442,7 +442,10 @@ span.box {
   height: fit-content;
 }
 .slider{
-  grid-column: span 7;
+  grid-column: span 6;
+}
+.related{
+  grid-column: span 3;
 }
 /* FOOTER
 ================================================== */
