@@ -266,12 +266,14 @@ header{
   padding: 2px;
   width: 100%;
 }
-.cart{
+#cart{
+  border:0.5px;
   display: flex;
   justify-content: space-between;
 }
-.cart:nth-child(2){
+#cart:nth-child(2){
   width: 30px;
+  border-left:0.5px;
   text-align: center;
 }
 
