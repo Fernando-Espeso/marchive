@@ -34,6 +34,10 @@ document.addEventListener("DOMContentLoaded", function(){
     var w = window.innerWidth,
     h = window.innerHeight;
     document.documentElement.style.setProperty('--h', h + 'px');
+
+    m = document.getElementById("header").offsetHeight;
+    document.documentElement.style.setProperty('--m', m + 'px');
+
   }
 
   $(document).ready(function() {
