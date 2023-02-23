@@ -64,7 +64,7 @@
           <div class="main-information">
             <div class="info-product">
               <div>Designer</div>
-              <div>Alexander Wang</div>
+              <div class="link">Alexander Wang</div>
             </div>
             <div class="info-product">
               <div>Era</div>
@@ -97,7 +97,7 @@
           </div>
         </div>
       </div>
-  </div>    
+  </div>
 {%- if template contains 'product' or template contains 'collection' -%}
   {{ 'global-product.js' | asset_url | script_tag }}
 {%- endif -%}
