@@ -43,9 +43,9 @@
           </div>
       </form>
       <div class="nav-info">
-        <div>Description</div>
-        <div>Size</div>
-        <div>Condition</div>
+        <div class="hov">Description</div>
+        <div class="hov">Size</div>
+        <div class="hov">Condition</div>
       </div>
       <div class="information">
           <div class="project_info">
@@ -56,7 +56,7 @@
     <div class="gallery">
           {% for media in product.media %}
           <div class="thumb">
-          <span class="box"></span>  
+          <span class="box"></span>
               {% case media.media_type %}
               {% when 'video' %}
                   {{ media | video_tag:loop: true, autoplay: true, muted:true}}
