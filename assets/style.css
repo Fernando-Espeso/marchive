@@ -288,6 +288,12 @@ img{
   position: absolute;
   border: 0.5px solid black;
 }
+span.box {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0.5px solid transparent;
+}
 .main-information {
   border-top: 0.5px solid transparent;
   border-right: 0.5px solid transparent;
@@ -324,6 +330,12 @@ img{
 .thumbnail img{
   width: 100%;
 }
+
+
+
+
+
+
 .sold-out{
   color:#9B9B9B;
   padding:2px;
