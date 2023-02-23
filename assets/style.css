@@ -256,7 +256,7 @@ header{
   grid-gap:12px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-column: 3/ span 7;
+  grid-column: 4/ span 7;
 }
 .drop{
   height: fit-content;
