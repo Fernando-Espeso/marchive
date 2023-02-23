@@ -435,6 +435,12 @@ span.box {
   display: grid;
   grid-template-columns: repeat(12,1fr);
 }
+.product_info{
+  grid-column: span 3;
+}
+.slider{
+  grid-column: span 7;
+}
 /* FOOTER
 ================================================== */
 footer{
