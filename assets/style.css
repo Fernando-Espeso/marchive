@@ -224,6 +224,7 @@ img{
 }
 
 header{
+  z-index: 100;
   top: 0px;
   position: sticky;
   grid-template-columns: repeat(12, 1fr);
