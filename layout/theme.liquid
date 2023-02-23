@@ -129,18 +129,17 @@ fernandoepeso.info
             {% endfor %} -->
     </div>
     <div class="cart-part">
-            <li>
-              <a id="cart" {% if template == 'cart' %}  style="color:green;"{% endif %} href="/cart">
-                BAG <span class="cart-total">
-                    {%- if cart.item_count == 0 -%}
-                    0
-                    {%- else -%}
-                    {{- cart.item_count -}}
-                    {%- endif -%}
-                </span>
-              </a>
-          </li>
-  	  </div>
+        <div id="cart">
+          <div class="baggie"><a {% if template == 'cart' %}  style="color:green;" {% endif %} href="/cart"></a>Cart</div>
+          <div class="cart-total">
+              {%- if cart.item_count == 0 -%}
+              0
+              {%- else -%}
+              {{- cart.item_count -}}
+              {%- endif -%}
+          </div>
+      </div>
+  	 </div>
   </div>
   </header>
   {% if template == 'index'%}
