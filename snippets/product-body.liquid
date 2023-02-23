@@ -77,26 +77,27 @@
             <div class="info-product">
               <div><a>Price</a></div>
               <div class="product-price">
-             {% if product.available %}
-              {% if product.price_varies %}
-                <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
-              {% else %}
-                {% if product.compare_at_price > product.price %}
-                <s>{{ product.compare_at_price | money }}</s>
-              <span class="red">{{ product.price | money }}</span>
-                {% else %}
-              <span>{{ product.price | money }}</span>
+                   {% if product.available %}
+                    {% if product.price_varies %}
+                      <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
+                    {% else %}
+                      {% if product.compare_at_price > product.price %}
+                      <s>{{ product.compare_at_price | money }}</s>
+                    <span class="red">{{ product.price | money }}</span>
+                      {% else %}
+                    <span>{{ product.price | money }}</span>
 
-                {% endif %}
-              {% endif %}
-            {% else %}
-              <span>{{ product.price | money }}</span>
-            {% endif %}
+                      {% endif %}
+                    {% endif %}
+                  {% else %}
+                    <span>{{ product.price | money }}</span>
+                  {% endif %}
+                </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-</div>
+      </div>
+  </div>    
 {%- if template contains 'product' or template contains 'collection' -%}
   {{ 'global-product.js' | asset_url | script_tag }}
 {%- endif -%}
