@@ -62,20 +62,21 @@
         </div>
         <div class="row">
           <div class="main-information">
-            <div>Designer</div>
-            <div class="product-designer">
-                <a>Alexander Wang</a>
+            <div class="info-product">
+              <div>Designer</div>
+              <div>Alexander Wang</div>
             </div>
-            <div>Era</div>
-            <div class="product-era">
-                <a>1980</a>
+            <div class="info-product">
+              <div>Era</div>
+              <div>1820</div>
             </div>
-            <div>Item</div>
-            <div class="product-title">
-                <a href="{{ product.url }}">{{ product.title}}</a>
+            <div class="info-product">
+              <div>Item</div>
+              <div><a href="{{ product.url }}">{{ product.title}}</a></div>
             </div>
-            <div>Price</div>
-            <div class="product-price">
+            <div class="info-product">
+              <div><a>Price</a></div>
+              <div class="product-price">
              {% if product.available %}
               {% if product.price_varies %}
                 <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
@@ -90,7 +91,6 @@
               {% endif %}
             {% else %}
               <span>{{ product.price | money }}</span>
-
             {% endif %}
             </div>
         </div>

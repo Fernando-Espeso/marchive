@@ -274,16 +274,23 @@ img{
 }
 .main-information {
   row-gap:0px!important;
+  grid-template-columns: repeat(1,1fr);
+  display: grid;
+  grid-gap:12px;
+}
+.info-product {
+  grid-column: span 1;
+  row-gap:0px!important;
   grid-template-columns: repeat(4,1fr);
   display: grid;
   grid-gap:12px;
 }
-.main-information>div:nth-child(odd) {
+.info-product>div:nth-child(odd) {
   grid-column: span 1;
   padding-left: 5px;
   display: grid;
 }
-.main-information>div:nth-child(even) {
+.info-product>div:nth-child(even) {
   grid-column: span 3;
   padding-left: 5px;
   display: grid;
