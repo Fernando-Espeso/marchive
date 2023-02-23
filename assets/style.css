@@ -339,7 +339,7 @@ header{
 .product:hover .info-product {
   border-bottom: 0.5px solid var(--black);
 }
-.product:hover >div:nth-child(even) {
+.product:hover >div:nth-child(odd) {
   border-left: 0.5px solid var(--black);
 }
 .product:hover span.box {
