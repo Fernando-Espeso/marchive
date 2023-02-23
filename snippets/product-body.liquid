@@ -75,69 +75,71 @@ data-pos="{{ forloop.index }}"
     {% endfor %}
     <img class="lazy" src="{{ product.images[0] | product_img_url: 'thumb' }}" data-src="{{ product.images[0] | product_img_url: 'master' }}" alt="{{ product.title }}" />
   </a>
-  <div class="product-price-wrap">
-        {% if product.available %}
-              {% if product.price_varies %}
-                {% else %}
-                 {% if product.compare_at_price > product.price %}
+  <div class="product-info">
+        <div class="product-price-wrap">
+              {% if product.available %}
+                    {% if product.price_varies %}
+                      {% else %}
+                       {% if product.compare_at_price > product.price %}
+                        {% else %}
+                        {% endif %}
+                      {% endif %}
                   {% else %}
-                  {% endif %}
+              {% endif %}
+
+              {% assign date_created = product.created_at | date:'%d' %}
+              {% assign     date_now = 'now' | date:'%d' %}
+              {% assign   difference = date_now | plus: date_created %}
+
+              {% if difference < 5 %}
+
+              {% endif %}
+        </div>
+        <div class="row">
+          <div class="main-information">
+            <div class="product-title">
+            <a href="{{ product.url }}">{{ product.title}}</a>
+            </div>
+            <div class="product-price">
+
+             {% if product.available %}
+              {% if product.price_varies %}
+                <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
+              {% else %}
+                {% if product.compare_at_price > product.price %}
+                <s>{{ product.compare_at_price | money }}</s>
+              <span class="red">{{ product.price | money }}</span>
+                {% else %}
+              <span>{{ product.price | money }}</span>
+
                 {% endif %}
+              {% endif %}
             {% else %}
-        {% endif %}
+              <span>{{ product.price | money }}</span>
 
-        {% assign date_created = product.created_at | date:'%d' %}
-        {% assign     date_now = 'now' | date:'%d' %}
-        {% assign   difference = date_now | plus: date_created %}
+            {% endif %}
 
-        {% if difference < 5 %}
-
-        {% endif %}
-  </div>
-  <div class="row">
-    <div class="main-information">
-      <div class="product-title">
-      <a href="{{ product.url }}">{{ product.title}}</a>
-      </div>
-      <div class="product-price">
-
-       {% if product.available %}
-        {% if product.price_varies %}
-          <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
-        {% else %}
-          {% if product.compare_at_price > product.price %}
-          <s>{{ product.compare_at_price | money }}</s>
-        <span class="red">{{ product.price | money }}</span>
-          {% else %}
-        <span>{{ product.price | money }}</span>
-
-          {% endif %}
-        {% endif %}
-      {% else %}
-        <span>{{ product.price | money }}</span>
-
-      {% endif %}
-
-      </div>
-      <div class="product-sizes">
-        {% for option in product.options_with_values %}
-          {%- for value in option.values -%}
-            {% unless option.name == "Color" %}
-              {%- liquid
-                assign optionNumber = 'option' | append: option.position
-                assign optionVariant = false
-                for variant in product.variants
-                  if variant[optionNumber] == value
-                    assign optionVariant = variant
-                    break
-                  endif
-                endfor
-              -%}
-              <div class="product-size-value {% if optionVariant.available == false %} unavailable {% endif %}"> {{ value }} </div>
-            {% endunless %}
-          {% endfor %}
-        {% endfor %}
-      </div></div>
+            </div>
+            <div class="product-sizes">
+              {% for option in product.options_with_values %}
+                {%- for value in option.values -%}
+                  {% unless option.name == "Color" %}
+                    {%- liquid
+                      assign optionNumber = 'option' | append: option.position
+                      assign optionVariant = false
+                      for variant in product.variants
+                        if variant[optionNumber] == value
+                          assign optionVariant = variant
+                          break
+                        endif
+                      endfor
+                    -%}
+                    <div class="product-size-value {% if optionVariant.available == false %} unavailable {% endif %}"> {{ value }} </div>
+                  {% endunless %}
+                {% endfor %}
+              {% endfor %}
+            </div></div>
+        </div>
   </div>
 </div>
   {%- if template contains 'product' or template contains 'collection' -%}
