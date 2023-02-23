@@ -439,7 +439,12 @@ span.box {
   grid-template-columns: repeat(12,1fr);
 }
 .product_info{
-
+  grid-column: span 3;
+  position: sticky;
+  top: 100px;
+  display: grid;
+  row-gap:12px;
+  height: fit-content;
 }
 .nav-info{
   border-left: 0.5px solid black;
