@@ -33,7 +33,6 @@
 data-price="{{ product.price }}"
 data-pos="{{ forloop.index }}"
 >
-
   <!--Product Link-->
   <a class="thumbnail" href="{{ product.url }}">
     <span class="box"></span>
@@ -101,9 +100,7 @@ data-pos="{{ forloop.index }}"
                 </div>
         {% endcase %}
     {% endfor %}
-    <img id="none" class="lazy" src="{{ product.images[0] | product_img_url: 'thumb' }}" data-src="{{ product.images[0] | product_img_url: 'master' }}" alt="{{ product.title }}" />
     <img class="lazy" src="{{ product.images[1] | product_img_url: 'thumb' }}" data-src="{{ product.images[1] | product_img_url: 'master' }}" alt="{{ product.title }}" />
-
   </a>
    	<div class="product-price-wrap">
         {% if product.available %}
