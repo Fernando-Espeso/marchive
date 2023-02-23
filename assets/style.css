@@ -241,6 +241,7 @@ header{
   grid-column: 3/ span 7;
 }
 .drop{
+  row-gap:12px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column:span 2;
