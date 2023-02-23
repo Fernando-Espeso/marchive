@@ -253,8 +253,13 @@ header{
   grid-column: span 1;
   border:0.5px solid black;
 }
-.link, .link-about:hover{
+.link:hover{
   background-color: black;
+  color: white;
+}
+.link-about:hover{
+  background-color: black;
+  color: white;
 }
 .link-about{
   padding: 2px;
