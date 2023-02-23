@@ -315,7 +315,6 @@ header{
   display: flex;
   justify-content: space-between;
 }
-
 .baggie{
   padding: 2px;
 }
@@ -325,7 +324,6 @@ header{
   border-left:0.5px solid var(--black);
   text-align: center;
 }
-
 .product{
   height: fit-content;
   position:relative;
@@ -342,7 +340,7 @@ header{
 .product:hover .info-product {
   border-bottom: 0.5px solid var(--black);
 }
-.product:hover >div:nth-child(odd) {
+.product:hover .info-product>div:nth-child(even) {
   border-left: 0.5px solid var(--black);
 }
 .product:hover span.box {
