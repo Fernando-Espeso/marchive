@@ -1,40 +1,6 @@
-
-{%- capture sizes -%}
-{%- for option in product.options -%}
- {%- assign size = option | downcase -%}
- {%- if size contains 'size' -%}
-   {%- assign index = forloop.index0 -%}
-   {%- for variant in product.variants -%}
-	  \{{- variant.options[index] | strip | handle | downcase | escape -}}
-   {%- endfor -%}
- {%- endif -%}
-{%- endfor -%}
-{%- endcapture -%}
-{%- assign sizes = sizes | split: '\' | uniq | sort -%}
-
-{%- capture colors -%}
-{%- for option in product.options -%}
- {%- assign color = option | downcase -%}
- {%- if color contains 'colo' -%}
-   {%- assign index = forloop.index0 -%}
-   {%- for variant in product.variants -%}
-	  \{{- variant.options[index] | strip | handle | downcase | escape -}}
-   {%- endfor -%}
- {%- endif -%}
-{%- endfor -%}
-{%- endcapture -%}
-{%- assign colors = colors | split: '\' | uniq | sort -%}
-
 <!--Product-->
-<div id="product-{{ product.id }}"
-     class="product
-           {% for filter in sizes %}{% unless filter == blank %}filter-size-{{ filter | strip | handle | downcase | escape }} {% endunless %}{% endfor %}
-           {% for filter in colors %}{% unless filter == blank %}filter-color-{{ filter | strip | handle | downcase | escape }} {% endunless %}{% endfor %}"
-data-price="{{ product.price }}"
-data-pos="{{ forloop.index }}"
->
-  <!--Product Link-->
-  <a class="thumbnail" href="{{ product.url }}">
+<div id="product" class="product">
+    <a class="thumbnail" href="{{ product.url }}">
     <span class="box"></span>
     {% unless product.metafields.custom.notice == blank %}
           <div class="newin" style="z-index:100; text-transform:uppercase;">  {{ product.metafields.custom.notice }}</div>
@@ -73,9 +39,8 @@ data-pos="{{ forloop.index }}"
                 </div>
         {% endcase %}
     {% endfor %}
-    <img class="lazy" src="{{ product.images[0] | product_img_url: 'thumb' }}" data-src="{{ product.images[0] | product_img_url: 'master' }}" alt="{{ product.title }}" />
-  </a>
-  <div class="product-info">
+    <img class="lazy" src="{{ product.images[0] | product_img_url: 'thumb' }}" data-src="{{ product.images[0] | product_img_url: 'master' }}" alt="{{ product.title }}" /></a>
+    <div class="product-info">
         <div class="product-price-wrap">
               {% if product.available %}
                     {% if product.price_varies %}
@@ -140,9 +105,9 @@ data-pos="{{ forloop.index }}"
               {% endfor %}
             </div></div>
         </div>
-  </div>
+    </div>
 </div>
-  {%- if template contains 'product' or template contains 'collection' -%}
+{%- if template contains 'product' or template contains 'collection' -%}
   {{ 'global-product.js' | asset_url | script_tag }}
 {%- endif -%}
 {%- if template == 'product' or template contains 'collection' -%}
