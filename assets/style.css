@@ -41,7 +41,22 @@
   height: 100%;
   width: 100%;
 }
-/* RESET CSS
+/* VARIABLES
+================================================== */
+:root {
+  --main: 20px;
+	--small: 12px;
+  --medium: 50px;
+  --tags: 20px;
+	--big: 3.5vw;
+  --logo: 50px;
+  --gap: 10px;
+  --white: #f1f2f2;
+  --black: #282829;
+  --font-main: 'GH_LittleSpain-Regular';
+  --font-secondary: 'AntiqueLegacy-Medium';
+}
+/* MAIN
 ================================================== */
 *{
   font-size:5px;
@@ -165,7 +180,7 @@ body{
  font-size: 10px;
  font-family: 'ABCArizonaSans-Bold';
  display: flex;
- background-color: #f1f2f2;
+ background-color: var(--white);
  flex-direction: column;
  min-height: 100vh;
  width: 100%;
@@ -235,7 +250,7 @@ header{
 .logo{
 }
 .logo svg{
-  fill:black!important;
+  fill:var(--black)!important;
 }
 .menu{
   grid-gap:12px;
@@ -254,12 +269,12 @@ header{
   border:0.5px solid black;
 }
 .link:hover{
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);;
 }
 .link-about:hover{
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);;
 }
 .link-about{
   padding: 2px;
@@ -269,9 +284,9 @@ header{
 }
 .dropdown{
   margin-top: -1px;
-  border-left:0.5px solid black;
-  border-top:0.5px solid black;
-  border-right:0.5px solid black;
+  border-left:0.5px solid var(--black);
+  border-top:0.5px solid var(--black);
+  border-right:0.5px solid var(--black);
   background-color: white;
   grid-column: span 2;
 }
@@ -281,13 +296,14 @@ header{
   width: 100%;
 }
 .dropdown>div:hover{
-  background-color: black;
+  background-color: var(--black);
+  color: var(--white);;
 }
 .cart-part{
   grid-column: span 2;
 }
 #cart{
-  border:0.5px solid black;
+  border:0.5px solid var(--black);
   display: flex;
   justify-content: space-between;
 }
@@ -298,7 +314,7 @@ header{
 #cart .cart-total{
   padding: 2px;
   width: 30px;
-  border-left:0.5px solid black;
+  border-left:0.5px solid var(--black);
   text-align: center;
 }
 
@@ -311,12 +327,12 @@ header{
   grid-column:span 4;
 }
 .product:hover .main-information {
-  border-top: 0.5px solid black;
-  border-right: 0.5px solid black;
-  border-left: 0.5px solid black;
+  border-top: 0.5px solid var(--black);
+  border-right: 0.5px solid var(--black);
+  border-left: 0.5px solid var(--black);
 }
 .product:hover .info-product {
-  border-bottom: 0.5px solid black;
+  border-bottom: 0.5px solid var(--black);
 }
 .product:hover >div:nth-child(even) {
 }
@@ -324,7 +340,7 @@ header{
   height: 100%;
   width: 100%;
   position: absolute;
-  border: 0.5px solid black;
+  border: 0.5px solid var(--black);
 }
 span.box {
   height: 100%;
@@ -376,7 +392,7 @@ span.box {
   top: 50%;
   transform: translate(0%,-50%);
   left: 0px;
-  background-color: white;
+  background-color: var(--white);;
 }
 .colors {
   position: absolute;
@@ -394,7 +410,7 @@ span.box {
   top: 50%;
   transform: translate(0%,-50%);
   left: 0px;
-  background-color: white;
+  background-color: var(--white);;
 }
 .newin{
   color:#5FB307;
