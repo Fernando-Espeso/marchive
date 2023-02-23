@@ -437,6 +437,9 @@ span.box {
 }
 .product_info{
   grid-column: span 3;
+  position: sticky;
+  top: 100px;
+  height: fit-content;
 }
 .slider{
   grid-column: span 7;
