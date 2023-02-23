@@ -261,11 +261,14 @@ header{
   border:0.5px solid;
 }
 .dropdown{
+  border-left:0.5px solid black;
+  border-top:0.5px solid black;
+  border-right:0.5px solid black;
   background-color: white;
   grid-column: span 2;
 }
 .dropdown>div{
-  border:0.5px solid black;
+  border:0.5px bottom black;
   padding: 2px;
   width: 100%;
 }
