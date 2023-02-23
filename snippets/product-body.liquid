@@ -62,17 +62,20 @@
         </div>
         <div class="row">
           <div class="main-information">
+            <div>designer</div>
             <div class="product-designer">
                 <a>designer</a>
             </div>
+            <div>era</div>
             <div class="product-era">
                 <a>1980</a>
             </div>
+            <div>title</div>
             <div class="product-title">
                 <a href="{{ product.url }}">{{ product.title}}</a>
             </div>
+            <div>price</div>
             <div class="product-price">
-
              {% if product.available %}
               {% if product.price_varies %}
                 <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>

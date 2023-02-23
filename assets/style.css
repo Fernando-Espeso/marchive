@@ -277,6 +277,12 @@ img{
     display: grid;
     grid-gap:12px;
 }
+.product-info>div:odd {
+    grid-template-columns: repeat(1,1fr);
+}
+.product-info>div:even {
+    grid-template-columns: repeat(2,1fr);
+}
 .thumbnail{
   height:auto;
 }
