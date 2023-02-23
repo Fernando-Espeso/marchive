@@ -256,8 +256,8 @@ header{
 .menu{
   grid-gap:12px;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-column: 4/ span 7;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column: 5/ span 5;
 }
 .drop{
   height: fit-content;
@@ -448,13 +448,6 @@ span.box {
 .product:hover .product-sizes{
   display: flex;
   gap: 5px;
-}
-.product:hover .product-sizes .product-size-value.unavailable{
-  color: #949494 !important;
-  text-decoration: line-through;´
-}
-.product:hover .product-price{
-  display: none;
 }
 /* FOOTER
 ================================================== */
