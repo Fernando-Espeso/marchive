@@ -442,10 +442,11 @@ span.box {
   grid-column: span 3;
   position: sticky;
   top: 100px;
+  display: grid;
+  row-gap:12px;
   height: fit-content;
 }
 .nav-info{
-  margin-top: 12px;
   border-left: 0.5px solid black;
   border-top: 0.5px solid black;
   border-right: 0.5px solid black;
