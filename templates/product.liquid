@@ -17,14 +17,14 @@
   			      </div>
               <div id="product-price"></div>
               {% if product.compare_at_price > product.price %}
-                  <span class="sale">ON SALE</span>
+                  <span class="sale">On sale</span>
               {% else %}
               {% endif %}
               {% if product.available %}
               {% else %}
-               <div class="sale">out of stock</div>
+               <div class="sale">Out of stock</div>
               {% endif %}
-              <div class="variations">
+              <!-- <div class="variations">
                           <select id="product-select" name="id">
                             {% for variant in product.variants %}
                             <option value="{{ variant.id }}">CHOOSE SIZE:</option>
@@ -34,7 +34,7 @@
                               <button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
                           {% else %}
                           {% endif %}
-              </div>
+              </div> -->
               {% unless product.metafields.custom.extra == blank %}
                 <div class="extra">
                       {{ product.metafields.custom.extra }}
