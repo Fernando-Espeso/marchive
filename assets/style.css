@@ -261,9 +261,12 @@ header{
 }
 .drop{
   height: fit-content;
-  display: grid;
+  display: none;
   grid-template-columns: repeat(2, 1fr);
   grid-column:span 2;
+}
+.drop.dropped{
+  display: grid;
 }
 .link{
   padding-left: 5px!important;
