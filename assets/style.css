@@ -168,7 +168,7 @@ span.box {
     border: 1px solid grey;
 }
 body{
- font-size: 12px;
+ font-size: 10px;
  font-family: 'ABCArizonaSans-Bold';
  display: flex;
  flex-direction: column;
@@ -290,13 +290,13 @@ img{
   grid-gap:12px;
 }
 .info-product>div:nth-child(odd) {
-  padding: 3px;
+  padding: 2spx;
   grid-column: span 1;
   padding-left: 5px;
   display: grid;
 }
 .info-product>div:nth-child(even) {
-  padding: 3px;
+  padding: 2px;
   border-left: 0.5px solid;
   grid-column: span 3;
   padding-left: 5px;
