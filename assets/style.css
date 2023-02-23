@@ -235,6 +235,8 @@ header{
   fill:black!important;
 }
 .menu{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
   grid-column: 3/ span 7;
 }
 .cart{}
