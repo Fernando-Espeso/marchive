@@ -442,7 +442,7 @@ span.box {
   grid-column: span 3;
   position: sticky;
   top: 100px;
-  display: grid;
+  display: grid!important;
   row-gap:12px;
   height: fit-content;
 }
