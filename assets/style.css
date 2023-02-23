@@ -450,6 +450,7 @@ span.box {
   border-right: 0.5px solid black;
 }
 .nav-info>div{
+  text-align: center;
   border-bottom: 0.5px solid black;
 }
 .gallery{
