@@ -345,7 +345,7 @@ img{
   grid-column:span 4;
 }
 .thumbnail{
-  height:80vh;
+  height:auto;
   overflow:hidden;
   position:relative;
 }
