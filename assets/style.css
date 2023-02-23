@@ -195,23 +195,6 @@ a{
   text-decoration: none;
   cursor: pointer;
 }
-.logo{
-  top:55px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  position:fixed;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index:100;
-  margin: 0 auto;
-}
-.logo svg{
-  fill:black!important;
-  width: 12vw;
-  padding:15px;
-}
 /* MAIN
 ================================================== */
 footer{
@@ -247,7 +230,9 @@ header{
   grid-gap:12px;
 }
 .logo{
-  grid-column: span 3;
+}
+.logo svg{
+  fill:black!important;
 }
 .menu{}
 .cart{}
