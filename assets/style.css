@@ -296,18 +296,6 @@ img{
   row-gap: 5px;
 }
 .colors span,
-.product-variant-option .color-option {
-  padding:0px 10px 0px 10px;
-  border-radius:10px;
-  width: 20px;
-  height: 15px;
-  border-radius: 100px;
-}
-.colors span.unavailable {
-  background-color: #949494;
-  border: 1px solid #949494;
-  opacity: .4;
-}
 .sale{
   color:#B35A07;
   padding:2px;
