@@ -246,6 +246,7 @@ header{
   grid-column:span 2;
 }
 .link{
+  padding: 2px;
   color: white;
   background-color: red;
   grid-column: span 1;
