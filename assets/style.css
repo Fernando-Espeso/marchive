@@ -430,6 +430,8 @@ span.box {
 }
 /* PRODUCT PAGE
 ================================================== */
+
+
 #single-product{
   padding: 12px 20px 0px 20px;
   grid-gap:12px;
@@ -443,7 +445,7 @@ span.box {
   top: 100px;
   height: fit-content;
 }
-.slider{
+.gallery{
   grid-column: span 6;
 }
 div#related {
