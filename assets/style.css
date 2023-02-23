@@ -565,7 +565,8 @@ align-items: end;
 	display: none !important;
 }
 div#related {
-  position: relative;
+  position: sticky;
+  top: 100px;
 }
 /* HOME
 ================================================== */
