@@ -449,6 +449,12 @@ span.box {
 div#related {
   grid-column: span 3;
 }
+div#related >.product{
+  display: none;
+}
+div#related >.product:first-child{
+  display: block!important;
+}
 /* FOOTER
 ================================================== */
 footer{
