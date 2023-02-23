@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function(){
        $(this).toggleClass("active");
        $(this).next(".dropdown").toggleClass("dropped");
     });
-
     $('.switch-view').click(function(){
       $(".product").toggleClass("dropped");
+      $("#products").toggleClass("dropped");
     });
   });
 });
