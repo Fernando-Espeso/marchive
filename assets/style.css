@@ -249,7 +249,7 @@ header{
   padding: 2px;
   color: white;
   grid-column: span 1;
-  border:0.5px solid;
+  border:0.5px solid black;
 }
 .link-about{
   color: white;
