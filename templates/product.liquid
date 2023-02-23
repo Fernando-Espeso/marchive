@@ -53,9 +53,10 @@
           </div>
       </div>
     </div>
-    <div class="slider">
+    <div class="gallery">
           {% for media in product.media %}
-          <div class="slide">
+          <div class="thumb">
+          <span class="box"></span>  
               {% case media.media_type %}
               {% when 'video' %}
                   {{ media | video_tag:loop: true, autoplay: true, muted:true}}
