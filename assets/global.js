@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function(){
   $(document).ready(function() {
     $('.link').click(function(){
        $(this).toggleClass("active");
-       $(this).find(".dropdown")toggleClass("droped");
+       $(".dropdown")toggleClass("droped");
     });
   });
 });
