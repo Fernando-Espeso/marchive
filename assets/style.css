@@ -254,6 +254,7 @@ header{
   grid-column: span 3;
 }
 .logo svg{
+  display: block;
   width: 100%;
   fill:var(--black)!important;
 }
