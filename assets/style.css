@@ -375,6 +375,7 @@ header{
 .product:hover span.box {
   height: 100%;
   width: 100%;
+  z-index: 10001;
   position: absolute;
   border: 0.5px solid var(--black);
 }
