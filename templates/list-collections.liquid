@@ -1,5 +1,11 @@
-<div id="products">
-  {% for product in collection.products %}
-		{% include 'product-body' %}
-  {% endfor %}
-</div>
+
+{% for link in settings.collection_list_menu %}
+  {% if link.type == 'collection_link' %}
+    {% assign collection = link.object %}
+    <div id="products">
+      {% for product in collection.products %}
+    		{% include 'product-body' %}
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endfor %}
