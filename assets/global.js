@@ -55,8 +55,7 @@ document.addEventListener("DOMContentLoaded", function(){
     var swiper = new Swiper(".swiper", {
       loop: true,
       allowTouchMove: false,
-      speed: 1000,
-      slidesPerView: "1",
+      slidesPerView: "5",
       observer: true,
       observeParents: true,
 });

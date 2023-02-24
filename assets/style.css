@@ -437,6 +437,7 @@ span.box {
 }
 .thumbnail-randmon{
   height: 20vh;
+  opacity: 1;
 }
 .thumbnail-randmon img{
   height: 20vh;
