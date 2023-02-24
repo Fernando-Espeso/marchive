@@ -566,9 +566,8 @@ footer{
   height: 200px;
   background-color:var(--black);
   color: var(--white);
-  padding: 20px;
+  padding: 20px!important;
   width: 100%;
-
 }
 .credits {
   margin-top: 12px;
