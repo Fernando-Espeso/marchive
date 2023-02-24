@@ -342,6 +342,9 @@ header{
   width: 100%;
   padding: 2px;
 }
+.baggie a{
+  width: 100%;
+}
 #cart .cart-total{
   padding: 2px;
   width: 30px;
