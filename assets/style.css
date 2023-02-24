@@ -207,6 +207,8 @@ video{
   user-select: none;
 }
 a{
+  display: block;
+  width: 100%;
   color: inherit;
   text-decoration: none;
   cursor: pointer;
