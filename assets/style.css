@@ -427,6 +427,8 @@ span.box {
   width: 100%;
 }
 .thumbnail img.none{
+  top: 0;
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
