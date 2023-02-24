@@ -296,11 +296,9 @@ header{
   border:0.5px solid black;
 }
 .switch-view{
-  display: none;
   margin-top: 20px;
   back-drop-filter:blur(20px);
   padding: 2px;
-  width: 100PX;
   width:auto;
   height: fit-content;
   border:0.5px solid black;
