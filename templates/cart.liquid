@@ -1,10 +1,8 @@
 
       {% if cart.item_count > 0 %}
-
-      <div class="shop_title">SHOPPING BAG</div>
       <form id="cart-wrapper" action="/cart" method="post">
-           {% for item in cart.items %} 
-                <div class="item">   
+           {% for item in cart.items %}
+                <div class="item">
                  <div class="thumb">
                  <img class="lazy" src="{{ item | img_url: 'thumb' }}" data-src="{{ item | img_url: 'master' }}" alt="{{ item.title | escape }}" />
               </div>
@@ -18,7 +16,7 @@
                                   <div class="item-variations">
                                     {%- for option_title in item.product.options -%}
                                     {{ item.variant.options[forloop.index0] }}{% unless forloop.last  %}<br> {% endunless %}
-                                    {%- endfor -%} 
+                                    {%- endfor -%}
                                   </div>
 
                                     {% endunless %}
@@ -29,18 +27,17 @@
                       <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
                       <span class="quantity-wrap"></span>
                       <span data-field="updates" class="quantity-button plus">
-                                            <span class="addmore">+</span>  
+                                            <span class="addmore">+</span>
                                             {% if cart.items.available %}
                                             {% else %}
                                             {% endif %}
                                </span>
                                </div>
-                 </div>  
-                     </div> 
-                  {% endfor %} 
-        
-          <div class="total">
+                 </div>
+                     </div>
+                  {% endfor %}
 
+          <div class="total">
             <div>SHIPPING</div>
             <div style="text-align:right">Calculated at checkout</div>
             SUBTOTAL
@@ -48,9 +45,8 @@
             <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
             <button id="checkout" type="submit" name="checkout">PROCEED TO CHECKOUT</button>
           </div>
-      </form>  
+      </form>
       {% else %}
             <!--Empty Bag-->
             <div class="empty">YOUR CART IS CURRENTLY EMPTY</div>
       {% endif %}
-
