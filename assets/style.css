@@ -216,7 +216,7 @@ a{
 /* MAIN
 ================================================== */
 footer{
-  position: fixed;
+  position: relative;
   bottom: 40px;
 }
 /* SHOP
