@@ -429,6 +429,7 @@ span.box {
 }
 .thumbnail img.none{
   top: 0;
+  padding: 50px;
   position: absolute;
   width: 100%;
   height: 100%;
