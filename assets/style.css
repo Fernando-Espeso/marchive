@@ -433,7 +433,7 @@ span.box {
 /* RANNDMON PAGE
 ================================================== */
 .container-fixed{
-  position: fixed;
+  position: absolute;
   top:0!important;
 
 }
