@@ -512,6 +512,7 @@ span.box {
   grid-template-columns: repeat(12,1fr);
 }
 .product_info{
+  z-index: 11;
   grid-column: span 3;
   position: sticky;
   top: var(--m);
