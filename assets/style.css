@@ -143,9 +143,6 @@ button:disabled,
 select:disabled{
   opacity: 1;
 }
-footer {
-  margin-left: 20px;
-}
 footer{
   margin-top: 12px;
   position: relative;
