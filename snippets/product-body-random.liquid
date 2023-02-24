@@ -1,9 +1,10 @@
 <!--Product-random-index-->
       <div class="swiper-slide">
-          <a class="thumbnail" href="{{ product.url }}">
-          <span class="box"></span>
-          <img class="lazy" src="{{ product.images[0] | product_img_url: 'thumb' }}" data-src="{{ product.images[0] | product_img_url: 'master' }}" alt="{{ product.title }}" /></a>
-        </div>
+          <div class="thumbnail-randmon">
+            <span class="box"></span>
+            <img class="lazy" src="{{ product.images[0] | product_img_url: 'thumb' }}" data-src="{{ product.images[0] | product_img_url: 'master' }}" alt="{{ product.title }}" />
+          </div>
+      </div>
 {%- if template contains 'product' or template contains 'collection' -%}
   {{ 'global-product.js' | asset_url | script_tag }}
 {%- endif -%}
