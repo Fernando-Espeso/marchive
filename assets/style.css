@@ -258,7 +258,7 @@ a{
     display: grid;
 }
 #products.dropped .sold-out {
-    bottom: 0px;
+    bottom: 0px!important;
     width: 100%;
 }
 .product.active-size,
