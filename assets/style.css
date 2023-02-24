@@ -441,6 +441,7 @@ span.box {
 }
 .thumbnail-randmon img{
   height: 20vh;
+  border:0.5px solid var(--black);
 }
 /* PRODUCT PAGE
 ================================================== */
