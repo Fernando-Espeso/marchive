@@ -433,9 +433,6 @@ span.box {
 /* RANNDMON PAGE
 ================================================== */
 .swiper {
-    height: 100vh;
-    position: absolute;
-    top: 0;
     padding: 20px!important;
 }
 .swiper-wrapper {
