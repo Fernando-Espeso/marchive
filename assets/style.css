@@ -284,6 +284,7 @@ header{
   color: var(--white);;
 }
 .hov:hover{
+  cursor: pointer;
   background-color: var(--black);
   color: var(--white);;
 }
