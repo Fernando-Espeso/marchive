@@ -150,10 +150,17 @@ fernandoepeso.info
   {%- endif -%}
   {{ content_for_layout }}
   <footer>
-    {% for link in linklists.footer.links %}
-    <li {% if link.active %}class="active"{% endif %}><a class="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a></li>
-    {% endfor %}
-    <div>All rights reserved. Marchive 2023</div>
+    <div class="nav-footer">
+      {% for link in linklists.footer.links %}
+      <li {% if link.active %}class="active"{% endif %}>
+        <a class="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a>
+      </li>
+      {% endfor %}
+    </div>
+    <div class="credits">
+      All rights reserved. Marchive 2023<br>
+      WWW by <a href="https://www.fernandoespeso.info/">Fernando Espeso</a>
+    </div>
   </footer>
   {%- if template contains 'product' -%}
     {{ 'global-product.js' | asset_url | script_tag }}

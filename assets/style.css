@@ -584,14 +584,16 @@ display:grid;
 grid-template-columns:repeat(12, 1fr);
 align-items: end;
 }
+.nav-footer{
+
+
+}
 /* PAGE DEFAULT
 ================================================== */
 .page_title{
   grid-column:span 9;
-  margin-top:50px;
 }
 .page_content{
-  margin-top:150px;
   grid-column:span 9;
 }
 .main_page{
