@@ -57,6 +57,11 @@ document.addEventListener("DOMContentLoaded", function(){
       allowTouchMove: false,
       slidesPerView: "5",
       observer: true,
+      speed:0,
+      autoplay: {
+        delay: 100,
+        disableOnInteraction: false,
+      },
       observeParents: true,
 });
 swiper.update();
