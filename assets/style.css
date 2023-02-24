@@ -569,6 +569,12 @@ footer{
   padding: 20px!important;
   width: 100%;
 }
+.nav-footer {
+  width: fit-content;
+}
+.nav-footer li {
+  padding: 2px;
+}
 .credits {
   margin-top: 12px;
   color: grey;
