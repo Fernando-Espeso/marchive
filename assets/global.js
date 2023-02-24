@@ -52,5 +52,5 @@ document.addEventListener("DOMContentLoaded", function(){
       $(".product").toggleClass("dropped");
       $("#products").toggleClass("dropped");
     });
-
+    
   });
