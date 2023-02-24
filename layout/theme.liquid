@@ -119,15 +119,15 @@ fernandoepeso.info
           {% endfor %}
         </div>
       </div>
-      <div class="link-about">About</div>
+      <div class="link-about"><a href="/about">About</a></div>
 
             <!-- {% for link in linklists.main-menu.links %}
             <li {% if link.active %}class="active"{% endif %}><a class="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a></li>
             {% endfor %} -->
     </div>
     <div class="cart-part">
-        <div {% if template == 'cart' %}  class="active" {% endif %} id="cart">
-          <div class="baggie hov">
+        <div id="cart">
+          <div {% if template == 'cart' %}  class="active" {% endif %} class="baggie hov">
               <a href="/cart">Cart</a>
           </div>
           <div class="cart-total">
