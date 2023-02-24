@@ -433,10 +433,10 @@ span.box {
 /* RANNDMON PAGE
 ================================================== */
 .container-fixed{
-  position: absolute;
 }
 .swiper {
-    height: 100VH;
+  width: 100vw;
+    height: 100vh;
     padding: 20px!important;
 }
 .swiper-wrapper {
@@ -464,8 +464,6 @@ span.box {
 	    background-repeat: no-repeat;
 	    background-position: center;
 	    background-size: contain;
-}
-.thumbnail-randmon{
 }
 .thumbnail-randmon img{
   height: 60vh;
