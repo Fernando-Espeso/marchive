@@ -52,18 +52,35 @@ document.addEventListener("DOMContentLoaded", function(){
       $("#products").toggleClass("dropped");
     });
 
-    var swiper = new Swiper(".swiper", {
-      loop: true,
-      allowTouchMove: false,
-      slidesPerView: "5",
-      observer: true,
-      speed:0,
-      autoplay: {
-        delay: 100,
-        disableOnInteraction: false,
-      },
-      observeParents: true,
-});
-swiper.update();
+    var mySwiper = new Swiper ('.swiper',
+    	{
+        speed:1000,
+    		direction: 'horizontal',
+    		navigation:
+    		{
+    		  nextEl: '.swiper-button-next',
+    		  prevEl: '.swiper-button-prev',
+    		},
+    		pagination:
+    		{
+    			el: '.swiper-pagination',
+    			dynamicBullets: true,
+    		},
+    		zoom: true,
+    		keyboard:
+    		{
+    			enabled: true,
+    			onlyInViewport: false,
+    		},
+    		mousewheel:
+    		{
+    			invert: true,
+    		},
+        autoplay:
+        {
+          delay: 2000,
+        },
+        loop: true,
+    	});
 
   });

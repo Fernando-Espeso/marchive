@@ -432,15 +432,7 @@ span.box {
 /* RANNDMON PAGE
 ================================================== */
 .swiper {
-    display: flex;
-    width: 100vw;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    z-index: 1;
+    padding: 20px!important;
 }
 .swiper-wrapper {
     width: fit-content;
@@ -458,8 +450,6 @@ span.box {
     transition-property: transform;
 }
 .thumbnail-randmon{
-  height: 20vh;
-  opacity: 1;
 }
 .thumbnail-randmon img{
   height: 20vh;
