@@ -107,32 +107,17 @@ fernandoepeso.info
       <div class="drop">
         <div class="link">Designers</div>
         <div class="dropdown">
-          <div><a>Alexander Wang</a></div>
-          <div><a>Peter Loius</a></div>
-          <div><a>Donatela Versacce</a></div>
-          <div><a>Christian Dior</a></div>
-          <div><a>View all</a></div>
+          {% for link in linklists.designers.links %}
+            <div {% if link.active %}class="active"{% endif %}><a class="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a></div>
+          {% endfor %}
         </div>
       </div>
       <div class="drop">
         <div class="link">Categories</div>
         <div class="dropdown">
-          <div><a>Alexander Wang</a></div>
-          <div><a>Peter Loius</a></div>
-          <div><a>Donatela Versacce</a></div>
-          <div><a>Christian Dior</a></div>
-          <div><a>Alexander Wang</a></div>
-          <div><a>Peter Loius</a></div>
-          <div><a>Donatela Versacce</a></div>
-          <div><a>Christian Dior</a></div>
-          <div><a>Alexander Wang</a></div>
-          <div><a>Peter Loius</a></div>
-          <div><a>Donatela Versacce</a></div>
-          <div><a>Christian Dior</a></div>
-          <div><a>Alexander Wang</a></div>
-          <div><a>Peter Loius</a></div>
-          <div><a>Donatela Versacce</a></div>
-          <div><a>View all</a></div>
+          {% for link in linklists.categories.links %}
+            <div {% if link.active %}class="active"{% endif %}><a class="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a></div>
+          {% endfor %}
         </div>
       </div>
       <div class="link-about">About</div>
