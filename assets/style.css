@@ -218,6 +218,12 @@ a{
 footer{
   position: relative;
   bottom: 40px;
+  height: 200px;
+  background-color:var(--black);
+  color: var(--white);
+  padding: 20px;
+  width: 100%;
+  display: flex;
 }
 /* SHOP
 ================================================== */
