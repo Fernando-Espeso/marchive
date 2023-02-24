@@ -673,6 +673,7 @@ align-items: end;
 	display: none !important;
 }
 div#related {
+  height: fit-content;
   position: sticky;
   top: var(--m);
 }
