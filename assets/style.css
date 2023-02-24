@@ -674,7 +674,7 @@ align-items: end;
 }
 div#related {
   position: sticky;
-  top: 100px;
+  top: var(--m);
 }
 /* HOME
 ================================================== */
