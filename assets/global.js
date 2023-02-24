@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
   }
   });
-  
+
   document.addEventListener('DOMContentLoaded', function(){
         var w = window.innerWidth,
         h = window.innerHeight;
@@ -42,12 +42,24 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   $(document).ready(function() {
+
     $('.link').click(function(){
        $(this).toggleClass("active");
        $(this).next(".dropdown").toggleClass("dropped");
     });
+
     $('.switch-view').click(function(){
       $(".product").toggleClass("dropped");
       $("#products").toggleClass("dropped");
     });
+
+    //swiper
+var swiper = new Swiper(".swiper", {
+  loop: true,
+  allowTouchMove: false,
+  speed: 0,
+  slidesPerView: "1",
+  observer: true,
+});
+swiper.update();
   });
