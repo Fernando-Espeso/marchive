@@ -126,9 +126,9 @@ fernandoepeso.info
             {% endfor %} -->
     </div>
     <div class="cart-part">
-        <div id="cart">
+        <div {% if template == 'cart' %}  class="active" {% endif %} id="cart">
           <div class="baggie hov">
-              <a {% if template == 'cart' %}  class="active" {% endif %} href="/cart">Cart</a>
+              <a href="/cart">Cart</a>
           </div>
           <div class="cart-total">
                 {%- if cart.item_count == 0 -%}
