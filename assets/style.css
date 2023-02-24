@@ -218,7 +218,7 @@ a{
 footer{
   margin-top: 12px;
   position: relative;
-  bottom: 40px;
+  bottom: 0px;
   height: 200px;
   background-color:var(--black);
   color: var(--white);
