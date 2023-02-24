@@ -40,6 +40,7 @@
         {% endcase %}
     {% endfor %}
     <img class="lazy" src="{{ product.images[0] | product_img_url: 'thumb' }}" data-src="{{ product.images[0] | product_img_url: 'master' }}" alt="{{ product.title }}" /></a>
+    <img class="lazy none" src="{{ product.images[1] | product_img_url: 'thumb' }}" data-src="{{ product.images[0] | product_img_url: 'master' }}" alt="{{ product.title }}" /></a>
     <div class="product-info">
         <div class="product-price-wrap">
               {% if product.available %}

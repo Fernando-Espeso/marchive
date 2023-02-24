@@ -378,6 +378,7 @@ header{
   position: absolute;
   border: 0.5px solid var(--black);
 }
+
 span.box {
   height: 100%;
   width: 100%;
@@ -417,9 +418,20 @@ span.box {
 }
 .thumbnail{
   height:auto;
+  position: relative;
+}
+.thumbnail:hover img.none{
+  display: block;
 }
 .thumbnail img{
   width: 100%;
+}
+.thumbnail img.none{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  z-index: 10000;
 }
 .sold-out{
   color:var(--white);
