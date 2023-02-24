@@ -433,8 +433,10 @@ span.box {
 /* RANNDMON PAGE
 ================================================== */
 .container-fixed{
+      pointer-events: none;
 }
 .swiper {
+    pointer-events: none;
     top: 0px;
     position: absolute;
     width: 100vw;
