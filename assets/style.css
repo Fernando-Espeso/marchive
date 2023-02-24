@@ -429,6 +429,18 @@ span.box {
   left: 0px;
   background-color: var(--black);;
 }
+/* RANNDMON PAGE
+================================================== */
+.swiper-wrapper{
+}
+.swiper-slide{
+}
+.thumbnail-randmon{
+  height: 20vh;
+}
+.thumbnail-randmon img{
+  height: 20vh;
+}
 /* PRODUCT PAGE
 ================================================== */
 #single-product{
