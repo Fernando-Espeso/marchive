@@ -46,8 +46,20 @@ document.addEventListener("DOMContentLoaded", function(){
        $(this).toggleClass("active");
        $(this).next(".dropdown").toggleClass("dropped");
     });
+
     $('.switch-view').click(function(){
       $(".product").toggleClass("dropped");
       $("#products").toggleClass("dropped");
     });
+
+    var swiper = new Swiper(".swiper", {
+      loop: true,
+      allowTouchMove: false,
+      speed: 500,
+      slidesPerView: "1",
+      observer: true,
+      observeParents: true,
+});
+swiper.update();
+
   });
