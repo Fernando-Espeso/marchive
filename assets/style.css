@@ -435,7 +435,9 @@ span.box {
 .container-fixed{
 }
 .swiper {
-  width: 100vw;
+    top: 0px;
+    position: absolute;
+    width: 100vw;
     height: 100vh;
     padding: 20px!important;
 }
