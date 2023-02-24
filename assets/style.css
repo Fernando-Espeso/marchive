@@ -601,11 +601,8 @@ align-items: end;
   grid-template-columns: repeat(12,1fr);
 }
 .credits {
-    bottom: 20px;
+  margin-top: 12px;
     text-align: right;
-    right: 20px;
-    width: 100vw;
-    position: fixed;
     color: grey;
 }
 /* ABOUT
