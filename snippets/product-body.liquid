@@ -16,9 +16,6 @@
                       {%- elsif variants > 1 -%}
                       class="product-variants"
                       {%- endif -%}>
-
-
-
                                      {% if product.compare_at_price > product.price %}
                                         <div class="sale">ON SALE</div>
                                      {% else %}
@@ -78,7 +75,9 @@
               <div class="hov"><a href="{{ product.url }}">{{ product.title}}</a></div>
             </div>
             <div class="info-product">
-              <div><a>Price</a></div>
+              <div><a>Price              {% if product.compare_at_price > product.price %}
+                              is ON SALE
+                           {% else %}</a></div>
               <div class="product-price">
                    {% if product.available %}
                     {% if product.price_varies %}
@@ -88,7 +87,6 @@
                       <li><s>{{ product.compare_at_price | money }}</s> {{ product.price | money }}<li>
                       {% else %}
                     <span>{{ product.price | money }}</span>
-
                       {% endif %}
                     {% endif %}
                   {% else %}
