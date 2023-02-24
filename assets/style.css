@@ -213,19 +213,6 @@ a{
   text-decoration: none;
   cursor: pointer;
 }
-/* MAIN
-================================================== */
-footer{
-  margin-top: 12px;
-  position: relative;
-  bottom: 0px;
-  height: 200px;
-  background-color:var(--black);
-  color: var(--white);
-  padding: 20px;
-  width: 100%;
-  display: flex;
-}
 /* SHOP
 ================================================== */
 .main{
@@ -573,16 +560,14 @@ div#related >.product:first-child{
 /* FOOTER
 ================================================== */
 footer{
+  margin-top: 12px;
   position: relative;
-  width: 100vw;
-  height: auto;
-  left: 0px;
-  font-size: 12px;
-  grid-gap: 20px;
-  padding: 12px 20px 0px 20px;
-  display:grid;
-  grid-template-columns: repeat(12, 1fr);
-  align-items: end;
+  bottom: 0px;
+  height: 200px;
+  background-color:var(--black);
+  color: var(--white);
+  padding: 20px;
+  width: 100%;
 }
 .credits {
   margin-top: 12px;
