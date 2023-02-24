@@ -45,12 +45,12 @@ fernandoepeso.info
   {%- if template == 'product' -%}
   {{ '//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js' | script_tag }}
   <link rel="preload" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  {%- endif -%}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper.min.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  {%- endif -%}
   {{ content_for_header }}
 </head>
 <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}
