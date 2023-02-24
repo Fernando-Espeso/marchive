@@ -573,18 +573,20 @@ div#related >.product:first-child{
 /* FOOTER
 ================================================== */
 footer{
-position: relative;
-width: 100vw;
-height: auto;
-left: 0px;
-font-size: 12px;
-grid-gap:20px;
-padding:12px 20px 0px 20px;
-display:grid;
-grid-template-columns:repeat(12, 1fr);
-align-items: end;
+  position: relative;
+  width: 100vw;
+  height: auto;
+  left: 0px;
+  font-size: 12px;
+  grid-gap: 20px;
+  padding: 12px 20px 0px 20px;
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: end;
 }
-.nav-footer{
+.credits {
+  margin-top: 12px;
+  color: grey;
 }
 /* PAGE DEFAULT
 ================================================== */
@@ -600,11 +602,7 @@ align-items: end;
   display: grid;
   grid-template-columns: repeat(12,1fr);
 }
-.credits {
-  margin-top: 12px;
-    text-align: right;
-    color: grey;
-}
+
 /* ABOUT
 ================================================== */
 /* CART
