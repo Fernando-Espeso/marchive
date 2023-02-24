@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     $('.switch-view').click(function(){
+      $(this).toggleClass("active");
       $(".product").toggleClass("dropped");
       $("#products").toggleClass("dropped");
     });
