@@ -75,9 +75,12 @@
               <div class="hov"><a href="{{ product.url }}">{{ product.title}}</a></div>
             </div>
             <div class="info-product">
-              <div><a>Price              {% if product.compare_at_price > product.price %}
-                              is ON SALE
-                           {% else %}</a></div>
+              <div><a>
+                Price   
+                {% if product.compare_at_price > product.price %}
+                s ON SALE
+                {% else %}</a>
+              </div>
               <div class="product-price">
                    {% if product.available %}
                     {% if product.price_varies %}
