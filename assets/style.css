@@ -432,14 +432,12 @@ span.box {
 }
 /* RANNDMON PAGE
 ================================================== */
-.icon-marchive{
+.icon-marchive svg{
+  display: block;
+  width: 50px;
   position: fixed;
   right: 20px;
   bottom:20px;
-  width: 50px;
-}
-.icon-marchive svg{
-  width: 50px;
 }
 .container-fixed{
 }
