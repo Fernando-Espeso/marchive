@@ -53,13 +53,4 @@ document.addEventListener("DOMContentLoaded", function(){
       $("#products").toggleClass("dropped");
     });
 
-    var swiper = new Swiper(".swiper", {
-        loop: true,
-        allowTouchMove: false,
-        speed: 0,
-        slidesPerView: "1",
-        observer: true,
-    });
-    swiper.update();
-
   });
