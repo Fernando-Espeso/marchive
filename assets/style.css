@@ -464,7 +464,7 @@ span.box {
 .thumbnail-randmon{
 }
 .thumbnail-randmon img{
-  height: 20vh;
+  height: 60vh;
   width: auto!important;
   border:0.5px solid var(--black);
 }
