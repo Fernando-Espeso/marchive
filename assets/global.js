@@ -56,14 +56,13 @@ document.addEventListener("DOMContentLoaded", function(){
     	{
         speed:0,
     		direction: 'horizontal',
-    		zoom: true,
     		mousewheel:
     		{
     			invert: true,
     		},
         autoplay:
         {
-          delay: 100,
+          delay: 300,
         },
         loop: true,
     	});
