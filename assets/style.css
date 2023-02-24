@@ -432,11 +432,6 @@ span.box {
 }
 /* RANNDMON PAGE
 ================================================== */
-.container-fixed{
-  position: absolute;
-  top:0!important;
-
-}
 .swiper {
     height: 100VH;
     padding: 20px!important;
