@@ -545,6 +545,7 @@ span.box {
   border: 0.5px solid black;
 }
 div#related {
+  z-index: 12;
   grid-column: span 3;
 }
 div#related >.product{
