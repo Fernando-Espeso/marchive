@@ -343,6 +343,7 @@ header{
   padding: 2px;
 }
 .baggie a{
+  display: block;
   width: 100%;
 }
 #cart .cart-total{
