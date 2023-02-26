@@ -53,6 +53,15 @@ document.addEventListener("DOMContentLoaded", function(){
       $("#products").toggleClass("dropped");
     });
 
+    $('.show-description').click(function () {
+  		$(this).toggleClass("active-but");
+  		$('.show-description').each(function () {
+  			if($(".description-product").hasClass( this.id )); {
+  				 $("."+this.id).addClass("active");
+  			}
+  	 });
+  	});
+
     var mySwiper = new Swiper ('.swiper',
     	{
         speed:0,

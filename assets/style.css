@@ -493,38 +493,37 @@ span.box {
   height: fit-content;
 }
 .swiper {
-    pointer-events: none;
-    top: 0px;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    padding: 20px!important;
+  pointer-events: none;
+  top: 0px;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px!important;
 }
 .swiper-wrapper {
-    width: fit-content;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    transition-property: transform;
-    box-sizing: content-box;
+  width: fit-content;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
 }
 .swiper-slide {
-	/* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-	    background-repeat: no-repeat;
-	    background-position: center;
-	    background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 .thumbnail-randmon img{
   height: 60vh;
