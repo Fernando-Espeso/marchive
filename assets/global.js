@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     $('.show-description').click(function () {
-  		$(this).toggleClass("active-but");
+  		$(this).toggleClass("active");
   		$('.show-description').each(function () {
   			if($(".description-product").hasClass( this.id )); {
   				 $("."+this.id).addClass("active");
