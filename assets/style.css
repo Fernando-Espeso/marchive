@@ -550,6 +550,7 @@ span.box {
 }
 .button.active{
   background-color: lightgrey;
+  color: var(--black);
 }
 /* .sale {
   border:1px solid black;
