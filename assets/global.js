@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function(){
   			if($(".show-description").hasClass( this.id )); {
   				 $("."+this.id).toggleClass("active");
   			}
-        else{
+        else(){
            $("."+this.id).removeClass("active");
         }
   	 });
