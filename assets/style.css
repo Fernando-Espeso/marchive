@@ -691,13 +691,12 @@ div#related {
 }
 
 div#related >.product{
-  display: none;
 }
 
 div#related >.product:first-child{
   display: grid!important;
   position: sticky;
-  top: var(--m);;
+  top: var(--m);
 }
 
 .addtocart{
