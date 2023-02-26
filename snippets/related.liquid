@@ -5,7 +5,7 @@
   {%- assign current_product = product.id -%}
     {%- for product in collections.all.products -%}
       {%- if product.id != current_product and product.available -%}
-      <div class="slide">
+      <div class="swiper-slide">
         {% include 'product-body' %}
       </div>
       {%- endif -%}
