@@ -480,7 +480,7 @@ span.box {
   left: 0px;
   background-color: var(--black);
 }
-.product-actions{
+#product-actions{
   width: 100%;
   grid-gap: 12px;
   position: absolute;
