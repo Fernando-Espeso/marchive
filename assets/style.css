@@ -547,7 +547,6 @@ span.box {
 }
 
 .swiper {
-  pointer-events: none;
   top: 0px;
   position: absolute;
   width: 100vw;
