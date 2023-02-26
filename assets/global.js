@@ -53,10 +53,10 @@ document.addEventListener("DOMContentLoaded", function(){
       $("#products").toggleClass("dropped");
     });
 
-    $('.show-description').click(function () {
+    $('.button').click(function () {
   		$(this).toggleClass("active");
-  		$('.show-description').each(function () {
-  			if($(".description-product").hasClass( this.id )); {
+  		$('.button.active').each(function () {
+  			if($(".show-description").hasClass( this.id )); {
   				 $("."+this.id).addClass("active");
   			}
   	 });
