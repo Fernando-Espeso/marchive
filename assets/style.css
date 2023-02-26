@@ -552,6 +552,9 @@ span.box {
   background-color: lightgrey;
   color: var(--black);
 }
+.button{
+  cursor: pointer;
+}
 #bag span.sale{
   right: 5px!important;
   position: absolute;
