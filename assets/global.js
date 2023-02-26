@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function(){
     	});
 
 
-      var mySwiper = new Swiper ('.swiper-related',
+      var mSwiper = new Swiper ('.swiper-related',
         {
           speed:200,
           slideperview: 1,
