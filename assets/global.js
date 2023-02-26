@@ -59,7 +59,9 @@ document.addEventListener("DOMContentLoaded", function(){
   			if($(".show-description").hasClass( this.id )); {
   				 $("."+this.id).toggleClass("active");
   			}
-  	 });
+        else if (){
+        	 $("."+this.id).removeClass("active");
+  	  });
   	});
 
     var mySwiper = new Swiper ('.swiper',
