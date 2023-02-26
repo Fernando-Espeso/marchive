@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function(){
           speed:0,
           autoplay:
           {
-            delay: 1000,
+            delay: 5000,
           },
           loop: true,
         });
