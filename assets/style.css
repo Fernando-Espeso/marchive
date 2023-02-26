@@ -548,6 +548,15 @@ span.box {
   row-gap:12px;
   height: fit-content;
 }
+.show-description{
+  display: none;
+}
+.show-description.show{
+  display: block;
+}
+.show-description.hide{
+  display: none;
+}
 .nav-info{
   border-left: 0.5px solid black;
   border-top: 0.5px solid black;

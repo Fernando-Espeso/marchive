@@ -57,10 +57,10 @@ document.addEventListener("DOMContentLoaded", function(){
   		$(this).toggleClass("active");
   		$('.button.active').each(function () {
   			if($(".show-description").hasClass( this.id )) {
-  				 $("."+this.id).toggleClass("active");
+  				 $("."+this.id).toggleClass("show");
   			}
         else {
-        	 $("."+this.id).removeClass("active");
+        	 $("."+this.id).addClass("hide");
         }
   	  });
   	});
