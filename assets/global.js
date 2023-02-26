@@ -60,7 +60,8 @@ document.addEventListener("DOMContentLoaded", function(){
   				 $("."+this.id).toggleClass("show");
   			}
         else {
-        	 $("."+this.id).addClass("hide");
+          $("."+this.id).toggleClass("show");
+
         }
   	  });
   	});
