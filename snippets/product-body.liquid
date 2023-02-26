@@ -10,7 +10,7 @@
         <div class="newin">NEW IN</div>
       {% endif %}
     {% endfor %}
-    <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+    <form id="product-action" action="/cart/add" method="post" enctype="multipart/form-data"
                       {%- if product.has_only_default_variant -%}
                       class="product-simple"
                       {%- elsif variants > 1 -%}
@@ -76,7 +76,7 @@
             </div>
             <div class="info-product">
               <div><a>
-                Price   
+                Price
                 {% if product.compare_at_price > product.price %}
                 s ON SALE
                 {% else %}</a>
