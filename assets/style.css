@@ -554,7 +554,7 @@ span.box {
   height: 100vh;
   padding: 20px!important;
 }
-.swiper-related {
+.swiper.related-swiper {
   top: 0px;
   position: relative;
   width: 100%;
