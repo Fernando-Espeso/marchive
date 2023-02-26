@@ -99,7 +99,10 @@ document.addEventListener("DOMContentLoaded", function(){
         const settings = {
           loop: true,
           speed: 700,
-
+          autoplay:
+          {
+            delay: 100,
+          },
           pagination: {
             el: ".swiper-pagination",
             type: "bullets"
