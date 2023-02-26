@@ -558,7 +558,7 @@ span.box {
   position: relative;
   width: 100%;
   height: auto;
-  padding: 20px!important;
+  padding: 0px!important;
 }
 
 .swiper-wrapper {
