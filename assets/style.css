@@ -476,7 +476,7 @@ span.box {
   z-index: 1;
   color:var(--white);
   padding:2px;
-  position: absolute;
+  padding-left: 5px;
   left: 0px;
   background-color: var(--black);
 }
