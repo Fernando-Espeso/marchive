@@ -85,17 +85,17 @@ document.addEventListener("DOMContentLoaded", function(){
     	});
 
 
-      var swiper = new theswiper ('.swiper-related',
-        {
-          slidesPerView: 1,
-          spaceBetween: 10,
-          speed:200,
-          autoplay:
-          {
-            delay: 100,
-          },
-          loop: true,
-        });
+      // var swiper = new theswiper ('.swiper-related',
+      //   {
+      //     slidesPerView: 1,
+      //     spaceBetween: 10,
+      //     speed:200,
+      //     autoplay:
+      //     {
+      //       delay: 100,
+      //     },
+      //     loop: true,
+      //   });
 
 
   });
