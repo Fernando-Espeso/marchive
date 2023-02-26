@@ -552,6 +552,13 @@ span.box {
   background-color: lightgrey;
   color: var(--black);
 }
+#bag span.sale{
+    right: 5px;
+    position: absolute;
+    width: fit-content;
+    background-color: transparent;
+    padding-right: 5px;
+}
 /* .sale {
   border:1px solid black;
   margin-bottom: 12px;
