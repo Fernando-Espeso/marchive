@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var mySwiper = new Swiper ('.home',
     	{
-        speed:30,
+        speed:0,
     		direction: 'horizontal',
     		mousewheel:
     		{
