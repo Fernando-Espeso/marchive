@@ -561,6 +561,8 @@ span.box {
   background-color: grey;
 }
 .sale {
+  border:1px solid black;
+  margin-top: 12px;
   width: 100%;
   text-align: center;
   padding: 2px;
