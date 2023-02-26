@@ -549,7 +549,7 @@ span.box {
   display: none;
 }
 .button.active{
-  background-color: grey;
+  background-color: lightgrey;
 }
 /* .sale {
   border:1px solid black;
