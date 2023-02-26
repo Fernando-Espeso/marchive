@@ -1,45 +1,44 @@
 <!--Product-->
 <div class="product">
     <a class="thumbnail" href="{{ product.url }}">
-    <span class="box"></span>
-    {% unless product.metafields.custom.notice == blank %}
-          <div class="newin" style="z-index:100; text-transform:uppercase;">  {{ product.metafields.custom.notice }}</div>
-    {% endunless %}
-    {% for c in product.collections %}
-      {% if c.handle == "new" %}
-        <div class="newin">NEW IN</div>
-      {% endif %}
-    {% endfor %}
-    <form id="product-action" action="/cart/add" method="post" enctype="multipart/form-data"
-                      {%- if product.has_only_default_variant -%}
-                      class="product-simple"
-                      {%- elsif variants > 1 -%}
-                      class="product-variants"
-                      {%- endif -%}>
-                                     {% if product.compare_at_price > product.price %}
-                                        <div class="sale">ON SALE</div>
-                                     {% else %}
-                                     {% endif %}
-                             {% if product.available %}
-                             {% else %}
-                                 <div class="sold-out">SOLD OUT</div>
-                             {% endif %}
+        <span class="box"></span>
+        {% unless product.metafields.custom.notice == blank %}
+              <div class="newin" style="z-index:100; text-transform:uppercase;">  {{ product.metafields.custom.notice }}</div>
+        {% endunless %}
+        {% for c in product.collections %}
+          {% if c.handle == "new" %}
+            <div class="newin">NEW IN</div>
+          {% endif %}
+        {% endfor %}
+        <form id="product-action" action="/cart/add" method="post" enctype="multipart/form-data"
+                          {%- if product.has_only_default_variant -%}
+                          class="product-simple"
+                          {%- elsif variants > 1 -%}
+                          class="product-variants"
+                          {%- endif -%}>
+                                         {% if product.compare_at_price > product.price %}
+                                            <div class="sale">ON SALE</div>
+                                         {% else %}
+                                         {% endif %}
+                                 {% if product.available %}
+                                 {% else %}
+                                     <div class="sold-out">SOLD OUT</div>
+                                 {% endif %}
 
 
 
-    </form>
-    {% for media in product.media %}
-        {% case media.media_type %}
-              {% when 'video' %}
-                <div  class="product-video">
-                      {{ media | video_tag:loop: true, autoplay: true, muted:true}}
-                </div>
-        {% endcase %}
-    {% endfor %}
-    <img class="lazy" src="{{ product.images[0] | product_img_url: 'thumb' }}" data-src="{{ product.images[0] | product_img_url: 'master' }}" alt="{{ product.title }}" />
-    <img class="lazy none" src="{{ product.images[1] | product_img_url: 'thumb' }}" data-src="{{ product.images[1] | product_img_url: 'master' }}" alt="{{ product.title }}" />
+        </form>
+        {% for media in product.media %}
+            {% case media.media_type %}
+                  {% when 'video' %}
+                    <div  class="product-video">
+                          {{ media | video_tag:loop: true, autoplay: true, muted:true}}
+                    </div>
+            {% endcase %}
+        {% endfor %}
+        <img class="lazy" src="{{ product.images[0] | product_img_url: 'thumb' }}" data-src="{{ product.images[0] | product_img_url: 'master' }}" alt="{{ product.title }}" />
+        <img class="lazy none" src="{{ product.images[1] | product_img_url: 'thumb' }}" data-src="{{ product.images[1] | product_img_url: 'master' }}" alt="{{ product.title }}" />
     </a>
-
     <div class="product-info">
         <div class="product-price-wrap">
               {% if product.available %}
