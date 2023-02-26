@@ -64,7 +64,9 @@
           <div class="main-information">
             <div class="info-product">
               <div>Designer</div>
-              <div class="hov">Alexander Wang</div>
+              <div class="hov">{% for collection in product.collections %}
+{{ collection.title }}
+{% endfor %}</div>
             </div>
             <div class="info-product">
               <div>Era</div>
@@ -78,7 +80,7 @@
               <div><a>
                 Price
                 {% if product.compare_at_price > product.price %}
-                s ON SALE
+                ON SALE
                 {% else %}</a>
               </div>
               <div class="product-price">
