@@ -69,27 +69,25 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 
-    var mySwiper = new Swiper ('.swiper',
-    	{
-        speed:0,
-    		direction: 'horizontal',
-    		mousewheel:
-    		{
-    			invert: true,
-    		},
-        autoplay:
-        {
-          delay: 100,
-        },
-        loop: true,
-    	});
+    // var mySwiper = new Swiper ('.swiper',
+    // 	{
+    //     speed:0,
+    // 		direction: 'horizontal',
+    // 		mousewheel:
+    // 		{
+    // 			invert: true,
+    // 		},
+    //     autoplay:
+    //     {
+    //       delay: 100,
+    //     },
+    //     loop: true,
+    // 	});
 
 
       var mSwiper = new Swiper ('.swiper-related',
         {
           speed:200,
-          slideperview: 1,
-          direction: 'horizontal',
           autoplay:
           {
             delay: 100,
