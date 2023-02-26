@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function(){
   			}
         else if (){
         	 $("."+this.id).removeClass("active");
+        }
   	  });
   	});
 
