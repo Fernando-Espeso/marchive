@@ -87,13 +87,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
       var mySwiper = new Swiper ('.swiper-related',
         {
-          speed:2000,
+          speed:200,
           slideperview: 1,
           direction: 'horizontal',
-          mousewheel:
-          {
-            invert: true,
-          },
           autoplay:
           {
             delay: 100,
