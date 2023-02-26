@@ -558,6 +558,7 @@ span.box {
     width: fit-content;
     background-color: transparent;
     padding-right: 5px;
+    left: none!important;
 }
 /* .sale {
   border:1px solid black;
