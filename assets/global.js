@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function(){
     		},
         autoplay:
         {
-          delay: 100000,
+          delay: 100,
         },
         loop: true,
     	});
