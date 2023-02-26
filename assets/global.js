@@ -69,30 +69,48 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 
-    // var mySwiper = new Swiper ('.swiper',
-    // 	{
-    //     speed:0,
-    // 		direction: 'horizontal',
-    // 		mousewheel:
-    // 		{
-    // 			invert: true,
-    // 		},
-    //     autoplay:
-    //     {
-    //       delay: 100,
-    //     },
-    //     loop: true,
-    // 	});
-
-
-      var mSwiper = new Swiper ('.swiper-related',
+    var mySwiper = new Swiper ('.swiper',
+    	{
+        speed:0,
+    		direction: 'horizontal',
+    		mousewheel:
+    		{
+    			invert: true,
+    		},
+        autoplay:
         {
-          speed:200,
-          autoplay:
-          {
-            delay: 100,
-          },
+          delay: 100,
+        },
+        loop: true,
+    	});
+
+
+      // var mSwiper = new Swiper ('.swiper-related',
+      //   {
+      //     speed:200,
+      //     autoplay:
+      //     {
+      //       delay: 100,
+      //     },
+      //     loop: true,
+      //   });
+
+
+        const settings = {
           loop: true,
-        });
+          speed: 700,
+
+          pagination: {
+            el: ".swiper-pagination",
+            type: "bullets"
+          },
+
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+          }
+        };
+
+        const swiper = new Swiper(".related-swiper", settings);
 
   });
