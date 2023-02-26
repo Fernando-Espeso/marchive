@@ -171,7 +171,6 @@ select:disabled{
   border: none !important;
 }
 .active{
-  pointer-events: none;
   color:var(--white);
   background-color: var(--black)
 }
