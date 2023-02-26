@@ -553,12 +553,11 @@ span.box {
   color: var(--black);
 }
 #bag span.sale{
-    right: 5px;
+    right: 5px!important;
     position: absolute;
     width: fit-content;
     background-color: transparent;
     padding-right: 5px;
-    left: none!important;
 }
 /* .sale {
   border:1px solid black;
