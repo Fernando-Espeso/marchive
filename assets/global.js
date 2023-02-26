@@ -69,23 +69,23 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     //
-    var mySwiper = new Swiper ('.swiper-home',
-    	{
-        speed:30,
-    		direction: 'horizontal',
-    		mousewheel:
-    		{
-    			invert: true,
-    		},
-        autoplay:
-        {
-          delay: 100000,
-        },
-        loop: true,
-    	});
+    // var mySwiper = new Swiper ('.swiper-home',
+    // 	{
+    //     speed:30,
+    // 		direction: 'horizontal',
+    // 		mousewheel:
+    // 		{
+    // 			invert: true,
+    // 		},
+    //     autoplay:
+    //     {
+    //       delay: 100000,
+    //     },
+    //     loop: true,
+    // 	});
 
 
-      var swiper = new theswiper ('.swiper-related',
+      var mySwiper = new Swiper ('.swiper-related',
         {
           slidesPerView: 1,
           spaceBetween: 10,
