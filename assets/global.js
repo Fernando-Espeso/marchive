@@ -84,4 +84,20 @@ document.addEventListener("DOMContentLoaded", function(){
         loop: true,
     	});
 
+
+      var mySwiper = new Swiper ('.swiper-related',
+        {
+          speed:2000,
+          direction: 'horizontal',
+          mousewheel:
+          {
+            invert: true,
+          },
+          autoplay:
+          {
+            delay: 100,
+          },
+          loop: true,
+        });
+
   });

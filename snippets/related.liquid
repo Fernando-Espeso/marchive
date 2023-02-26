@@ -1,10 +1,15 @@
 <div id="related">
   <div class="related-title">RELATED PRODUCTS</div>
-
+  <div class="swiper">
+    <div class="swiper-wrapper">
   {%- assign current_product = product.id -%}
     {%- for product in collections.all.products -%}
       {%- if product.id != current_product and product.available -%}
+      <div class="slide">
         {% include 'product-body' %}
+      </div>
       {%- endif -%}
     {%- endfor -%}
+  </div>
+</div>
 </div>
