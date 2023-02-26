@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function(){
     //
     var mySwiper = new Swiper ('.swiper-home',
     	{
-        speed:0,
+        speed:30,
     		direction: 'horizontal',
     		mousewheel:
     		{
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function(){
     		},
         autoplay:
         {
-          delay: 100,
+          delay: 100000,
         },
         loop: true,
     	});
