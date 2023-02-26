@@ -559,7 +559,14 @@ span.box {
 }
 .button.active{
   background-color: grey;
-
+}
+.sale {
+  width: 100%;
+  text-align: center;
+  padding: 2px;
+  color: var(--white);
+  background: var(--black);
+  z-index: 100;
 }
 .nav-info{
   border-left: 0.5px solid black;
