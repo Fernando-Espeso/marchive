@@ -53,18 +53,21 @@ document.addEventListener("DOMContentLoaded", function(){
       $("#products").toggleClass("dropped");
     });
 
-    $('.button').click(function () {
-  		$(this).toggleClass("active");
-  		$('.button.active').each(function () {
-  			if($(".show-description").hasClass( this.id )) {
-  				 $("."+this.id).toggleClass("show");
-  			}
-        else {
-          $("."+this.id).toggleClass("show");
+    $('#description').click(function(){
+      $(this).toggleClass("active");
+  		$("."+this.id).toggleClass("show");
+    });
 
-        }
-  	  });
-  	});
+    $('#size').click(function(){
+      $(this).toggleClass("active");
+  		$("."+this.id).toggleClass("show");
+    });
+
+    $('#condition').click(function(){
+      $(this).toggleClass("active");
+  		$("."+this.id).toggleClass("show");
+    });
+
 
     var mySwiper = new Swiper ('.swiper',
     	{
