@@ -85,35 +85,17 @@ document.addEventListener("DOMContentLoaded", function(){
     	});
 
 
-      // var mSwiper = new Swiper ('.swiper-related',
-      //   {
-      //     speed:200,
-      //     autoplay:
-      //     {
-      //       delay: 100,
-      //     },
-      //     loop: true,
-      //   });
-
-
-        const settings = {
-          loop: true,
-          speed: 700,
+      var mSwiper = new Swiper ('.swiper-related',
+        {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          speed:200,
           autoplay:
           {
             delay: 100,
           },
-          pagination: {
-            el: ".swiper-pagination",
-            type: "bullets"
-          },
+          loop: true,
+        });
 
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-          }
-        };
-
-        const swiper = new Swiper(".related-swiper", settings);
 
   });
