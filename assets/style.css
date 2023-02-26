@@ -696,7 +696,7 @@ div#related >.product{
 div#related >.product:first-child{
   top: var(--m);
 }
-#related .title-related{
+#related .related-title{
   padding: 2px;
   padding-left: 5px;
   margin-bottom: 12px;
