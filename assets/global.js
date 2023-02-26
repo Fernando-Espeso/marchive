@@ -56,10 +56,10 @@ document.addEventListener("DOMContentLoaded", function(){
     $('.button').click(function () {
   		$(this).toggleClass("active");
   		$('.button.active').each(function () {
-  			if($(".show-description").hasClass( this.id )); {
+  			if($(".show-description").hasClass( this.id )) {
   				 $("."+this.id).toggleClass("active");
   			}
-        else if (){
+        else {
         	 $("."+this.id).removeClass("active");
         }
   	  });
