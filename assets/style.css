@@ -557,6 +557,10 @@ span.box {
 .show-description.hide{
   display: none;
 }
+.button.active{
+  background-color: grey;
+
+}
 .nav-info{
   border-left: 0.5px solid black;
   border-top: 0.5px solid black;
