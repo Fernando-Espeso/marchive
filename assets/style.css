@@ -820,7 +820,7 @@ footer{
 .go-cart__drawer {
     position: fixed;
     top: 0;
-    right: -23vw;
+    right: -26vw!important;;
     z-index: 40!important;
     width: 100%!important;
     border-left: 0.5px solid var(--black)!important;
@@ -828,8 +828,8 @@ footer{
     height: 100%!important;
     color: white!important;
     background-color: var(--black)!important;
-    -webkit-transition: all 0s ease-in-out;
-    transition: all 0s ease-in-out;
+    -webkit-transition: all 0s ease-in-out!important;
+    transition: all 0s ease-in-out!important;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
