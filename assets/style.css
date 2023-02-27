@@ -802,7 +802,7 @@ footer{
     max-width: 25.2vw!important;
     height: 100%!important;
     color: white!important;
-    background-color: var(--black);
+    background-color: var(--black)!important;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     -webkit-backface-visibility: hidden;
@@ -811,6 +811,8 @@ footer{
 .go-cart__drawer.is-open {
     -webkit-transform: translateX(-26vw)!important;
     transform: translateX(-26vw)!important;
+    color: white!important;
+    background-color: var(--black)!important;
 }
 
 
