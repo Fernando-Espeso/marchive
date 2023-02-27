@@ -573,6 +573,10 @@ span.box {
   color: grey;
 }
 
+.extra-info{
+  padding: 100px;
+  color: grey;
+}
 .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
