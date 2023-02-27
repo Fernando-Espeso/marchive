@@ -10,15 +10,15 @@
                 <div class="main-information">
                   <div class="info-product">
                     <div>Designer</div>
-                    <div>{{ product.metafields.custom.designer }}</div>
+                    <div>{{ item.product.metafields.custom.designer }}</div>
                   </div>
                   <div class="info-product">
                     <div>Era</div>
-                    <div>{{ product.metafields.custom.era }}</div>
+                    <div>{{ item.product.metafields.custom.era }}</div>
                   </div>
                   <div class="info-product">
                     <div>Item</div>
-                    <div class="hov"><a href="{{ product.url }}">{{ product.title}}</a></div>
+                    <div class="hov"><a href="{{ product.url }}">{{ item.product.title }}</a></div>
                   </div>
                   <div class="info-product">
                     <div><a>Price</a></div>
@@ -41,10 +41,17 @@
                       </div>
                   </div>
                 </div>
-                <a href="/cart/change?line={{ forloop.index }}&quantity=0">x Remove</a>
-            </div>
-            </div>
-        {% endfor %}
+                            <div class="item-title">
+                               <a class="product-title">{{ item.product.title }}</a><br>
+                               <div> {{ item.price | money }} </div>
+                           </div>
+
+                             <a href="/cart/change?line={{ forloop.index }}&quantity=0">x Remove</a>
+
+
+                 </div>
+                     </div>
+                  {% endfor %}
 
           <div class="total">
             <div>SHIPPING</div>
