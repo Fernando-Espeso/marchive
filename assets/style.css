@@ -914,6 +914,17 @@ div#related {
     grid-column: span 12;
 }
 
+
+.gallery {
+    order: -1;
+    display: grid;
+    row-gap: 12px;
+    grid-column: span 12;
+}
+.product_info {
+    grid-column: span 12;
+}
+
 }
 /*BIGGER DESKTOP*/
 @media (min-width: 1920px){
