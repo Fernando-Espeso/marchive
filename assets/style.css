@@ -581,9 +581,11 @@ span.box {
 .contact a{
   display:contents;
   width: fit-content;
+  color:var(--black);
 }
 
 .contact{
+  text-align: right;
   border: none;
   color: grey;
 }
