@@ -127,10 +127,10 @@ document.addEventListener("DOMContentLoaded", function(){
         slidesPerView: 1,
         spaceBetween: 10,
         speed:0,
-        autoplay:
-      {
-        delay: 5000,
-      },
+      //   autoplay:
+      // {
+      //   delay: 0,
+      // },
         loop: true,
       });
   });
