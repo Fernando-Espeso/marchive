@@ -1,7 +1,6 @@
 <div id="single-product">
     <div class="product_info">
-          <form action="/cart/add" method="post" enctype="multipart/form-data"
-          id="cart"
+          <form  style="display:none" action="/cart/add" method="post" enctype="multipart/form-data" id="cart"
               {%- if product.has_only_default_variant -%}
               class="product-simple"
               {%- elsif variants > 1 -%}
@@ -43,6 +42,46 @@
                 </button>
               </div>
           </form>
+        	<form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+              {%- if product.has_only_default_variant -%}
+              class="product-simple"
+              {%- elsif variants > 1 -%}
+              class="product-variants"
+              {%- endif -%}>
+              <div id="bag-total" >
+                <div class="title">
+                  <div>{{ product.title }}</div>
+                        <div id="product-price"></div>
+                           {% if product.compare_at_price > product.price %}
+                              <span class="sale">ON SALE</span>
+                           {% else %}
+                           {% endif %}
+                   {% if product.available %}
+                            {% else %}
+                 <div class="sale">SOLD OUT</div>
+                            {% endif %}
+                 </div>
+               <div class="variations">
+                            <!--Variations Dropdown-->
+                            <select id="product-select" name="id">
+
+                              {% for variant in product.variants %}
+
+                              <option value="{{ variant.id }}">CHOOSE SIZE:
+
+                              </option>
+
+                              {% endfor %}
+                            </select>
+
+                            <!--Actions-->
+                            {% if product.available %}
+                                <button id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO BAG</button>
+                            {% else %}
+
+                            {% endif %}
+                 </div>
+        </form>
 
 
           <div class="main-information">
@@ -137,7 +176,7 @@
 {% endif %}
 {% endfor %}
 <script>
-  //PRODUCT FUNCTIONS
+  //Produt functions
   var selectCallback = function(variant, selector){
     if(variant){
       if(variant.available){
@@ -161,18 +200,18 @@
       {% endif %}
     }
   };
-
-  // jQuery(function($) {
-  //   new Shopify.OptionSelectors('product-select', {
-  //     product: {{ product | json }},
-  //     onVariantSelected: selectCallback
-  //   });
-  //   {% assign count = -1 %}
-  //   {% for option in product.options %}
-  //   {% if product.options.first != 'Title' %}
-  //     {% assign count = count | plus: 1 %}
-  //     $("#product-select-option-{{ count }}").prepend("<option value='' disabled selected>{{ product.options[count] | upcase }}</option>");
-  //   {% endif %}
-  //   {% endfor %}
-  // });
+  //Replace default variant selector
+  jQuery(function($) {
+    new Shopify.OptionSelectors('product-select', {
+      product: {{ product | json }},
+      onVariantSelected: selectCallback
+    });
+    {% assign count = -1 %}
+    {% for option in product.options %}
+    {% if product.options.first != 'Title' %}
+      {% assign count = count | plus: 1 %}
+      $("#product-select-option-{{ count }}").prepend("<option value='' disabled selected>{{ product.options[count] | upcase }}</option>");
+    {% endif %}
+    {% endfor %}
+  });
 </script>
