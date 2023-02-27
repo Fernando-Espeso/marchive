@@ -792,6 +792,25 @@ footer{
 ================================================== */
 /* CART
 ================================================== */
+.go-cart__drawer {
+    position: fixed;
+    top: 0;
+    right: -26vw!important;
+    z-index: 40!important;
+    width: 100%!important;
+    border-left: 0.5px solid black!important;
+    max-width: 25.2vw!important;
+    height: 100%!important;
+    color: white!important;
+    background-color: var(--black);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+
 #cart-wrapper{
    grid-auto-flow: dense;
   padding:20px;
