@@ -238,6 +238,10 @@ a{
   grid-template-columns: repeat(12,1fr);
 }
 
+.main-page{
+  min-height: 100vh;
+}
+
 #products{
   padding: 20px;
   grid-gap:12px;
@@ -738,7 +742,7 @@ footer{
 .main_page{
   grid-gap:20px;
   padding:20px;
-  display: flex;
+  display: grid;
   grid-template-columns: repeat(12,1fr);
   min-height: calc(100vh - var(--m));
 }
