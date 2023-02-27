@@ -62,7 +62,7 @@
 <style>
     .main-information {
         border-top: 0.5px solid var(--black);
-        border-right: 0.5px solid var(--black)t;
+        border-right: 0.5px solid var(--black);
         border-left: 0.5px solid var(--black);
         row-gap: 0px!important;
         grid-template-columns: repeat(1,1fr);
@@ -77,5 +77,11 @@
     grid-template-columns: repeat(4,1fr);
     display: grid;
     grid-gap: 12px;
+}
+.info-product>div:nth-child(even) {
+    border-left: 0.5px solid var(--black);
+    grid-column: span 3;
+    padding: 2px 2px 2px 5px;
+    display: grid;
 }
 </style>
