@@ -20,7 +20,10 @@
     <div class="go-cart-modal">
         <!--go cart modal close-->
         <div class="go-cart-modal__close js-go-cart-modal-close">
-          cart
+          <div id="cart">
+              <div class="baggie hov">Cart</div>
+              <div class="js-go-cart-counter cart-total">{{- cart.item_count -}}</div>
+          </div>
         </div>
         <!--end go cart modal close-->
         <!--go cart modal content-->
@@ -46,7 +49,10 @@
         <!--go cart drawer close-->
         <div class="go-cart-drawer__header">
             <div class="go-cart-drawer__close js-go-cart-drawer-close">
-              cart
+              <div id="cart">
+                  <div class="baggie hov">Cart</div>
+                  <div class="js-go-cart-counter cart-total">{{- cart.item_count -}}</div>
+              </div>
             </div>
         </div>
         <!--end go cart drawer close-->
