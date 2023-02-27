@@ -971,6 +971,9 @@ div#related {
   z-index: 1;
   grid-column: span 12;
 }
+.page_title, .page_content {
+    grid-column: span 12;
+}
 }
 /*BIGGER DESKTOP*/
 @media (min-width: 1920px){
