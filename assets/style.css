@@ -656,7 +656,7 @@ span.box {
 
 .sold-out, .sale{
   position: relative;
-  z-index: 1;
+  z-index: 10;
   color:var(--white);
   padding:2px;
   padding-left: 5px;
