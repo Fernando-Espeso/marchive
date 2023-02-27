@@ -908,7 +908,7 @@ footer{
 .info_cart {
     display: grid;
     grid-column: span 6;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(6,1fr);
     height: fit-content;
 }
 .item-title{
