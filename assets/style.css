@@ -564,6 +564,10 @@ span.box {
   box-sizing: content-box;
 }
 
+.contact a{
+  display: flex;
+}
+
 .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
