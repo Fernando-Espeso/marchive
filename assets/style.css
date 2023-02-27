@@ -426,6 +426,7 @@ header{
 }
 .go-cart-drawer {
     padding: 20px!important;
+    padding-left: 12px!important;
     position: relative;
     height: 100%;
 }
