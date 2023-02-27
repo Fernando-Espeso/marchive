@@ -313,7 +313,12 @@ header{
   width: 100%;
   fill:var(--black)!important;
 }
-
+.nav-down{
+  margin-top: 0px;
+}
+.nav-up{
+  margin-top: 0px;
+}
 .menu{
   grid-gap:12px;
   display: grid;
@@ -891,6 +896,12 @@ div#related {
 /* RESPONSIVE
 ================================================== */
 @media (max-width: 800px){
+  .nav-down{
+    margin-top: -50px;
+  }
+  .nav-up{
+    margin-top: 0px;
+  }
 header{
     z-index: 10!important;
   }
