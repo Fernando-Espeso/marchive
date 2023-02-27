@@ -918,19 +918,16 @@ footer{
     grid-column:span 3;
 }
 #checkout{
-  padding:10px!important;
   grid-column:span 2;
   width:100%;
   background:#5FB307;
 }
 .quantity-button{
   cursor:pointer;
-    padding:10px!important;
     background:#DEDED9;
 }
 .quantity-wrap{
    background:white;
-    padding:10px!important;
 }
 .item-quantity {
   align-self: end;
