@@ -6,44 +6,45 @@
                  <div class="thumb">
                  <img class="lazy" src="{{ item | img_url: 'thumb' }}" data-src="{{ item | img_url: 'master' }}" alt="{{ item.title | escape }}" />
               </div>
-              <div class="info-product">
-                <div>Designer</div>
-                <div>{{ product.metafields.custom.designer }}</div>
-              </div>
-              <div class="info-product">
-                <div>Era</div>
-                <div>{{ product.metafields.custom.era }}</div>
-              </div>
               <div class="info_cart">
-                            <div class="item-title">
-                               <a class="product-title">{{ item.product.title }}</a><br>
-                               <div> {{ item.price | money }} </div>
-                           </div>
-                          {% unless item.product.options contains 'Title' %}
-                          <!--Variations-->
-                                  <div class="item-variations">
-                                    {%- for option_title in item.product.options -%}
-                                    {{ item.variant.options[forloop.index0] }}{% unless forloop.last  %}<br> {% endunless %}
-                                    {%- endfor -%}
-                                  </div>
-
-                                    {% endunless %}
-                             <a href="/cart/change?line={{ forloop.index }}&quantity=0">x Remove</a>
-
-                       <div class="item-quantity">
-                        <span data-field="updates" class="quantity-button minus"><span>–</span></span>
-                      <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
-                      <span class="quantity-wrap"></span>
-                      <span data-field="updates" class="quantity-button plus">
-                                            <span class="addmore">+</span>
-                                            {% if cart.items.available %}
-                                            {% else %}
-                                            {% endif %}
-                               </span>
-                               </div>
-                 </div>
-                     </div>
-                  {% endfor %}
+                <div class="main-information">
+                  <div class="info-product">
+                    <div>Designer</div>
+                    <div>{{ product.metafields.custom.designer }}</div>
+                  </div>
+                  <div class="info-product">
+                    <div>Era</div>
+                    <div>{{ product.metafields.custom.era }}</div>
+                  </div>
+                  <div class="info-product">
+                    <div>Item</div>
+                    <div class="hov"><a href="{{ product.url }}">{{ product.title}}</a></div>
+                  </div>
+                  <div class="info-product">
+                    <div><a>Price</a></div>
+                    <div class="product-price">{{ item.price | money }}</div>
+                  </div>
+                  <div class="info-product">
+                    <div><a>Quantity</a></div>
+                    <div class="product-price">
+                      <div class="item-quantity">
+                       <span data-field="updates" class="quantity-button minus"><span>–</span></span>
+                     <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
+                     <span class="quantity-wrap"></span>
+                     <span data-field="updates" class="quantity-button plus">
+                                           <span class="addmore">+</span>
+                                           {% if cart.items.available %}
+                                           {% else %}
+                                           {% endif %}
+                              </span>
+                              </div>
+                      </div>
+                  </div>
+                </div>
+                <a href="/cart/change?line={{ forloop.index }}&quantity=0">x Remove</a>
+            </div>
+            </div>
+        {% endfor %}
 
           <div class="total">
             <div>SHIPPING</div>
