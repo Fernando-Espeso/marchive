@@ -6,6 +6,14 @@
                  <div class="thumb">
                  <img class="lazy" src="{{ item | img_url: 'thumb' }}" data-src="{{ item | img_url: 'master' }}" alt="{{ item.title | escape }}" />
               </div>
+              <div class="info-product">
+                <div>Designer</div>
+                <div>{{ product.metafields.custom.designer }}</div>
+              </div>
+              <div class="info-product">
+                <div>Era</div>
+                <div>{{ product.metafields.custom.era }}</div>
+              </div>
               <div class="info_cart">
                             <div class="item-title">
                                <a class="product-title">{{ item.product.title }}</a><br>
@@ -52,8 +60,5 @@
       {% endif %}
 
     <style>
-    body{
-      background-color: var(--black)!important;
-      color: var(--white)!important;
-    }
+
     </style>
