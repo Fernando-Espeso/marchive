@@ -1,18 +1,51 @@
 <div id="single-product">
     <div class="product_info">
           <form action="/cart/add" method="post" enctype="multipart/form-data"
-                id="add-to-cart-{{ product.handle }}-{{ collection.handle }}-{{ section.id }}">
+          id="add-to-cart-{{ product.handle }}-{{ collection.handle }}-{{ section.id }}"
+              {%- if product.has_only_default_variant -%}
+              class="product-simple"
+              {%- elsif variants > 1 -%}
+              class="product-variants"
+              {%- endif -%}>
               <div id="bag">
-                <button
-                   type="submit"
-                   name="add"
-                   data-add-to-cart
-                   class="js-go-cart-add-to-cart"
-                   {%- unless current_variant.available -%}disabled="disabled"{%- endunless -%}>
-                  	 <span data-add-to-cart-text>
-                  	      {{- 'products.product.add_to_cart' | t -}}
-                  	 </span>
-               </button>
+                  {% if product.compare_at_price > product.price %}
+                      <span class="sale">On sale</span>
+                  {% else %}
+                  {% endif %}
+                  {% if product.available %}
+                  {% else %}
+                  {% endif %}
+                  <div class="variations">
+                              <select id="product-select" name="id">
+                                {% for variant in product.variants %}
+                                <option value="{{ variant.id }}">CHOOSE SIZE:</option>
+                                {% endfor %}
+                              </select>
+                              {% if product.available %}
+                                  <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button></div>
+                              {% else %}
+                                <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">SOLD OUT</button></div>
+                              {% endif %}
+                  </div>
+                  {% unless product.metafields.custom.extra == blank %}
+                    <div class="extra">
+                          {{ product.metafields.custom.extra }}
+                      </div>
+                  {% endunless %}
+                  <button
+ type="submit"
+ name="add"
+ data-add-to-cart
+ class="js-go-cart-add-to-cart"
+ {%- unless current_variant.available -%}disabled="disabled"{%- endunless -%}>
+	 <span data-add-to-cart-text>
+	    {%- if current_variant.available -%}
+	        {{- 'products.product.add_to_cart' | t -}}
+	    {%- else -%}
+	        {{- 'products.product.sold_out' | t -}}
+	    {%- endif -%}
+	 </span>
+ </button>
               </div>
           </form>
           <div class="main-information">
@@ -73,6 +106,7 @@
               {% endfor %}
               {% for media in product.media %}
               {% endfor %}
+
     <div class="extra-info">
       This item is guaranteed authentic and has been professionally cleaned.
       Recommended dry clean only
