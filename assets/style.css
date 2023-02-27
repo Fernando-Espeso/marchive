@@ -920,8 +920,10 @@ footer{
   background:#5FB307;
 }
 .quantity-button{
-  cursor:pointer;
-    background:#DEDED9;
+width: 50%;
+text-align: center;
+cursor:pointer;
+background:#DEDED9;
 }
 .quantity-wrap{
    background:white;
