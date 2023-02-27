@@ -5,7 +5,8 @@
               class="product-simple"
               {%- elsif variants > 1 -%}
               class="product-variants"
-              {%- endif -%}>
+              {%- endif -%}
+              >
               <div id="bag">
                   {% if product.compare_at_price > product.price %}
                       <span class="sale">On sale</span>
@@ -16,9 +17,7 @@
                   {% endif %}
                   <div class="variations">
                               <select id="product-select" name="id">
-                                {% for variant in product.variants %}
-                                <option value="{{ variant.id }}">CHOOSE SIZE:</option>
-                                {% endfor %}
+                        
                               </select>
                               {% if product.available %}
                                   <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button></div>
