@@ -81,7 +81,7 @@ fernandoepeso.info
   </script>
   </div>
   <!--Header-->
-  <header id="header">
+<header id="header">
     <div class="logo">
       <svg id="uuid-00d08a67-11e5-46c1-aaf1-3924bc15e6af" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="281" height="36.6" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 281 36.6">
         <defs>
@@ -124,26 +124,10 @@ fernandoepeso.info
         </div>
       </div>
       <div class="link-about"><a href="../pages/about">About</a></div>
-
-            <!-- {% for link in linklists.main-menu.links %}
-            <li {% if link.active %}class="active"{% endif %}><a class="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a></li>
-            {% endfor %} -->
     </div>
     <div class="cart-part">
       {%- section 'go-cart' -%}
       {%- include "go-cart-button" -%}
-        <!-- <div id="cart">
-          <div {% if template == 'cart' %}  class="active baggie hov" {% endif %} class="baggie hov">
-              <a href="/cart">Cart</a>
-          </div>
-          <div class="cart-total">
-                {%- if cart.item_count == 0 -%}
-                0
-                {%- else -%}
-                {{- cart.item_count -}}
-                {%- endif -%}
-          </div>
-        </div> -->
   	 </div>
      <div class="link-about-mobile"><a href="../pages/about">About</a></div>
      <div class="switch-view hov">Switch view</div>
@@ -169,12 +153,6 @@ fernandoepeso.info
       All rights reserved. Marchive 2023<br>
     </div>
   </footer>
-  {%- if template contains 'product' -%}
-    {{ 'global-product.js' | asset_url | script_tag }}
-  {%- endif -%}
-  {%- if template == 'product' -%}
-	   {% render 'ajaxify-cart' %}
-     {%- endif -%}{% render 'mws_apo_init' %}
 </body>
 <script>
   var goCart = new GoCart();
