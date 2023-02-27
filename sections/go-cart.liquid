@@ -65,7 +65,16 @@
         <!--end go cart drawer close-->
 
         <!--go cart drawer content-->
-        <div class="go-cart-drawer__content js-go-cart-drawer-content"></div>
+        <div class="go-cart-drawer__content js-go-cart-drawer-content">
+          <div class="info-product">
+            <div>Designer</div>
+            <div>{{ product.metafields.custom.designer }}</div>
+          </div>
+          <div class="info-product">
+            <div>Era</div>
+            <div>{{ product.metafields.custom.era }}</div>
+          </div>
+        </div>
         <!--end go cart drawer content-->
 
         <!--go cart drawer subtotal-->
