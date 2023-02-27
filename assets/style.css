@@ -366,6 +366,15 @@ header{
   border:0.5px solid black;
 }
 
+.link-about-mobile{
+  back-drop-filter:blur(20px);
+  padding: 2px;
+  display: none;
+  height: fit-content;
+  grid-column: span 2;
+  border:0.5px solid black;
+}
+
 .switch-view{
   padding: 2px 2px 2px 5px;
   grid-column:1/span 1;
@@ -936,6 +945,18 @@ header{
     display: grid;
     grid-column: span 12;
 }
+.link-about{
+  display: none;
+}
+.link-about-mobile{
+  back-drop-filter:blur(20px);
+  padding: 2px;
+  display: block;
+  height: fit-content;
+  grid-column: span 2;
+  border:0.5px solid black;
+}
+
 
 
 .gallery {
