@@ -579,8 +579,8 @@ span.box {
 }
 
 .contact a{
+  display:contents;
   width: fit-content;
-  display: contents;
 }
 
 .contact{
