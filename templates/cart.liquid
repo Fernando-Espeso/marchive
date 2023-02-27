@@ -6,8 +6,6 @@
                  <div class="thumb">
                  <img class="lazy" src="{{ item | img_url: 'thumb' }}" data-src="{{ item | img_url: 'master' }}" alt="{{ item.title | escape }}" />
               </div>
-              {% include 'product-body' %}
-
               <div class="info-product">
                 <div>Designer</div>
                 <div>{{ product.metafields.custom.designer }}</div>
