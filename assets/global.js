@@ -96,11 +96,11 @@ document.addEventListener("DOMContentLoaded", function(){
         // This is necessary so you never see what is "behind" the navbar.
         if (st > lastScrollTop && st > navbarHeight){
             // Scroll Down
-            $('.plaza').removeClass('nav-down').addClass('nav-up');
+            $('.logo').removeClass('nav-down').addClass('nav-up');
         } else {
             // Scroll Up
             if(st + $(window).height() < $(document).height()) {
-                $('.plaza').removeClass('nav-up').addClass('nav-down');
+                $('.logo').removeClass('nav-up').addClass('nav-down');
             }
         }
 
