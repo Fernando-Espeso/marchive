@@ -912,7 +912,7 @@ header{
 .menu {
     grid-gap: 12px;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-column: span 12;
 }
 .cart-part {
@@ -920,6 +920,13 @@ header{
 }
 .switch-view {
     grid-column: 9/span 4;
+}
+.drop {
+    column-gap: 12px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column: span 2;
 }
 .product {
     height: fit-content;
