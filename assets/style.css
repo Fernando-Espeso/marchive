@@ -280,16 +280,6 @@ a{
   display: grid;
 }
 
-#products.dropped .sold-out {
-  z-index: 1;
-  color: var(--white);
-  padding: 2px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0px;
-  background-color: var(--black);
-}
 
 .product.active-size,
 .product.active-color{
