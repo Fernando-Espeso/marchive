@@ -421,9 +421,14 @@ header{
 #cart-white{
   border:0.5px solid var(--white);
   display: flex;
+  line-height: 12px;
   justify-content: space-between;
 }
-
+.go-cart-drawer {
+    padding: 20px!important;
+    position: relative;
+    height: 100%;
+}
 .baggie{
   width: 100%;
   padding: 2px;
