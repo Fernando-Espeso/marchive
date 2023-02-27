@@ -580,7 +580,7 @@ span.box {
 
 .contact a{
   width: fit-content;
-  display: flex;
+  display: contents;
 }
 
 .contact{
