@@ -909,10 +909,9 @@ footer{
   grid-column:span 2;
 }
 .info_cart{
-  background: #FAF8F6;
-  padding:20px;
+  /* background: #FAF8F6; */
   display:grid;
-   grid-column:span 6;
+  grid-column:span 8;
   grid-template-columns: repeat(8,1fr);
 }
 .item-title{
