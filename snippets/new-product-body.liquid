@@ -1,4 +1,4 @@
-<!--product-body-new-->
+<!--Product-->
 <div class="product">
     <a class="thumbnail" href="{{ product.url }}">
         <span class="box"></span>
@@ -24,6 +24,9 @@
                                  {% else %}
                                      <div class="sold-out">SOLD OUT</div>
                                  {% endif %}
+
+
+
         </form>
         {% for media in product.media %}
             {% case media.media_type %}
@@ -99,6 +102,7 @@
         </div>
       </div>
   </div>
+
 {%- if template contains 'product' or template contains 'collection' -%}
   {{ 'global-product.js' | asset_url | script_tag }}
 {%- endif -%}
