@@ -682,7 +682,7 @@ span.box {
   background-color: var(--black);
 }
 
-#product-action{
+.product-action{
   width: 100%;
   grid-gap: 12px;
   position: absolute;
