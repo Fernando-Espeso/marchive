@@ -751,8 +751,7 @@ footer{
   position: relative;
   bottom: 0px;
   height: auto;
-  background-color:var(--black);
-  color: var(--white);
+  color: var(--black);
   padding: 20px!important;
   width: 100%;
 }
