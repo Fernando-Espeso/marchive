@@ -808,7 +808,10 @@ footer{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
+.go-cart__drawer.is-open {
+    -webkit-transform: translateX(-26vw)!important;
+    transform: translateX(-26vw)!important;
+}
 
 
 #cart-wrapper{
