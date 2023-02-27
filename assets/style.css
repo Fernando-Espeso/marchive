@@ -439,6 +439,14 @@ header{
   border-left:0.5px solid var(--white);
   text-align: center;
 }
+.go-cart-drawer__header {
+    width: 100%;
+    height: auto!important;
+    display: block!important;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0!important;;
+}
 
 #cart .cart-total{
   padding: 2px;
