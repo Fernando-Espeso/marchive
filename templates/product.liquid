@@ -10,6 +10,11 @@
               <div id="bag">
 
                   <div class="variations">
+                              <select id="product-select" name="id">
+                                {% for variant in product.variants %}
+
+                                {% endfor %}
+                              </select>
                               {% if product.available %}
                                   <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button></div>
                               {% else %}
