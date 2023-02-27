@@ -891,7 +891,10 @@ div#related {
 /* RESPONSIVE
 ================================================== */
 @media (max-width: 800px){
-  .logo {
+header{
+    z-index: 10!important;
+  }
+.logo {
     grid-column: span 12;
 }
 .menu {
