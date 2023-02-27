@@ -814,6 +814,9 @@ footer{
     color: white!important;
     background-color: var(--black)!important;
 }
+.go-cart__overlay {
+    background-color: transparent!important;
+}
 
 
 #cart-wrapper{
