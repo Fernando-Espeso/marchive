@@ -208,6 +208,7 @@ body{
  -moz-osx-font-smoothing: grayscale;
  -webkit-text-size-adjust: none;
  font-smoothing: antialiased;
+ overflow-x: hidden;
 }
 
 img,
