@@ -652,6 +652,7 @@ span.box {
 
 .button:hover{
   cursor: pointer;
+  background-color: lightgrey;
 }
 
 .button.active{
