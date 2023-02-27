@@ -64,7 +64,7 @@
             <div class="info-product">
               <div>Designer</div>
               <div class="hov">
-          no
+
               </div>
             </div>
             <div class="info-product">
@@ -102,12 +102,14 @@
         </div>
       </div>
   </div>
+
 {%- if template contains 'product' or template contains 'collection' -%}
   {{ 'global-product.js' | asset_url | script_tag }}
 {%- endif -%}
 {%- if template == 'product' or template contains 'collection' -%}
 	{% render 'ajaxify-cart' %}
 {%- endif -%}{% render 'mws_apo_init' %}
+
 <script>
   //Produt functions
   var selectCallback = function(variant, selector){

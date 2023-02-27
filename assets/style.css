@@ -280,7 +280,6 @@ a{
   display: grid;
 }
 
-
 .product.active-size,
 .product.active-color{
     display: none;
@@ -535,7 +534,9 @@ span.box {
   bottom:20px;
   height: fit-content;
 }
-
+.main_page{
+  min-height: calc(100vh - var(--m));
+}
 .swiper.home {
   top: 0px;
   position: absolute;
@@ -739,6 +740,7 @@ footer{
   padding:20px;
   display: grid;
   grid-template-columns: repeat(12,1fr);
+  min-height: calc(100vh - var(--m));
 }
 
 /* ABOUT
