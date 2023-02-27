@@ -88,7 +88,7 @@
                       <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
                     {% else %}
                       {% if product.compare_at_price > product.price %}
-                      <li><s>{{ product.compare_at_price | money }}</s> - {{ product.price | money }}<li>
+                      <li><s>{{ product.compare_at_price | money }}</s> - {{ product.price | money }} <li>
                       {% else %}
                     <span>{{ product.price | money }}</span>
                       {% endif %}
