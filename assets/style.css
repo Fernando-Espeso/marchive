@@ -910,6 +910,7 @@ header{
     grid-column: span 12;
 }
 .menu {
+    order: 5;
     grid-gap: 12px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
