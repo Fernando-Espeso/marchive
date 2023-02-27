@@ -736,6 +736,7 @@ footer{
   grid-column:span 9;
 }
 .main_page{
+  height: fit-content;
   grid-gap:20px;
   padding:20px;
   display: grid;
