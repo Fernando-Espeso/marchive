@@ -901,18 +901,18 @@ footer{
 }
  .item{
     grid-column:span 8;
-     grid-gap:20px;
+    grid-gap:12px;
     grid-template-columns: repeat(8,1fr);
     display:grid;
 }
 .thumb{
   grid-column:span 2;
 }
-.info_cart{
-  /* background: #FAF8F6; */
-  display:grid;
-  grid-column:span 8;
-  grid-template-columns: repeat(8,1fr);
+.info_cart {
+    display: grid;
+    grid-column: span 6;
+    grid-template-columns: repeat(8,1fr);
+    height: fit-content;
 }
 .item-title{
     grid-column:span 3;
