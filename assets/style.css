@@ -891,6 +891,29 @@ div#related {
 /* RESPONSIVE
 ================================================== */
 @media (max-width: 800px){
+  .logo {
+    grid-column: span 12;
+}
+.menu {
+    grid-gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-column: span 12;
+}
+.cart-part {
+    grid-column: span 7;
+}
+.switch-view {
+    grid-column: 9/span 4;
+}
+.product {
+    height: fit-content;
+    position: relative;
+    row-gap: 10px;
+    display: grid;
+    grid-column: span 12;
+}
+
 }
 /*BIGGER DESKTOP*/
 @media (min-width: 1920px){
