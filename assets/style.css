@@ -568,6 +568,10 @@ span.box {
   display: flex;
 }
 
+.contact{
+  border: none;
+}
+
 .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
