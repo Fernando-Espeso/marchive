@@ -75,7 +75,7 @@
             </div>
             <div class="info-product">
               <div>Item</div>
-              <div class="hov"><a href="{{ product.url }}"> - {{ product.title}}</a></div>
+              <div class="hov"><a href="{{ product.url }}">{{ product.title}}</a></div>
             </div>
             <div class="info-product">
               <div><a>Price</a></div>
@@ -85,7 +85,7 @@
                       <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
                     {% else %}
                       {% if product.compare_at_price > product.price %}
-                      <li><s>{{ product.compare_at_price | money }}</s> {{ product.price | money }}<li>
+                      <li><s>{{ product.compare_at_price | money }}</s> – {{ product.price | money }}<li>
                       {% else %}
                     <span>{{ product.price | money }}</span>
 
