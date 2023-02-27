@@ -12,12 +12,10 @@
                       <span class="sale">On sale</span>
                   {% else %}
                   {% endif %}
-                  {% if product.available %}
-                  {% else %}
-                  {% endif %}
+
                   <div class="variations">
                               <select id="product-select" name="id">
-                        
+
                               </select>
                               {% if product.available %}
                                   <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button></div>
