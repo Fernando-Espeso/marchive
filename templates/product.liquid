@@ -8,13 +8,7 @@
               {%- endif -%}
               >
               <div id="bag">
-                  {% if product.compare_at_price > product.price %}
-                      <span class="sale">On sale</span>
-                  {% else %}
-                  {% endif %}
-                  {% if product.available %}
-                  {% else %}
-                  {% endif %}
+                  
                   <div class="variations">
                               <select id="product-select" name="id">
                                 {% for variant in product.variants %}
