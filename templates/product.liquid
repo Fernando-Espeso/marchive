@@ -1,5 +1,5 @@
 <div id="single-product">
-      <div class="product_info">
+    <div class="product_info">
           <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
               {%- if product.has_only_default_variant -%}
               class="product-simple"
@@ -89,8 +89,8 @@
                 <span>{{ product.content | replace: '_16x16', '' | replace: '_32x32', '' | replace: '_50x50', '' | replace: '_100x100', '' | replace: '_160x160', '' | replace: '_240x240', '' | replace: '_480x480', '' | replace: '_600x600', '' | replace: '_1024x1024', '' }}</span>
               </div>
           </div>
-        </div>
-        <div class="gallery">
+    </div>
+    <div class="gallery">
           {% for media in product.media %}
           <div class="thumb">
               {% case media.media_type %}
@@ -105,8 +105,17 @@
               {% endfor %}
               {% for media in product.media %}
               {% endfor %}
+
+    <div class="extra-info">
+      This item is guaranteed authentic and has been professionally cleaned.
+      Recommended dry clean only
+      This Marchive treasure has been pre-loved and may carry its own
+      beautiful imperfections,
+      just as we all do.
+      We ask that you embrace this piece’s unique character as it begins a new chapter of its life with you.
     </div>
-        {% include 'related' %}
+    </div>
+    {% include 'related' %}
 </div>
 <style>
   .switch-view{
