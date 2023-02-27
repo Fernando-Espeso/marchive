@@ -8,7 +8,7 @@
               {%- endif -%}
               >
               <div id="bag">
-                  
+
                   <div class="variations">
                               <select id="product-select" name="id">
                                 {% for variant in product.variants %}
@@ -21,7 +21,7 @@
                                 <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">SOLD OUT</button></div>
                               {% endif %}
                   </div>
-                  <button
+                  <!-- <button
                type="submit"
                name="add"
                data-add-to-cart
@@ -34,7 +34,7 @@
               	        {{- 'products.product.sold_out' | t -}}
               	    {%- endif -%}
               	 </span>
-                </button>
+                </button> -->
               </div>
           </form>
 
