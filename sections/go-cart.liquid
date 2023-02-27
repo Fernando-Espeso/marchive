@@ -2,7 +2,10 @@
 <div class="go-cart__modal go-cart__modal--fail js-go-cart-modal-fail">
     <div class="go-cart-modal">
         <div class="go-cart-modal__close js-go-cart-modal-fail-close">
-          CART
+          <div id="cart">
+              <div class="baggie hov">Cart</div>
+              <div class="js-go-cart-counter cart-total">{{- cart.item_count -}}</div>
+          </div>
         </div>
         <!--go cart modal content-->
         <div class="go-cart-modal__content js-go-cart-modal-fail-content">
@@ -74,11 +77,7 @@
         <!--end go cart drawer buttons-->
 
     </div>
-
 </div>
-<!--end go cart drawer-->
-
-<!--go cart overlay-->
 <div class="go-cart__overlay js-go-cart-overlay">
 </div>
 <!--end go cart overlay-->
