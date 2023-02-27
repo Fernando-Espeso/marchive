@@ -530,7 +530,7 @@ span.box {
 
 /* RANNDMON PAGE
 ================================================== */
-.icon-marchive svg{
+.icon-marchive svg {
   display: block;
   width: 100px;
   position: fixed;
@@ -538,9 +538,7 @@ span.box {
   bottom:20px;
   height: fit-content;
 }
-.main_page{
-  min-height: calc(100vh - var(--m));
-}
+
 .swiper.home {
   top: 0px;
   position: absolute;
@@ -548,6 +546,7 @@ span.box {
   height: 100vh;
   padding: 20px!important;
 }
+
 .swiper.relatedd {
   top: 0px;
   position: relative;
