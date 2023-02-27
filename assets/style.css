@@ -927,8 +927,9 @@ div#related {
   grid-column: span 12;
 }
 div#related {
-    z-index: 12;
-    grid-column: span 12;
+  top: auto;
+  z-index: 12;
+  grid-column: span 12;
 }
 
 }
