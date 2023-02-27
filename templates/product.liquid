@@ -8,19 +8,20 @@
               {%- endif -%}
               >
               <div id="bag">
+                <!--Variations Dropdown-->
+                <select id="product-select" name="id">
+                  {% for variant in product.variants %}
+                  <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
 
-                  <div class="variations">
-                              <select id="product-select" name="id">
-                                {% for variant in product.variants %}
-                                <option value="{{ variant.id }}">CHOOSE SIZE:</option>
-                                {% endfor %}
-                              </select>
-                              {% if product.available %}
-                                  <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button></div>
-                              {% else %}
-                                <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">SOLD OUT</button></div>
-                              {% endif %}
-                  </div>
+                  {% endfor %}
+                </select>
+
+                <!--Actions-->
+                  {% if product.available %}
+                      <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button></div>
+                  {% else %}
+                    <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">SOLD OUT</button></div>
+                  {% endif %}
                   <!-- <button
                type="submit"
                name="add"
