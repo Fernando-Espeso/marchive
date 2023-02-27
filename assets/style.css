@@ -738,7 +738,7 @@ footer{
 .main_page{
   grid-gap:20px;
   padding:20px;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(12,1fr);
   min-height: calc(100vh - var(--m));
 }
