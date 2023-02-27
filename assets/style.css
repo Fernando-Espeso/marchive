@@ -719,6 +719,15 @@ div#related >.product:first-child{
   border: 0.5px solid var(--black);
   padding: 2px 5px 2px 5px;
 }
+.layer{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--white);
+  opacity: 0.5;
+}
 
 /* FOOTER
 ================================================== */
