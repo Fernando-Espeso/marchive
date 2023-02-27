@@ -75,13 +75,13 @@
             </div>
           </div>
           <div class="nav-info">
-              <div id="description" class="button">Description</div>
-              <div id="size" class="button">Size</div>
-              <div id="condition" class="button">Condition</div>
-              
-              <div class="show-description description">{{ product.metafields.custom.description }}</div>
-              <div class="show-description size">{{ product.metafields.custom.size }}</div>
-              <div class="show-description condition">{{ product.metafields.custom.condition }}</div>
+            {%- if product.metafields.custom.description != blank -%}<div id="description" class="button">Description</div>{%- endif -%}
+            {%- if product.metafields.custom.size != blank -%}<div id="size" class="button">Size</div>{%- endif -%}
+            {%- if product.metafields.custom.condition != blank -%}<div id="condition" class="button">Condition</div>{%- endif -%}
+
+            {%- if product.metafields.custom.description != blank -%}<div class="show-description description">{{ product.metafields.custom.description }}</div>{%- endif -%}
+            {%- if product.metafields.custom.size != blank -%}<div class="show-description size">{{ product.metafields.custom.size }}</div>{%- endif -%}
+            {%- if product.metafields.custom.condition != blank -%}<div class="show-description condition">{{ product.metafields.custom.condition }}</div>{%- endif -%}
           </div>
           <span class="contact">Contact for more information to <a href="mailto:hello@marchive.info">hello@marchive.info</a></span>
     </div>
