@@ -37,8 +37,6 @@
                 </button> -->
               </div>
           </form>
-
-
           <div class="main-information">
             <div class="info-product">
               <div>Designer</div>
@@ -97,14 +95,14 @@
               {% endfor %}
               {% for media in product.media %}
               {% endfor %}
-    <div class="extra-info">
-      This item is guaranteed authentic and has been professionally cleaned.
-      Recommended dry clean only
-      This Marchive treasure has been pre-loved and may carry its own
-      beautiful imperfections,
-      just as we all do.
-      We ask that you embrace this piece’s unique character as it begins a new chapter of its life with you.
-    </div>
+      <div class="extra-info">
+        This item is guaranteed authentic and has been professionally cleaned.
+        Recommended dry clean only
+        This Marchive treasure has been pre-loved and may carry its own
+        beautiful imperfections,
+        just as we all do.
+        We ask that you embrace this piece’s unique character as it begins a new chapter of its life with you.
+      </div>
     </div>
     {% include 'related' %}
 </div>
@@ -124,12 +122,12 @@
     border-left: 0.5px solid var(--black);
   }
 </style>
-{% assign variants = 0 %}
+
 {% for option in product.options %}
 {% if product.options.first != 'Title' %}
-{% assign variants = variants | plus: 1 %}
 {% endif %}
 {% endfor %}
+
 <script>
   //Produt functions
   var selectCallback = function(variant, selector){
