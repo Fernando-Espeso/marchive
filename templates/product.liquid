@@ -12,7 +12,9 @@
                       <span class="sale">On sale</span>
                   {% else %}
                   {% endif %}
-
+                  {% if product.available %}
+                  {% else %}
+                  {% endif %}
                   <div class="variations">
                               <select id="product-select" name="id">
 
