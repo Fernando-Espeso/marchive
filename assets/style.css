@@ -895,6 +895,7 @@ footer{
 	display: none !important;
 }
 div#related {
+  z-index: 0;
   height: fit-content;
   position: sticky;
   top: var(--m);
