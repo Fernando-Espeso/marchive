@@ -1,7 +1,7 @@
 <div id="single-product">
     <div class="product_info">
           <form action="/cart/add" method="post" enctype="multipart/form-data"
-          id="add-to-cart-{{ product.handle }}-{{ collection.handle }}-{{ section.id }}"
+          id="cart"
               {%- if product.has_only_default_variant -%}
               class="product-simple"
               {%- elsif variants > 1 -%}
@@ -27,27 +27,24 @@
                                 <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">SOLD OUT</button></div>
                               {% endif %}
                   </div>
-                  {% unless product.metafields.custom.extra == blank %}
-                    <div class="extra">
-                          {{ product.metafields.custom.extra }}
-                      </div>
-                  {% endunless %}
                   <button
- type="submit"
- name="add"
- data-add-to-cart
- class="js-go-cart-add-to-cart"
- {%- unless current_variant.available -%}disabled="disabled"{%- endunless -%}>
-	 <span data-add-to-cart-text>
-	    {%- if current_variant.available -%}
-	        {{- 'products.product.add_to_cart' | t -}}
-	    {%- else -%}
-	        {{- 'products.product.sold_out' | t -}}
-	    {%- endif -%}
-	 </span>
- </button>
+               type="submit"
+               name="add"
+               data-add-to-cart
+               class="js-go-cart-add-to-cart"
+               {%- unless current_variant.available -%}disabled="disabled"{%- endunless -%}>
+              	 <span data-add-to-cart-text>
+              	    {%- if current_variant.available -%}
+              	        {{- 'products.product.add_to_cart' | t -}}
+              	    {%- else -%}
+              	        {{- 'products.product.sold_out' | t -}}
+              	    {%- endif -%}
+              	 </span>
+                </button>
               </div>
           </form>
+
+
           <div class="main-information">
             <div class="info-product">
               <div>Designer</div>
@@ -106,7 +103,6 @@
               {% endfor %}
               {% for media in product.media %}
               {% endfor %}
-
     <div class="extra-info">
       This item is guaranteed authentic and has been professionally cleaned.
       Recommended dry clean only
