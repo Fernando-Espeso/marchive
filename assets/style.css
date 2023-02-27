@@ -922,6 +922,12 @@ div#related {
     grid-column: span 12;
 }
 .product_info {
+  z-index: 1;
+  position: relative;
+  grid-column: span 12;
+}
+div#related {
+    z-index: 12;
     grid-column: span 12;
 }
 
