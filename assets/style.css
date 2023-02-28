@@ -265,8 +265,8 @@ a{
   border-bottom: 0.5px solid var(--black);
 }
 
-#products.dropped .product .info-product>div:nth-child(even) {
-  border-left: 0.5px solid var(--black);
+#products.dropped .product .info-product>div:nth-child(odd) {
+  border-right: 0.5px solid var(--black);
 }
 
 #products.dropped .info-product {
@@ -278,8 +278,8 @@ a{
   grid-gap: 12px;
 }
 
-#products.dropped .info-product>div:nth-child(even) {
-  border-left: 0.5px solid transparent;
+#products.dropped .info-product>div:nth-child(odd) {
+  border-right: 0.5px solid transparent;
   grid-column: span 2;
   padding: 2px 2px 2px 5px;
   display: grid;
@@ -526,8 +526,8 @@ header{
   border-bottom: 0.5px solid var(--black);
 }
 
-.product:hover .info-product>div:nth-child(even) {
-  border-left: 0.5px solid var(--black);
+.product:hover .info-product>div:nth-child(odd) {
+  border-right: 0.5px solid var(--black);
 }
 
 .product:hover span.box {
@@ -572,8 +572,8 @@ span.box {
   display: grid;
 }
 
-.info-product>div:nth-child(even) {
-  border-left: 0.5px solid transparent;
+.info-product>div:nth-child(odd) {
+  border-right: 0.5px solid transparent;
   padding: 2px;
   grid-column: span 3;
   padding-left: 5px;
