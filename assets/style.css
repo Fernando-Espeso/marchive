@@ -1083,7 +1083,6 @@ div#related {
     position: sticky;
     top: 100px;
     grid-column: 5/span 8;
-    background: #FAF8F6;
     height: fit-content;
     grid-template-columns: repeat(2,1fr);
     display: grid;
