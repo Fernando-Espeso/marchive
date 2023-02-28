@@ -1,126 +1,169 @@
+<div id="single-product">
+    <div class="product_info">
+      <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+          {%- if product.has_only_default_variant -%}
+          class="product-simple"
+          {%- elsif variants > 1 -%}
+          class="product-variants"
+          {%- endif -%}>
+              <div id="bag">
+                <!--Variations Dropdown-->
+                <select id="product-select" name="id">
+                  {% for variant in product.variants %}
+                  <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
+                  {% endfor %}
+                </select>
+                <!--Actions-->
+                {% if product.available %}
+                      <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button></div>
+                  {% else %}
+                    <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">SOLD OUT</button></div>
+                  {% endif %}
+                <button
+                         type="submit"
+                         name="add"
+                         data-add-to-cart
+                         class="js-go-cart-add-to-cart addtocart hov"
+                         {%- unless current_variant.available -%}disabled="disabled"{%- endunless -%}>
+                        	 <span data-add-to-cart-text>
+                        	    {%- if current_variant.available -%}
+                        	        {{- 'products.product.add_to_cart' | t -}}
+                        	    {%- else -%}
+                        	        {{- 'products.product.sold_out' | t -}}
+                        	    {%- endif -%}
+                        	 </span>
+                </button>
+              </div>
+          </form>
+          <div class="main-information">
+            <div class="info-product">
+              <div>Designer</div>
+              <div>{{ product.metafields.custom.designer }}</div>
+            </div>
+            <div class="info-product">
+              <div>Era</div>
+              <div>{{ product.metafields.custom.era }}</div>
+            </div>
+            <div class="info-product">
+              <div>Item</div>
+              <div class="hov"><a href="{{ product.url }}">{{ product.title}}</a></div>
+            </div>
+            <div class="info-product">
+              <div><a>Price</a></div>
+              <div class="product-price">
+                   {% if product.available %}
+                    {% if product.price_varies %}
+                      <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
+                    {% else %}
+                      {% if product.compare_at_price > product.price %}
+                        <li><s>{{ product.compare_at_price | money }}</s> - {{ product.price | money }}<li>
+                      {% else %}
+                    <span>{{ product.price | money }}</span>
+                      {% endif %}
+                    {% endif %}
+                  {% else %}
+                    <span>{{ product.price | money }}</span>
+                  {% endif %}
+                </div>
+            </div>
+          </div>
+          <div class="nav-info">
+            {%- if product.metafields.custom.description != blank -%}<div id="description" class="button">Description</div>{%- endif -%}
+            {%- if product.metafields.custom.size != blank -%}<div id="size" class="button">Size</div>{%- endif -%}
+            {%- if product.metafields.custom.condition != blank -%}<div id="condition" class="button">Condition</div>{%- endif -%}
 
-
-
-<div class="product-content">
-   <!--Product Info-->
-<form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
-      {%- if product.has_only_default_variant -%}
-      class="product-simple"
-      {%- elsif variants > 1 -%}
-      class="product-variants"
-      {%- endif -%}>
-
-<div id="cent" class="movil">
-{% for media in product.media %}
-<img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
-{% endfor %}
-</div>
-
-
-  <div id="bag-total" >
-    <div class="active">{{ product.title }}</div>
-
-  <!--Variations Dropdown-->
-  <select id="product-select" name="id">
-    {% for variant in product.variants %}
-    <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
-
-    {% endfor %}
-  </select>
-
-
-  <!--Actions-->
-  {% if product.available %}
-  <button id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">
-  	ADD TO CART
-   </button>
-  {% else %}
-  {% endif %}
-   </div>
-</form>
-
-	<div class="title">
-       <div class="stik">
-   <div id="product-price"></div>
-         {% if product.compare_at_price > product.price %}
-			<span class="sale">ON SALE</span>
-         {% else %}
-         {% endif %}
-
-	</div>
-	</div>
-
-
-<div id="cent" class="desk">
-{% for media in product.media %}
-<img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
-{% endfor %}
-</div>
-
-
-
-
-<div id="content">
-
-      <div class="stik">
-    <div class="project_info">
-      {{ product.content | replace: '_16x16', '' | replace: '_32x32', '' | replace: '_50x50', '' | replace: '_100x100', '' | replace: '_160x160', '' | replace: '_240x240', '' | replace: '_480x480', '' | replace: '_600x600', '' | replace: '_1024x1024', '' }}
+            {%- if product.metafields.custom.description != blank -%}<div class="show-description description">{{ product.metafields.custom.description }}</div>{%- endif -%}
+            {%- if product.metafields.custom.size != blank -%}<div class="show-description size">{{ product.metafields.custom.size }}</div>{%- endif -%}
+            {%- if product.metafields.custom.condition != blank -%}<div class="show-description condition">{{ product.metafields.custom.condition }}</div>{%- endif -%}
+          </div>
+          <div class="contact">For more information contact to <a href="mailto:hello@marchive.info">hello@marchive.info</a></div>
     </div>
+    <div class="gallery">
+          {% for media in product.media %}
+          <div class="thumb">
+              {% case media.media_type %}
+              {% when 'video' %}
+                  {{ media | video_tag:loop: true, autoplay: true, muted:true}}
+              {% endcase %}
+              {% case media.media_type %}
+              {% when 'image' %}
+                  <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
+              {% endcase %}
+           </div>
+              {% endfor %}
+              {% for media in product.media %}
+              {% endfor %}
+      <div class="extra-info">
+        This item is guaranteed authentic and has been professionally cleaned.
+        Recommended dry clean only
+        This Marchive treasure has been pre-loved and may carry its own
+        beautiful imperfections,
+        just as we all do.
+        We ask that you embrace this piece’s unique character as it begins a new chapter of its life with you.
+      </div>
+    </div>
+    {% include 'related' %}
 </div>
-</div>
+<style>
+  .switch-view{
+    display: none;
+  }
+   .product_info .main-information {
+    border-top: 0.5px solid var(--black);
+    border-right: 0.5px solid var(--black);
+    border-left: 0.5px solid var(--black);
+  }
+  .product_info .main-information .info-product {
+    border-bottom: 0.5px solid var(--black);
+  }
+  .product_info .main-information .info-product>div:nth-child(even) {
+    border-left: 0.5px solid var(--black);
+  }
+</style>
 
-
-
-
-</div>
-
-{% assign variants = 0 %}
+<!-- {% assign variants = 0 %}
 {% for option in product.options %}
 {% if product.options.first != 'Title' %}
-{% assign variants = variants | plus: 1 %}
 {% endif %}
-{% endfor %}
-
-
-{% include 'related' %}
+{% endfor %} -->
 
 <script>
   //Produt functions
-  var selectCallback = function(variant, selector){
-    if(variant){
-      if(variant.available){
-        jQuery('#add-to-cart').prop('disabled', false).text('ADD TO CART');
-      }else{
-        jQuery('#add-to-cart').prop('disabled', true).text('SOLD OUT');
-      }
-      if( variant.compare_at_price > variant.price ) {
-        {% if variant.price < variant.compare_at_price %} {{ variant.compare_at_price | money }}{% endif %}
-        jQuery('#product-price').html(Shopify.formatMoney(variant.price, "<span>{{ shop.money_format }}</span>") + " <s>" + Shopify.formatMoney(variant.compare_at_price, "{{ shop.money_format }}") + "</s>");
-      }else{
-        jQuery('#product-price').html(Shopify.formatMoney(variant.price, "{{ shop.money_format }}"));
-      }
-    }else{
-      jQuery('#product-price').empty();
-      jQuery('#add-to-cart').prop('disabled', true).text('ADD TO CART');
-      {% if product.price_varies %}
-        jQuery('#product-price').html('{{ product.price_min | money }} – {{ product.price_max | money }}' );
-      {% else %}
-        jQuery('#product-price').html('{{ product.price | money }}');
-      {% endif %}
-    }
-  };
-  //Replace default variant selector
-  jQuery(function($) {
-    new Shopify.OptionSelectors('product-select', {
-      product: {{ product | json }},
-      onVariantSelected: selectCallback
-    });
-    {% assign count = -1 %}
-    {% for option in product.options %}
-    {% if product.options.first != 'Title' %}
-      {% assign count = count | plus: 1 %}
-      $("#product-select-option-{{ count }}").prepend("<option value='' disabled selected>{{ product.options[count] | upcase }}</option>");
-    {% endif %}
-    {% endfor %}
-  });
+  // var selectCallback = function(variant, selector){
+  //   if(variant){
+  //     if(variant.available){
+  //       jQuery('#add-to-cart').prop('disabled', false).text('ADD TO CART');
+  //     }else{
+  //       jQuery('#add-to-cart').prop('disabled', true).text('SOLD OUT');
+  //     }
+  //     if( variant.compare_at_price > variant.price ) {
+  //       {% if variant.price < variant.compare_at_price %} {{ variant.compare_at_price | money }}{% endif %}
+  //       jQuery('#product-price').html(Shopify.formatMoney(variant.price, "<span>{{ shop.money_format }}</span>") + " <s>" + Shopify.formatMoney(variant.compare_at_price, "{{ shop.money_format }}") + "</s>");
+  //     }else{
+  //       jQuery('#product-price').html(Shopify.formatMoney(variant.price, "{{ shop.money_format }}"));
+  //     }
+  //   }else{
+  //     jQuery('#product-price').empty();
+  //     jQuery('#add-to-cart').prop('disabled', true).text('ADD TO CART');
+  //     {% if product.price_varies %}
+  //       jQuery('#product-price').html('{{ product.price_min | money }} – {{ product.price_max | money }}' );
+  //     {% else %}
+  //       jQuery('#product-price').html('{{ product.price | money }}');
+  //     {% endif %}
+  //   }
+  // };
+  // //Replace default variant selector
+  // jQuery(function($) {
+  //   new Shopify.OptionSelectors('product-select', {
+  //     product: {{ product | json }},
+  //     onVariantSelected: selectCallback
+  //   });
+  //   {% assign count = -1 %}
+  //   {% for option in product.options %}
+  //   {% if product.options.first != 'Title' %}
+  //     {% assign count = count | plus: 1 %}
+  //     $("#product-select-option-{{ count }}").prepend("<option value='' disabled selected>{{ product.options[count] | upcase }}</option>");
+  //   {% endif %}
+  //   {% endfor %}
+  // });
 </script>
