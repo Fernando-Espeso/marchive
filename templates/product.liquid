@@ -1,6 +1,11 @@
 <div id="single-product">
     <div class="product_info">
-      <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data">
+      <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+          {%- if product.has_only_default_variant -%}
+          class="product-simple"
+          {%- elsif variants > 1 -%}
+          class="product-variants"
+          {%- endif -%}>
               <div id="bag">
                 <!--Variations Dropdown-->
                 <select id="product-select" name="id">
