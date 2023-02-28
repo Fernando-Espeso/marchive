@@ -266,7 +266,7 @@ a{
 }
 
 #products.dropped .product .info-product>div:nth-child(odd) {
-  border-left: 0.5px solid var(--black);
+  border-right: 0.5px solid var(--black);
 }
 
 #products.dropped .info-product {
@@ -279,7 +279,7 @@ a{
 }
 
 #products.dropped .info-product>div:nth-child(odd) {
-  border-left: 0.5px solid transparent;
+  border-right: 0.5px solid transparent;
 }
 
 .product.active-size,
@@ -524,7 +524,7 @@ header{
 }
 
 .product:hover .info-product>div:nth-child(odd) {
-  border-left: 0.5px solid var(--black);
+  border-right: 0.5px solid var(--black);
 }
 
 .product:hover span.box {
