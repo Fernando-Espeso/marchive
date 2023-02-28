@@ -894,6 +894,13 @@ footer{
   color: white!important;
   background-color: var(--black)!important;
 }
+.go-cart__button {
+    background: #000;
+    color: #fff;
+    padding: 0px!important;
+    text-align: center;
+    cursor: pointer;
+}
 .go-cart__overlay {
   background-color: transparent!important;
 }
