@@ -859,6 +859,19 @@ footer{
 ================================================== */
 /* CART
 ================================================== */
+.go-cart-drawer__footer, .go-cart-drawer__subtotal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px!important;
+    -webkit-transition:none;
+}
+.go-cart-drawer__subtotal {
+    align-items: center;
+    height: auto!important;
+    padding: 0px!important;
+}
+
 .go-cart__drawer {
   position: fixed;
   top: 0;
