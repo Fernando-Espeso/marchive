@@ -878,7 +878,7 @@ footer{
     background-color: transparent!important;
 }
 
-.product-simple selector-wrapper {
+.product-simple .selector-wrapper {
     display: none;
 }
 
