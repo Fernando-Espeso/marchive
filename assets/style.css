@@ -275,6 +275,7 @@ a{
   row-gap: 0px!important;
   grid-template-columns: repeat(3,1fr);
   display: grid;
+  grid-gap: 12px;
 }
 
 #products.dropped .info-product>div:nth-child(odd) {
@@ -523,7 +524,7 @@ header{
 }
 
 .product:hover .info-product>div:nth-child(odd) {
-  border-right: 0.5px solid var(--black);
+  border-left: 0.5px solid var(--black);
 }
 
 .product:hover span.box {
@@ -557,6 +558,7 @@ span.box {
   row-gap:0px!important;
   grid-template-columns: repeat(4,1fr);
   display: grid;
+  grid-gap:12px;
 }
 
 .info-product>div:nth-child(odd) {
