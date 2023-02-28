@@ -1,103 +1,100 @@
 
-      {% if cart.item_count > 0 %}
-      <form id="cart-wrapper" action="/cart" method="post">
-           {% for item in cart.items %}
-                <div class="item">
-                 <div class="thumb">
-                 <img class="lazy" src="{{ item | img_url: 'thumb' }}" data-src="{{ item | img_url: 'master' }}" alt="{{ item.title | escape }}" />
-              </div>
-              <div class="info_cart">
-                <div class="main-information">
-
-                  <div class="info-product">
-                    <div>Designer</div>
-                    <div>{{ item.product.metafields.custom.designer }}</div>
+{% if cart.item_count > 0 %}
+    <form id="cart-wrapper" action="/cart" method="post">
+               {% for item in cart.items %}
+                    <div class="item">
+                     <div class="thumb">
+                     <img class="lazy" src="{{ item | img_url: 'thumb' }}" data-src="{{ item | img_url: 'master' }}" alt="{{ item.title | escape }}" />
                   </div>
-
-                  <div class="info-product">
-                    <div>Era</div>
-                    <div>{{ item.product.metafields.custom.era }}</div>
-                  </div>
-
-                  <div class="info-product">
-                    <div>Item</div>
-                    <div class="hov"><a href="{{ product.url }}">{{ item.product.title }}</a></div>
-                  </div>
-
-                  <div class="info-product">
-                    <div><a>Price</a></div>
-                    <div class="product-price">{{ item.price | money }}</div>
-                  </div>
-
-                  <div class="info-product">
-                    <div><a>Quantity</a></div>
-                    <div class="product-price">
-                      <div class="item-quantity">
-
-                     <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
-                     <span class="quantity-wrap"></span>
-
-                              </div>
+                  <div class="info_cart">
+                    <div class="main-information">
+                      <div class="info-product">
+                        <div>Designer</div>
+                        <div>{{ item.product.metafields.custom.designer }}</div>
                       </div>
-                  </div>
 
-                  <div class="remove">
-                    <a href="/cart/change?line={{ forloop.index }}&quantity=0">Remove</a>
-                  </div>
-            </div>
-            </div>
-          </div>
-        {% endfor %}
-          <div class="total">
-            <div class="main-information">
-              <div class="info-product">
-                <div>Subtotal</div>
-                <div>{{ cart.total_price | money }}</div>
-              </div>
-              <div class="info-product">
-                <div>Shipping</div>
-                <div>Calculated at checkout</div>
-              </div>
-            </div>
-            <div class="active" style="grid-column:span 2; padding:2px;">
-            <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
-            <button id="checkout" type="submit" name="checkout">PROCEED TO CHECKOUT</button>
-          </div>
-        </div>
-      </form>
-      {% else %}
-            <!--Empty Bag-->
-            <div class="empty">YOUR CART IS CURRENTLY EMPTY</div>
-      {% endif %}
+                      <div class="info-product">
+                        <div>Era</div>
+                        <div>{{ item.product.metafields.custom.era }}</div>
+                      </div>
 
+                      <div class="info-product">
+                        <div>Item</div>
+                        <div class="hov"><a href="{{ product.url }}">{{ item.product.title }}</a></div>
+                      </div>
+
+                      <div class="info-product">
+                        <div><a>Price</a></div>
+                        <div class="product-price">{{ item.price | money }}</div>
+                      </div>
+
+                      <div class="info-product">
+                        <div><a>Quantity</a></div>
+                        <div class="product-price">
+                          <div class="item-quantity">
+
+                         <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
+                         <span class="quantity-wrap"></span>
+
+                                  </div>
+                          </div>
+                      </div>
+
+                      <div class="remove hov">
+                        <a href="/cart/change?line={{ forloop.index }}&quantity=0">Remove</a>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+            {% endfor %}
+              <div class="total">
+                <div class="main-information">
+                  <div class="info-product">
+                    <div>Subtotal</div>
+                    <div>{{ cart.total_price | money }}</div>
+                  </div>
+                  <div class="info-product">
+                    <div>Shipping</div>
+                    <div>Calculated at checkout</div>
+                  </div>
+                </div>
+                <div class="active" style="grid-column:span 2; padding:2px;">
+                <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
+                <button id="checkout" type="submit" name="checkout">PROCEED TO CHECKOUT</button>
+              </div>
+            </div>
+          </form>
+{% else %}
+    <div class="empty">YOUR CART IS CURRENTLY EMPTY</div>
+{% endif %}
 <style>
-.main-information {
-  position: relative;
-  border-top: 0.5px solid var(--black);
-  border-right: 0.5px solid var(--black);
-  border-left: 0.5px solid var(--black);
-  row-gap: 0px!important;
-  grid-template-columns: repeat(1,1fr);
-  display: grid;
-  grid-column: span 4;
-}
-.info-product {
-  border-bottom: 0.5px solid var(--black);
-  grid-column: span 1;
-  row-gap: 0px!important;
-  grid-template-columns: repeat(4,1fr);
-  display: grid;
-}
-.info-product>div:nth-child(even) {
-  grid-column: span 3;
-  padding: 2px 2px 2px 5px;
-  display: grid;
-}
-.info-product>div:nth-child(odd) {
-  border-right: 0.5px solid var(--black);
-  grid-column: span 1;
-}
-.switch-view{
-  display: none;
-}
+  .main-information {
+    position: relative;
+    border-top: 0.5px solid var(--black);
+    border-right: 0.5px solid var(--black);
+    border-left: 0.5px solid var(--black);
+    row-gap: 0px!important;
+    grid-template-columns: repeat(1,1fr);
+    display: grid;
+    grid-column: span 4;
+  }
+  .info-product {
+    border-bottom: 0.5px solid var(--black);
+    grid-column: span 1;
+    row-gap: 0px!important;
+    grid-template-columns: repeat(4,1fr);
+    display: grid;
+  }
+  .info-product>div:nth-child(even) {
+    grid-column: span 3;
+    padding: 2px 2px 2px 5px;
+    display: grid;
+  }
+  .info-product>div:nth-child(odd) {
+    border-right: 0.5px solid var(--black);
+    grid-column: span 1;
+  }
+  .switch-view{
+    display: none;
+  }
 </style>
