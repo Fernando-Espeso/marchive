@@ -328,6 +328,7 @@ header{
 }
 
 .drop{
+  column-gap: 12px;
   height: fit-content;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
