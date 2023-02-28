@@ -1063,7 +1063,13 @@ div#related {
   grid-column: span 12;
 }
 
-
+.info_cart {
+    display: grid;
+    grid-column: span 8;
+    grid-template-columns: repeat(4,1fr);
+    height: fit-content;
+    grid-gap: 12px;
+}
 .thumb {
     grid-column: span 4;
 }
