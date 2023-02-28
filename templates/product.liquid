@@ -9,9 +9,7 @@
               <div id="bag">
                 <!--Variations Dropdown-->
                 <select id="product-select" name="id">
-                  {% for variant in product.variants %}
-                  <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
-                  {% endfor %}
+      
                 </select>
 
                 <!--Actions-->
@@ -153,18 +151,18 @@
   //     {% endif %}
   //   }
   // };
-  //Replace default variant selector
-  jQuery(function($) {
-    new Shopify.OptionSelectors('product-select', {
-      product: {{ product | json }},
-      onVariantSelected: selectCallback
-    });
-    {% assign count = -1 %}
-    {% for option in product.options %}
-    {% if product.options.first != 'Title' %}
-      {% assign count = count | plus: 1 %}
-      $("#product-select-option-{{ count }}").prepend("<option value='' disabled selected>{{ product.options[count] | upcase }}</option>");
-    {% endif %}
-    {% endfor %}
-  });
+  // //Replace default variant selector
+  // jQuery(function($) {
+  //   new Shopify.OptionSelectors('product-select', {
+  //     product: {{ product | json }},
+  //     onVariantSelected: selectCallback
+  //   });
+  //   {% assign count = -1 %}
+  //   {% for option in product.options %}
+  //   {% if product.options.first != 'Title' %}
+  //     {% assign count = count | plus: 1 %}
+  //     $("#product-select-option-{{ count }}").prepend("<option value='' disabled selected>{{ product.options[count] | upcase }}</option>");
+  //   {% endif %}
+  //   {% endfor %}
+  // });
 </script>
