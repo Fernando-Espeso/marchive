@@ -878,6 +878,9 @@ footer{
     background-color: transparent!important;
 }
 
+.product-simple selector-wrapper {
+    display: none;
+}
 
 #cart-wrapper{
   grid-auto-flow: dense;
