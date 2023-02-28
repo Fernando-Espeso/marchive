@@ -923,7 +923,6 @@ footer{
   grid-column:span 3;
 }
 #checkout{
-  margin-top: 24px;
   grid-column:span 2;
   width:100%;
   background:var(--black);
