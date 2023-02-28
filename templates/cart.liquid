@@ -8,39 +8,35 @@
               </div>
               <div class="info_cart">
                 <div class="main-information">
-                      <div class="info-product">
-                        <div>Designer</div>
-                        <div>{{ item.product.metafields.custom.designer }}</div>
-                      </div>
+                  <div class="info-product">
+                    <div>Designer</div>
+                    <div>{{ item.product.metafields.custom.designer }}</div>
+                  </div>
+                  <div class="info-product">
+                    <div>Era</div>
+                    <div>{{ item.product.metafields.custom.era }}</div>
+                  </div>
+                  <div class="info-product">
+                    <div>Item</div>
+                    <div class="hov"><a href="{{ product.url }}">{{ item.product.title }}</a></div>
+                  </div>
+                  <div class="info-product">
+                    <div><a>Price</a></div>
+                    <div class="product-price">{{ item.price | money }}</div>
+                  </div>
+                  <div class="info-product">
+                    <div><a>Quantity</a></div>
+                    <div class="product-price">
+                      <div class="item-quantity">
 
-                      <div class="info-product">
-                        <div>Era</div>
-                        <div>{{ item.product.metafields.custom.era }}</div>
+                     <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
+                     <span class="quantity-wrap"></span>
+    
+                              </div>
                       </div>
-
-                      <div class="info-product">
-                        <div>Item</div>
-                        <div class="hov"><a href="{{ product.url }}">{{ item.product.title }}</a></div>
-                      </div>
-
-                      <div class="info-product">
-                        <div><a>Price</a></div>
-                        <div class="product-price">{{ item.price | money }}</div>
-                      </div>
-
-                      <div class="info-product">
-                        <div><a>Quantity</a></div>
-                        <div class="product-price">
-                           <div class="item-quantity">
-                             <span class="quantity-wrap"></span>
-                           </div>
-                          </div>
-                      </div>
-                      <div class="info-product">
-                        <div><a href="/cart/change?line={{ forloop.index }}&quantity=0">Remove</a></div>
-                      </div>
-                 </div>
-                 </div>
+                  </div>
+            </div>
+                <!-- <a href="/cart/change?line={{ forloop.index }}&quantity=0">x Remove</a> -->
             </div>
           </div>
         {% endfor %}
