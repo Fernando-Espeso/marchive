@@ -922,7 +922,6 @@ footer{
   grid-column:span 2;
   width:100%;
   background:var(--black);
-  padding: 2px;
 }
 .quantity-button{
 width: 50%;
