@@ -86,10 +86,15 @@
     display: grid;
     grid-gap: 12px;
 }
-.info-product>div:nth-child(odd) {
-    border-right: 0.5px solid var(--black);
+.info-product>div:nth-child(even) {
     grid-column: span 3;
     padding: 2px 2px 2px 5px;
     display: grid;
 }
+.info-product>div:nth-child(odd) {
+    border-right: 0.5px solid var(--black);
+    grid-column: span 1;
+}
+
+
 </style>
