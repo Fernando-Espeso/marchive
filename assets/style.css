@@ -52,6 +52,7 @@
   --logo: 50px;
   --gap: 10px;
   --white: #f1f2f2;
+  --offwhite: #FAF8F6;
   --black: #282829;
   --font-main: 'GH_LittleSpain-Regular';
   --font-secondary: 'AntiqueLegacy-Medium';
@@ -898,7 +899,6 @@ footer{
   position:sticky;
   top:100px;
   grid-column:span 3;
-  background: #FAF8F6;
   height:fit-content;
   grid-template-columns: repeat(2,1fr);
   display:grid;
@@ -932,7 +932,6 @@ footer{
   width: 50%;
   text-align: center;
   cursor:pointer;
-  background:#DEDED9;
 }
 .item-quantity {
   align-self: end;
