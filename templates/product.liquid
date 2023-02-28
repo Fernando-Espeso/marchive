@@ -7,9 +7,12 @@
           class="product-variants"
           {%- endif -%}>
               <div id="bag">
+
                 <!--Variations Dropdown-->
                 <select id="product-select" name="id">
-      
+                  {% for variant in product.variants %}
+                  <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
+                  {% endfor %}
                 </select>
 
                 <!--Actions-->
@@ -18,20 +21,20 @@
                   {% else %}
                     <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">SOLD OUT</button></div>
                   {% endif %}
-                  <!-- <button
-               type="submit"
-               name="add"
-               data-add-to-cart
-               class="js-go-cart-add-to-cart"
-               {%- unless current_variant.available -%}disabled="disabled"{%- endunless -%}>
-              	 <span data-add-to-cart-text>
-              	    {%- if current_variant.available -%}
-              	        {{- 'products.product.add_to_cart' | t -}}
-              	    {%- else -%}
-              	        {{- 'products.product.sold_out' | t -}}
-              	    {%- endif -%}
-              	 </span>
-                </button> -->
+                  <button
+                         type="submit"
+                         name="add"
+                         data-add-to-cart
+                         class="js-go-cart-add-to-cart"
+                         {%- unless current_variant.available -%}disabled="disabled"{%- endunless -%}>
+                        	 <span data-add-to-cart-text>
+                        	    {%- if current_variant.available -%}
+                        	        {{- 'products.product.add_to_cart' | t -}}
+                        	    {%- else -%}
+                        	        {{- 'products.product.sold_out' | t -}}
+                        	    {%- endif -%}
+                        	 </span>
+                </button>
               </div>
           </form>
           <div class="main-information">
