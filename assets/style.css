@@ -240,9 +240,8 @@ a{
   grid-template-columns: repeat(12,1fr);
 }
 
-/* .main-page{
-  min-height: calc(100vh - var(--m));
-} */
+.main-page{
+    flex-grow: 1;}
 
 #products{
   padding: 20px;
@@ -876,7 +875,7 @@ footer{
 .go-cart__drawer {
   position: fixed;
   top: 0;
-  right: -26vw!important;;
+  right: -30vw!important;;
   z-index: 40!important;
   width: 100%!important;
   border-left: 0.5px solid var(--black)!important;
