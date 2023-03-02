@@ -839,6 +839,7 @@ footer{
 /* PAGE DEFAULT
 ================================================== */
 .page_title{
+  color: grey;
   grid-column:span 2;
 }
 .page_content{
