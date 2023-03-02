@@ -240,9 +240,9 @@ a{
   grid-template-columns: repeat(12,1fr);
 }
 
-.main-page{
+/* .main-page{
   min-height: calc(100vh - var(--m));
-}
+} */
 
 #products{
   padding: 20px;
