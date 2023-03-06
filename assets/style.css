@@ -624,6 +624,7 @@ span.box {
 
 .swiper.home {
   top: 0px;
+  overflow: hidden;
   position: absolute;
   width: 100vw;
   height: 100vh;
