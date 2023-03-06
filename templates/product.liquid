@@ -15,25 +15,24 @@
                   {% endfor %}
                 </select>
                 <!--Actions-->
-                <!-- {% if product.available %}
+                {% if product.available %}
                       <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button></div>
                   {% else %}
                     <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">SOLD OUT</button></div>
-                  {% endif %} -->
-                <button
+                  {% endif %}
+                <div
                          type="submit"
                          name="add"
                          data-add-to-cart
                          class="js-go-cart-add-to-cart addtocart hov"
-                        >
+                         {%- unless current_variant.available -%}disabled="disabled"{%- endunless -%}>
                         	 <span data-add-to-cart-text>
-                        	    {%- if current_variant.available -%}
-                        	        {{- 'products.product.add_to_cart' | t -}}
-                        	    {%- else -%}
-                        	        {{- 'products.product.sold_out' | t -}}
-                        	    {%- endif -%}
-                        	 </span>
-                </button>
+                             {% if product.available %}
+                                <button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
+                               {% else %}
+                              <button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">SOLD OUT</button>
+                               {% endif %}
+                </div>
               </div>
           </form>
           <div class="main-information">
