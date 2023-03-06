@@ -314,10 +314,10 @@ header{
   fill:var(--black)!important;
 }
 .nav-down{
-  margin-top: 0px;
+  opacity: 1;
 }
 .nav-up{
-  margin-top: 0px;
+  opacity: 1;
 }
 .menu{
   grid-gap:12px;
@@ -1042,11 +1042,11 @@ font-size: 13px;
 line-height: 16px;
 }
 .nav-down{
-    margin-top: 0px;
-  }
+  opacity: 1;
+}
 .nav-up{
-  margin-top: -10vw;
-  }
+  opacity: 0;
+}
 header{
   z-index: 10!important;
   }
