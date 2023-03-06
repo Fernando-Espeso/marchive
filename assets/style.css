@@ -915,6 +915,7 @@ footer{
   display: none;
 }
 #cart-wrapper{
+  flex-grow: 1;
   grid-auto-flow: dense;
   padding:20px;
   grid-gap:12px;
