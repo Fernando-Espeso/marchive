@@ -35,7 +35,6 @@ fernandoepeso.info
   {%- endif -%}
   {{ 'style.css'  | asset_url | stylesheet_tag }}
   {{ 'gocart.css'  | asset_url | stylesheet_tag }}
-  {{ 'gocart.js' | asset_url | script_tag }}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
@@ -58,7 +57,14 @@ fernandoepeso.info
   {%- endif -%}
   {{ content_for_header }}
 </head>
-<body>
+<body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}
+             {%- if template.suffix.size > 0 -%}
+             template-{{ template.suffix }}(&nbsp;
+
+             {% endif %}
+             {%- if template == 'cart' and cart.item_count == 0 -%}
+             template-cart-empty
+             {%- endif -%}">
   <div id="loader"
        style="position: fixed;
               top: 0;
