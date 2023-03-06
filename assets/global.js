@@ -114,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function(){
     		direction: 'horizontal',
     		mousewheel:
     		{
+          
     		invert: true,
     		},
         autoplay:
