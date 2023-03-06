@@ -891,7 +891,7 @@ footer{
 .go-cart__drawer {
   position: fixed;
   top: 0;
-  right: -30vw!important;;
+  right: -26vw!important;;
   z-index: 40!important;
   width: 100%!important;
   border-left: 0.5px solid var(--black)!important;
