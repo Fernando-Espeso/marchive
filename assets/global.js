@@ -110,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function(){
     var mySwiper = new Swiper ('.home',
     	{
         speed:0,
+        slidesPerView: 1;
     		direction: 'horizontal',
     		mousewheel:
     		{
