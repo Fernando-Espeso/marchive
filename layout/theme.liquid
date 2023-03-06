@@ -160,7 +160,7 @@ fernandoepeso.info
   <footer>
     <div class="nav-footer">
       {% for link in linklists.footer.links %}
-      <li {% if link.active %}class="active"{% endif %}>
+      <li {% if link.active %}class="active-footer"{% endif %}>
         <a class="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a>
       </li>
       {% endfor %}

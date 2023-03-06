@@ -189,6 +189,9 @@ select:disabled{
   color:var(--white);
   background-color: var(--black)
 }
+.active-footer{
+  color: grey;
+}
 
 .thumbnail{
   position: relative;
