@@ -20,7 +20,7 @@ $(document).ready(function(){
     e.preventDefault();
     var fieldName = $(e.target).data('field');
     var parent = $(e.target).parents('div');
-    var currentVal = parseInt(parent.find('input[name="updates[]"]').val(), 10);    
+    var currentVal = parseInt(parent.find('input[name="updates[]"]').val(), 10);
     if (!isNaN(currentVal) && currentVal > 0) {
       parent.find('input[name="updates[]"]').val(currentVal - 1);
     } else {
