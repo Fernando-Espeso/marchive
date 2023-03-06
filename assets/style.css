@@ -899,8 +899,8 @@ footer{
   height: 100%!important;
   color: white!important;
   background-color: var(--black)!important;
-  -webkit-transition: all 0.5s ease-in-out!important;
-  transition: all 0.5s ease-in-out!important;
+  -webkit-transition: all 0.1s ease-in-out!important;
+  transition: all 0.1s ease-in-out!important;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
