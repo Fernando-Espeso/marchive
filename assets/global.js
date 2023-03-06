@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function(){
     var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
-    var navbarHeight = $('#header').outerHeight();
+    var navbarHeight = $('.header').outerHeight();
     $(window).scroll(function(event){
         didScroll = true;
     });
@@ -86,12 +86,12 @@ document.addEventListener("DOMContentLoaded", function(){
             return;
         if (st > lastScrollTop && st > navbarHeight){
             // Scroll Down
-            $('#header').removeClass('nav-down').addClass('nav-up');
+            $('.header').removeClass('nav-down').addClass('nav-up');
         }
         else {
             // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-            $('#header').removeClass('nav-up').addClass('nav-down');
+            $('.header').removeClass('nav-up').addClass('nav-down');
           }
         }
 
