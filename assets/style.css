@@ -1106,13 +1106,13 @@ div#related {
 
 .info_cart {
     display: grid;
-    grid-column: span 8;
+    grid-column: span 12;
     grid-template-columns: repeat(4,1fr);
     height: fit-content;
     grid-gap: 12px;
 }
 .thumb {
-    grid-column: span 4;
+    grid-column: span 5;
 }
 .item {
     grid-column: span 12;
