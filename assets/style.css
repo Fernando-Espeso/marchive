@@ -1123,7 +1123,7 @@ div#related {
 .total {
     position: sticky;
     top: 100px;
-    grid-column: 5/span 8;
+    grid-column: span 12;
     height: fit-content;
     grid-template-columns: repeat(2,1fr);
     display: grid;
