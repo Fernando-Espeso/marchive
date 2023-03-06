@@ -1048,6 +1048,7 @@ line-height: 16px;
   opacity: 0;
 }
 header{
+  transition: 0.5s;
   z-index: 10!important;
   }
 .logo {
