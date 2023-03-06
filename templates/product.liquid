@@ -25,7 +25,7 @@
                          name="add"
                          data-add-to-cart
                          class="js-go-cart-add-to-cart addtocart hov"
-                         {%- unless current_variant.available -%}disabled="disabled"{%- endunless -%}>
+                        >
                         	 <span data-add-to-cart-text>
                         	    {%- if current_variant.available -%}
                         	        {{- 'products.product.add_to_cart' | t -}}
