@@ -20,20 +20,20 @@
                   {% else %}
                     <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">SOLD OUT</button></div>
                   {% endif %} -->
-                <div
+                <button
                          type="submit"
                          name="add"
                          data-add-to-cart
                          class="js-go-cart-add-to-cart addtocart hov"
-                         >
+                         {%- unless current_variant.available -%}disabled="disabled"{%- endunless -%}>
                         	 <span data-add-to-cart-text>
-                        	    {% if product.available %}
+                        	    {%- if current_variant.available -%}
                         	        {{- 'products.product.add_to_cart' | t -}}
                         	    {%- else -%}
                         	        {{- 'products.product.sold_out' | t -}}
                         	    {%- endif -%}
                         	 </span>
-                </div>
+                </button>
               </div>
           </form>
           <div class="main-information">
