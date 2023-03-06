@@ -58,14 +58,7 @@ fernandoepeso.info
   {%- endif -%}
   {{ content_for_header }}
 </head>
-<body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}
-             {%- if template.suffix.size > 0 -%}
-             template-{{ template.suffix }}(&nbsp;
-
-             {% endif %}
-             {%- if template == 'cart' and cart.item_count == 0 -%}
-             template-cart-empty
-             {%- endif -%}">
+<body>
   <div id="loader"
        style="position: fixed;
               top: 0;
