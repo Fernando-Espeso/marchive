@@ -1030,6 +1030,10 @@ div#related {
 /* RESPONSIVE
 ================================================== */
 @media (max-width: 800px){
+body{
+font-size: 14px;
+line-height: 14px;
+}
 .nav-down{
     margin-top: 0px;
   }
