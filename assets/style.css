@@ -1135,6 +1135,9 @@ div#related {
     grid-template-columns: repeat(2,1fr);
     display: grid;
 }
+.link{
+  grid-column: span 2;
+}
 }
 /*BIGGER DESKTOP*/
 @media (min-width: 1920px){
