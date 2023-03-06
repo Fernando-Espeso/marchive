@@ -114,12 +114,11 @@ document.addEventListener("DOMContentLoaded", function(){
     		direction: 'horizontal',
     		mousewheel:
     		{
-          
     		invert: true,
     		},
         autoplay:
         {
-        delay: 10000,
+        delay: 100,
         },
         loop: true,
     	});
