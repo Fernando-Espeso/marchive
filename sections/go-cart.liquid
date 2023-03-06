@@ -42,6 +42,43 @@
     </div>
 </div>
 <!--go cart drawer-->
+<div class="go-cart__drawer js-go-cart-drawer">
 
+        {% if cart.item_count > 0 %}
+        <form id="cart-wrapper" action="/cart" method="post">
+             {% for item in cart.items %}
+                  <div class="item">
+                   <div class="thumb">
+                   <img class="lazy" src="{{ item | img_url: 'thumb' }}" data-src="{{ item | img_url: 'master' }}" alt="{{ item.title | escape }}" />
+                </div>
+                <div class="info_cart">
+                              <div class="item-title">
+                                 <a class="product-title">{{ item.product.title }}</a><br>
+                                 <div> {{ item.price | money }} </div>
+                             </div>
+                            {% unless item.product.options contains 'Title' %}
+                            <!--Variations-->
+                                    <div class="item-variations">
+                                      {%- for option_title in item.product.options -%}
+                                      {{ item.variant.options[forloop.index0] }}{% unless forloop.last  %}<br> {% endunless %}
+                                      {%- endfor -%}
+                                    </div>
+
+                                      {% endunless %}
+
+                   </div>
+                       </div>
+                    {% endfor %}
+
+            <div class="total">
+              <div>SHIPPING</div>
+              <div style="text-align:right">Calculated at checkout</div>
+              SUBTOTAL
+              <div style="text-align:right" class="pri">{{ cart.total_price | money }}</div>
+              <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
+              <button id="checkout" type="submit" name="checkout">PROCEED TO CHECKOUT</button>
+            </div>
+        </form>
+</div>
 <div class="go-cart__overlay js-go-cart-overlay">
 </div>
