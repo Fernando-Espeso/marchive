@@ -580,6 +580,13 @@ span.box {
   display: grid;
   margin-left: -12px;
 }
+
+.dropped .info-product>div:nth-child(even) {
+    grid-column: span 2!important;
+    padding: 2px 2px 2px 5px;
+    display: grid;
+    margin-left: -12px;
+}
 .remove{
   right: 0px;
   position: absolute;
