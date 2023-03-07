@@ -384,7 +384,6 @@ header{
   display: none;
   height: fit-content;
   grid-column: span 2;
-  border:0.5px solid black;
 }
 
 .switch-view{
