@@ -1105,6 +1105,7 @@ line-height: 16px;
   opacity: 0;
 }
 header{
+  position: relative;
   transition: 0.5s;
   z-index: 10!important;
   }
