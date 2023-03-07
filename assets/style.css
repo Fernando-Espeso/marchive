@@ -1015,6 +1015,13 @@ footer{
 .go-cart-item__quantity {
     display: none!important;
 }
+.go-cart-drawer__subtotal {
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: var(--white)!important;
+    padding: 3px 2px 2px 5px!important;
+    height: auto!important;
+}
 .item-title{
   grid-column:span 3;
 }
