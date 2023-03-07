@@ -501,7 +501,7 @@ header{
     padding: 0px!important;;
 }
 .go-cart-item__image {
-    width: 100!important;;
+    width: 50%!important;;
     height: 216px!important;;
     background-size: cover;
     background-position: 50%;
