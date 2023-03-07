@@ -1124,6 +1124,7 @@ header{
 }
 .switch-view {
   grid-column: span 3;
+  border: 0px;
 }
 .drop {
   column-gap: 12px;
