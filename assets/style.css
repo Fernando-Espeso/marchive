@@ -471,24 +471,21 @@ header{
     display: block!important;
     justify-content: flex-end;
     align-items: center;
-    padding: 0!important;;
+    padding: 0!important;
 }
-
 #cart .cart-total{
-  padding: 2px;
+    padding: 2px;
     padding-top: 3px!important;
-  width: 30px;
-  border-left:0.5px solid var(--black);
-  text-align: center;
+    width: 30px;
+    border-left:0.5px solid var(--black);
+    text-align: center;
 }
-
 .go-cart-item__quantity {
     position: relative!important;;
     bottom: 10px;
     display: flex;
     align-items: center;
 }
-
 .go-cart-item__info {
     max-width: 0px!important;;
     line-height:auto!important;;
@@ -506,16 +503,12 @@ header{
     display: grid!important;;
 }
 .go-cart-drawer__content {
-    height: calc(100% - 280px);
+    height: 100vh;
     overflow: hidden;
     overflow-y: scroll;
     padding: 0!important;
+    margin-top: var(--m);
 }
-
-
-
-
-
 .product{
   height: fit-content;
   position:relative;
@@ -524,31 +517,25 @@ header{
   display: grid;
   grid-column:span 4;
 }
-
 .product.dropped{
   grid-gap:12px;
   grid-template-columns: repeat(4, 1fr);
   display:grid;
 }
-
 .product.dropped .product-info{
   grid-column: span 3;
 }
-
 .product:hover .main-information {
   border-top: 0.5px solid var(--black);
   border-right: 0.5px solid var(--black);
   border-left: 0.5px solid var(--black);
 }
-
 .product:hover .info-product {
   border-bottom: 0.5px solid var(--black);
 }
-
 .product:hover .info-product>div:nth-child(odd) {
   border-right:0.5px solid var(--black);
 }
-
 .product:hover span.box {
   height: 100%;
   width: 100%;
@@ -556,14 +543,12 @@ header{
   position: absolute;
   border: 0.5px solid var(--black);
 }
-
 span.box {
   height: 100%;
   width: 100%;
   position: absolute;
   border: 0.5px solid transparent;
 }
-
 .main-information {
   border-top: 0.5px solid transparent;
   border-right: 0.5px solid transparent;
@@ -573,36 +558,31 @@ span.box {
   display: grid;
   grid-gap:12px;
 }
-
 .info-product {
   border-bottom: 0.5px solid transparent;
   grid-column: span 1;
   row-gap:0px!important;
   grid-template-columns: repeat(4,1fr);
   display: grid;
-
   grid-gap: 12px;
 }
-
 .info-product>div:nth-child(odd) {
   color: grey;
   padding: 2px;
-    padding-top: 3px!important;
+  padding-top: 3px!important;
   grid-column: span 1;
   padding-left: 5px;
   display: grid;
   border-right: 0.5px solid transparent;
 }
-
 .info-product>div:nth-child(even) {
   padding: 2px;
-    padding-top: 3px!important;
+  padding-top: 3px!important;
   grid-column: span 3;
   padding-left: 5px;
   display: grid;
   margin-left: -12px;
 }
-
 .dropped .info-product>div:nth-child(even) {
     grid-column: span 2!important;
     padding: 2px 2px 2px 5px;
