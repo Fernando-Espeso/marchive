@@ -1018,7 +1018,7 @@ footer{
   color:grey;
   margin-right:10px;
 }
-.go-cart__price::before {
+.go-cart-item__price::before {
   content: "price";
   color:grey;
   margin-right:10px;
