@@ -1013,6 +1013,17 @@ footer{
   cursor: pointer;
   margin-bottom: 5px;
 }
+.go-cart-item__title::before {
+  content: "item";
+  color:grey;
+}
+.go-cart-price::before {
+  content: "price";
+  color:grey;
+}
+.go-cart-item__title{
+  padding: 4px 5px 2px 5px;
+}
 .go-cart-drawer__footer {
   flex-direction: column;
   height: auto!important;
