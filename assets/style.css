@@ -1016,13 +1016,9 @@ footer{
 .go-cart-item__title::before {
   content: "Item";
   color:grey;
-  position: absolute;
-  left: 40%;
 }
 .go-cart-item__price::before {
   content: "Price";
-  position: absolute;
-  left: 40%;
   color:grey;
 }
 .go-cart-item__title{
