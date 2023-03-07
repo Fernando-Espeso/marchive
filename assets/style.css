@@ -777,7 +777,7 @@ header{
   background-color: var(--black);
 }
 
-.dropped .sold-out, .sale{
+.dropped .sold-out, .dropped .sale{
   position: relative;
   z-index: 10;
   width: 100%;
