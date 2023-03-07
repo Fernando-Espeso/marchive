@@ -1024,7 +1024,10 @@ footer{
   margin-right:40px;
 }
 .go-cart-item__title{
-
+  width: 30%;
+}
+.go-cart-item__price{
+  width: 30%;
 }
 .go-cart-drawer__footer {
   flex-direction: column;
