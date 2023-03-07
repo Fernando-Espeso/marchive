@@ -904,6 +904,7 @@ footer{
   -webkit-transition:none;
 }
 .go-cart-item__remove {
+  top: 0px!important;
   position: relative!important;
 }
 .go-cart-item__info{
