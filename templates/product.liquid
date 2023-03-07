@@ -16,9 +16,9 @@
                 </select>
                 <!--Actions-->
                 {% if product.available %}
-                      <div class="addtocart hov"><button class="js-go-cart-add-to-cart" id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button></div>
+                      <div class="js-go-cart-add-to-cart addtocart hov"><button id="produ" type="submit" name="add">ADD TO CART</button></div>
                   {% else %}
-                    <div class="addtocart hov"><button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">SOLD OUT</button></div>
+                    <div class="addtocart hov"><button id="produ" type="submit" name="add">SOLD OUT</button></div>
                   {% endif %}
 
               </div>
