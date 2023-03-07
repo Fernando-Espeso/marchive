@@ -1,26 +1,26 @@
 <div id="single-product">
     <div class="product_info">
       <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
-      id="add-to-cart-{{ product.handle }}-{{ collection.handle }}-{{ section.id }}"
-          {%- if product.has_only_default_variant -%}
-          class="product-simple"
-          {%- elsif variants > 1 -%}
-          class="product-variants"
-          {%- endif -%}>
-      
-              <button
- type="submit"
- name="add"
- data-add-to-cart
- {%- unless current_variant.available -%}disabled="disabled" {%- endunless -%}>
-	 <span data-add-to-cart-text>
-	    {%- if product.available  -%}
-                {{- 'products.product.add_to_cart' | t -}}
-	    {%- else -%}
-                {{- 'products.product.sold_out' | t -}}
-	    {%- endif -%}
-	 </span>
-</button>
+            id="add-to-cart-{{ product.handle }}-{{ collection.handle }}-{{ section.id }}"
+                {%- if product.has_only_default_variant -%}
+                class="product-simple"
+                {%- elsif variants > 1 -%}
+                class="product-variants"
+                {%- endif -%}>
+              <div
+                class="bag"
+                type="submit"
+                name="add"
+                data-add-to-cart
+                {%- unless current_variant.available -%}disabled="disabled" {%- endunless -%}>
+  	             <div data-add-to-cart-text>
+                    {% if product.available %}
+                    <div class="js-go-cart-add-to-cart addtocart hov">ADD TO CART</div>
+                    {% else %}
+                    <div class="js-go-cart-add-to-cart addtocart hov">SOLD OUT</div>
+                    {% endif %}
+  	             </div>
+             </div>
           </form>
 
           <div class="main-information">
@@ -92,6 +92,7 @@
     </div>
     {% include 'related' %}
 </div>
+
 <style>
   .thumb {
     grid-column: auto!important;
