@@ -911,7 +911,7 @@ footer{
     -webkit-transition:none;
 }
 .go-cart-item__remove {
-    display: none;
+  position: relative!important;
 }
 
 .go-cart-drawer__subtotal {
