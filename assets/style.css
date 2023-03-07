@@ -1023,9 +1023,11 @@ footer{
 }
 .go-cart-item__title{
   width: 30%!important;
+  padding: 3px;
 }
 .go-cart-item__price{
-  width: 30%%!important;;
+  width: 30%%!important;
+  padding: 3px;
 }
 .go-cart-drawer__footer {
   flex-direction: column;
