@@ -1012,6 +1012,9 @@ footer{
     height: auto!important;
     padding: 0px!important;
 }
+.go-cart-item__quantity {
+    display: none!important;
+}
 .item-title{
   grid-column:span 3;
 }
