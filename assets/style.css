@@ -347,6 +347,7 @@ header{
   padding-left: 5px!important;
   cursor: pointer;
   padding: 2px;
+    padding-top: 3px!important;
   grid-column: span 1;
   border:0.5px solid black;
 }
@@ -370,6 +371,8 @@ header{
 .link-about{
   back-drop-filter:blur(20px);
   padding: 2px;
+    padding-top: 3px!important;
+    padding-left: 5px!important;
   height: fit-content;
   grid-column: span 1;
   border:0.5px solid black;
@@ -378,6 +381,8 @@ header{
 .link-about-mobile{
   back-drop-filter:blur(20px);
   padding: 2px;
+    padding-top: 3px!important;
+    padding-left: 5px!important;
   display: none;
   height: fit-content;
   grid-column: span 2;
@@ -409,7 +414,7 @@ header{
   padding-left: 5px!important;
   border-bottom:0.5px solid black;
   padding: 2px;
-  padding-top: 4px!important;;
+  padding-top: 3px!important;
   cursor: pointer;
   width: 100%;
 }
@@ -443,6 +448,7 @@ header{
 .baggie{
   width: 100%;
   padding: 2px;
+  padding-top: 3px!important;
 }
 
 .baggie a{
@@ -451,6 +457,7 @@ header{
 }
 #cart-white .cart-total{
   padding: 2px;
+    padding-top: 3px!important;
   width: 30px;
   border-left:0.5px solid var(--white);
   text-align: center;
@@ -466,6 +473,7 @@ header{
 
 #cart .cart-total{
   padding: 2px;
+    padding-top: 3px!important;
   width: 30px;
   border-left:0.5px solid var(--black);
   text-align: center;
@@ -576,6 +584,7 @@ span.box {
 .info-product>div:nth-child(odd) {
   color: grey;
   padding: 2px;
+    padding-top: 3px!important;
   grid-column: span 1;
   padding-left: 5px;
   display: grid;
@@ -584,6 +593,7 @@ span.box {
 
 .info-product>div:nth-child(even) {
   padding: 2px;
+    padding-top: 3px!important;
   grid-column: span 3;
   padding-left: 5px;
   display: grid;
@@ -789,6 +799,7 @@ span.box {
 
 .nav-info>div {
   padding: 2px;
+    padding-top: 3px!important;
   border-bottom: 0.5px solid black;
   padding-left: 5px!important;
 }
@@ -820,6 +831,7 @@ div#related >.product:first-child{
 }
 #related .related-title{
   padding: 2px;
+    padding-top: 3px!important;
   padding-left: 0px;
   margin-bottom: 12px;
 }
