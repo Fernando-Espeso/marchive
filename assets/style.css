@@ -1022,11 +1022,10 @@ footer{
   color:grey;
 }
 .go-cart-item__title{
-  width: 50%!important;
   padding: 3px;
 }
 .go-cart-item__price{
-  width: 50%!important;
+  
   padding: 3px;
 }
 .go-cart-drawer__footer {
