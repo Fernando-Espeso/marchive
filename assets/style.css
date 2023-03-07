@@ -1016,18 +1016,16 @@ footer{
 .go-cart-item__title::before {
   content: "Item";
   color:grey;
-  margin-right:40px;
 }
 .go-cart-item__price::before {
   content: "Price";
   color:grey;
-  margin-right:40px;
 }
 .go-cart-item__title{
-  width: 30%;
+  width: 30%!important;
 }
 .go-cart-item__price{
-  width: 30%;
+  width: 30%%!important;;
 }
 .go-cart-drawer__footer {
   flex-direction: column;
