@@ -21,7 +21,21 @@
                     <div class="js-go-cart-add-to-cart addtocart hov">SOLD OUT</div>
                   {% endif %}
               </div>
+              <button
+ type="submit"
+ name="add"
+ data-add-to-cart
+ {%- unless current_variant.available -%}disabled="disabled" {%- endunless -%}>
+	 <span data-add-to-cart-text>
+	    {%- if current_variant.available -%}
+                {{- 'products.product.add_to_cart' | t -}}
+	    {%- else -%}
+                {{- 'products.product.sold_out' | t -}}
+	    {%- endif -%}
+	 </span>
+</button> 
           </form>
+
           <div class="main-information">
             <div class="info-product">
               <div>Designer</div>
