@@ -1026,10 +1026,10 @@ footer{
   width: 65px!important;
 }
 .go-cart-item__title{
-  padding: 3px;
+  padding: 3px 2px 2px 0px;
 }
 .go-cart-item__price{
-  padding: 3px;
+  padding: 3px 2px 2px 0px;
 }
 .go-cart-drawer__footer {
   flex-direction: column;
