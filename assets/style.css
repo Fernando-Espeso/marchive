@@ -927,6 +927,10 @@ footer{
       justify-content: unset!important;;
       width: 100%!important;;
   }
+.go-cart-item__image{
+      margin-bottom: 12px!important;
+}
+
 
 .go-cart__drawer {
   position: fixed;
