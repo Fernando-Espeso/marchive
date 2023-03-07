@@ -1016,10 +1016,14 @@ footer{
 .go-cart-item__title::before {
   content: "Item";
   color:grey;
+  display: inline-block;
+  width: 65px!important;
 }
 .go-cart-item__price::before {
   content: "Price";
   color:grey;
+  display: inline-block;
+width: 65px!important;
 }
 .go-cart-item__title{
   padding: 3px;
