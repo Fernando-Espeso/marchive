@@ -1023,7 +1023,7 @@ footer{
   content: "Price";
   color:grey;
   display: inline-block;
-width: 65px!important;
+  width: 65px!important;
 }
 .go-cart-item__title{
   padding: 3px;
