@@ -777,6 +777,18 @@ header{
   background-color: var(--black);
 }
 
+.dropped .sold-out, .sale{
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  color:var(--white);
+  padding:2px;
+  padding-top: 3px!important;
+  padding-left: 5px;
+  left: 0px;
+  background-color: var(--black);
+}
+
 .product-action{
   width: 100%;
   grid-gap: 12px;
