@@ -914,11 +914,10 @@ footer{
   position: relative!important;
 }
 .go-cart-item__info{
-  width: 100%;
-  display: grid;
-  max-width: 250px;
-  line-height: 1.18;
-  padding: 10px 10px 10px 30px;
+  width: 100%!important;;
+  display: grid!important;;
+  max-width: 100%!important;
+  padding: 10px 10px 10px 30px!important;;
 }
 .go-cart-drawer__subtotal {
       display: grid!important;;
