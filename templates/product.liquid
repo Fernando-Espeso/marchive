@@ -11,13 +11,14 @@
                 class="bag"
                 type="submit"
                 name="add"
+                class="js-go-cart-add-to-cart"
                 data-add-to-cart
                 {%- unless current_variant.available -%}disabled="disabled" {%- endunless -%}>
   	             <div data-add-to-cart-text>
                     {% if product.available %}
-                    <div class="js-go-cart-add-to-cart addtocart hov">ADD TO CART</div>
+                    <div class="addtocart hov">ADD TO CART</div>
                     {% else %}
-                    <div class="js-go-cart-add-to-cart addtocart hov">SOLD OUT</div>
+                    <div class="addtocart hov">SOLD OUT</div>
                     {% endif %}
   	             </div>
              </button>
