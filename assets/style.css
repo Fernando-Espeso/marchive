@@ -546,14 +546,14 @@ header{
 .product:hover .info-product>div:nth-child(odd) {
   border-right:0.5px solid var(--black);
 }
-.product:hover span.box {
+.product:hover .box {
   height: 100%;
   width: 100%;
   z-index: 10001;
   position: absolute;
   border: 0.5px solid var(--black);
 }
-span.box {
+.box {
   height: 100%;
   width: 100%;
   position: absolute;
