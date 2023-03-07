@@ -349,7 +349,6 @@ header{
   padding: 2px;
     padding-top: 3px!important;
   grid-column: span 1;
-  border:0.5px solid black;
 }
 
 .link:hover{
@@ -1149,7 +1148,6 @@ header{
   display: block;
   height: fit-content;
   grid-column: span 3;
-  border: 0.5px solid black;
 }
 .gallery {
   order: -1;
