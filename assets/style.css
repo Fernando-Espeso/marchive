@@ -1016,10 +1016,12 @@ footer{
 .go-cart-item__title::before {
   content: "item";
   color:grey;
+  margin-right:10px;
 }
-.go-cart-price::before {
+.go-cart__price::before {
   content: "price";
   color:grey;
+  margin-right:10px;
 }
 .go-cart-item__title{
   padding: 4px 5px 2px 5px;
