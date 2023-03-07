@@ -908,6 +908,9 @@ footer{
     padding: 0px!important;
     -webkit-transition:none;
 }
+.go-cart-item__remove {
+    display: none;
+}
 
 .go-cart-drawer__subtotal {
       display: grid!important;;
