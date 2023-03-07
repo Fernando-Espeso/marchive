@@ -1014,14 +1014,14 @@ footer{
   margin-bottom: 5px;
 }
 .go-cart-item__title::before {
-  content: "item";
+  content: "Item";
   color:grey;
-  margin-right:10px;
+  margin-right:40px;
 }
 .go-cart-item__price::before {
-  content: "price";
+  content: "Price";
   color:grey;
-  margin-right:10px;
+  margin-right:40px;
 }
 .go-cart-item__title{
   padding: 4px 5px 2px 5px;
