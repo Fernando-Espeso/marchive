@@ -1003,7 +1003,7 @@ footer{
     background: var(--white)!important;
     color: var(--black)!important;
     padding: 3px 2px 2px 2px!important;
-    padding: 0px 0px!important;;
+    padding: 0px!important;
     text-align: center;
     cursor: pointer;
     margin-bottom: 5px;
