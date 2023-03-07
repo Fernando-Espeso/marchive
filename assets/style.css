@@ -447,6 +447,7 @@ header{
 .go-cart-item__price {
   position: inherit!important;
   top: 0px!important;
+  bottom: 0px!important;
 
 }
 .go-cart-item__image {
