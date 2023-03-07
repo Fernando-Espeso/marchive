@@ -916,10 +916,7 @@ footer{
       border: 0.5px solid!important;
       justify-content: unset!important;;
       width: 100%!important;;
-      -webkit-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out;
   }
-}
 
 .go-cart__drawer {
   position: fixed;
