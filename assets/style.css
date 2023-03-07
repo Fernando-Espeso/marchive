@@ -1007,6 +1007,11 @@ footer{
     text-align: center;
     cursor: pointer;
 }
+.go-cart-drawer__footer {
+    flex-direction: column;
+    height: auto!important;
+    padding: 20px!important;
+}
 .item-title{
   grid-column:span 3;
 }
