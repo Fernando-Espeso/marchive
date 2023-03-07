@@ -445,7 +445,15 @@ header{
     padding: 0px 20px 20px 12px!important;
 }
 .go-cart-item__price {
-    position: auto!important;
+  position: inherit!important;
+
+}
+.go-cart-item__image {
+    width: 100%!important;
+    height: 230px!important;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
 }
 .baggie{
   width: 100%;
