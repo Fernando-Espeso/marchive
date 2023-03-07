@@ -1000,8 +1000,8 @@ footer{
   grid-gap: 12px;
 }
 .go-cart__button {
-    background: var(--white);
-    color: var(--black);
+    background: var(--white)!important;
+    color: var(--black)!important;
     padding: 3px 2px 2px 2px!important;
     padding: 20px 10px;
     text-align: center;
