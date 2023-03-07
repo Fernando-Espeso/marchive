@@ -390,7 +390,7 @@ header{
 }
 
 .switch-view{
-  padding: 2px 2px 2px 5px;
+  padding: 4px 2px 2px 5px;
   grid-column:1/span 1;
   height: fit-content;
   border:0.5px solid black;
@@ -778,6 +778,7 @@ span.box {
   z-index: 10;
   color:var(--white);
   padding:2px;
+    padding-top: 3px!important;
   padding-left: 5px;
   left: 0px;
   background-color: var(--black);
