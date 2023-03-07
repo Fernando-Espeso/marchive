@@ -4,6 +4,14 @@
   {% endfor %}
 </div>
 <script>
-  $(".dropdown").addClass("dropped");
-    $(".link").addClass("active");
+$(window).resize(function() {
+  var width = $(window).width();
+  if (width < 800){
+    $(".dropdown").addClass("dropped");
+      $(".link").addClass("active");  }
+  else{
+    
+  }
+});
+
 </script>
