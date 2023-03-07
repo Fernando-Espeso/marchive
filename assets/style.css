@@ -960,6 +960,12 @@ footer{
 .product-simple .selector-wrapper {
   display: none;
 }
+.go-cart-item__quantity {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    align-items: center;
+}
 #cart-wrapper{
   flex-grow: 1;
   grid-auto-flow: dense;
@@ -992,6 +998,14 @@ footer{
   grid-template-columns: repeat(5,1fr);
   height: fit-content;
   grid-gap: 12px;
+}
+.go-cart__button {
+    background: var(--white);
+    color: var(--black);
+    padding: 3px 2px 2px 2px!important;
+    padding: 20px 10px;
+    text-align: center;
+    cursor: pointer;
 }
 .item-title{
   grid-column:span 3;
