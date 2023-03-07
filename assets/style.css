@@ -447,13 +447,6 @@ header{
   bottom: 0px!important;
 
 }
-.go-cart-item__image {
-    width: 100%!important;
-    height: 230px!important;
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
 .baggie{
   width: 100%;
   padding: 2px;
@@ -500,7 +493,7 @@ header{
     line-height:auto!important;;
     padding: 0px!important;;
 }
-.go-cart-item__image {
+.go-cart-item__image{
     width: 50%!important;;
     height: 216px!important;;
     background-size: cover;
@@ -958,13 +951,6 @@ footer{
   padding: 0px!important;
   text-align: center;
   cursor: pointer;
-}
-.go-cart-item__image {
-  width: 100%!important;
-  height: 180px!important;
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
 }
 .go-cart-item__single {
   position: relative;
