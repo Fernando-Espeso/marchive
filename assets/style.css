@@ -611,7 +611,7 @@ span.box {
   right: 0px;
   position: absolute;
   top: 0;
-  padding: 2px 5px 2px 5px!important;
+  padding: 3px 2px 2px 5px !important;
   border-left: 0.5px solid;
 }
 
