@@ -445,6 +445,10 @@ header{
     position: relative;
     height: 100%;
 }
+.go-cart-item__price {
+    position: relative;
+    right: 0;
+}
 .baggie{
   width: 100%;
   padding: 2px;
