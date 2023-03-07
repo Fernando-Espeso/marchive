@@ -23,39 +23,23 @@
 
 </div>
 <!--end go cart modal fail-->
-
-<!--go cart modal-->
 <div class="go-cart__modal js-go-cart-modal">
-
     <div class="go-cart-modal">
-      <div id="cart">
-          <div class="baggie hov">Cart</div>
-          <div class="js-go-cart-counter cart-total">{{- cart.item_count -}}</div>
-      </div>
         <!--go cart modal close-->
         <div class="go-cart-modal__close js-go-cart-modal-close">
-
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <path d="M15.89 14.696l-4.734-4.734 4.717-4.717c.4-.4.37-1.085-.03-1.485s-1.085-.43-1.485-.03L9.641 8.447 4.97 3.776c-.4-.4-1.085-.37-1.485.03s-.43 1.085-.03 1.485l4.671 4.671-4.688 4.688c-.4.4-.37 1.085.03 1.485s1.085.43 1.485.03l4.688-4.687 4.734 4.734c.4.4 1.085.37 1.485-.03s.43-1.085.03-1.485z"></path>
+            </svg>
         </div>
-        <!--end go cart modal close-->
-
-        <!--go cart modal content-->
         <div class="go-cart-modal__content js-go-cart-modal-content"></div>
-        <!--end go cart modal content-->
-
-        <!--go cart modal buttons-->
         <div class="go-cart-modal__buttons">
-
             <a class="go-cart__button js-go-cart-modal-close">
                 Continue shopping
             </a>
-
             <a href="/cart/" class="go-cart__button">
                 View cart
             </a>
-
         </div>
-        <!--end go cart modal buttons-->
-
     </div>
 
 </div>
@@ -70,12 +54,10 @@
         <div class="go-cart-drawer__header">
 
             <div class="go-cart-drawer__close js-go-cart-drawer-close">
-              <div id="cart">
-                  <div class="baggie hov">Cart</div>
-                  <div class="js-go-cart-counter cart-total">{{- cart.item_count -}}</div>
-              </div>
-  <div class="baggie hov">X</div>
 
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M15.89 14.696l-4.734-4.734 4.717-4.717c.4-.4.37-1.085-.03-1.485s-1.085-.43-1.485-.03L9.641 8.447 4.97 3.776c-.4-.4-1.085-.37-1.485.03s-.43 1.085-.03 1.485l4.671 4.671-4.688 4.688c-.4.4-.37 1.085.03 1.485s1.085.43 1.485.03l4.688-4.687 4.734 4.734c.4.4 1.085.37 1.485-.03s.43-1.085.03-1.485z"></path>
+                </svg>
 
             </div>
 
@@ -84,21 +66,24 @@
 
         <!--go cart drawer content-->
         <div class="go-cart-drawer__content js-go-cart-drawer-content"></div>
+        <!--end go cart drawer content-->
 
+        <!--go cart drawer subtotal-->
         <div class="go-cart-drawer__subtotal">
-            <span>Subtotal </span>
+            <span>Subtotal: </span>
             <span class="go-cart-drawer__subtotal-price js-go-cart-drawer-subtotal"></span>
         </div>
         <!--end go cart drawer subtotal-->
 
         <!--go cart drawer buttons-->
         <div class="go-cart-drawer__footer js-go-cart-drawer-footer">
+
             <a href="/checkout/" class="go-cart__button">
-              PROCEED TO CHECKOUT
+                Proceed to checkout
             </a>
 
             <a href="/cart/" class="go-cart__button">
-                GO TO CART
+                View cart
             </a>
 
         </div>
