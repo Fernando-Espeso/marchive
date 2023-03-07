@@ -4,12 +4,14 @@
   {% endfor %}
 </div>
 <script>
-$(window).resize(function() {
+$(window).ready(function() {
   var width = $(window).width();
   if (width > 600){
-    $(".dropdown").addClass("dropped");
-      $(".link").addClass("active");  }
+    $(".dropdown").removeClass("dropped");
+    $(".link").removeClass("active"); }
   else{
+    $(".dropdown").addClass("dropped");
+    $(".link").addClass("active");
   }
 });
 </script>
