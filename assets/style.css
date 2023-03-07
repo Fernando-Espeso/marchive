@@ -928,7 +928,7 @@ footer{
   backface-visibility: hidden;
 }
 .go-cart__drawer.is-open {
-  -webkit-transform: translateX(calc(25vw + 14px))!important;
+  -webkit-transform: translateX(-26vw)!important;
   transform: translateX(-26vw)!important;
   color: white!important;
   background-color: var(--black)!important;
