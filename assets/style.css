@@ -903,6 +903,13 @@ padding: 20px 30px;
   padding: 0px!important;
   -webkit-transition:none;
 }
+.go-cart-drawer__content {
+    height: var(--h)!important;
+    overflow: hidden;
+    padding: 0px!important;
+    overflow-y: scroll;
+    padding-top: var(--m)!important;
+}
 .go-cart-item__remove {
   top: 0px!important;
   position: relative!important;
@@ -1198,13 +1205,6 @@ div#related {
 }
 .page_title, .page_content {
   grid-column: span 12;
-}
-.go-cart-drawer__content {
-    height: var(--h)!important;
-    overflow: hidden;
-    padding: 0px!important;
-    overflow-y: scroll;
-    padding-top: var(--m)!important;
 }
 .info_cart {
     display: grid;
