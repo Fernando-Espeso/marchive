@@ -1,27 +1,11 @@
 
-    {%- for block in section.blocks -%}
-    {% case block.type %}
-       {% when 'double' %}
-           <div class="double">
-       <img alt="{{ block.settings.double.alt}}" src="{{ block.settings.double | img_url: 'master' }}" />
-         </div>
-      {% endcase %}
-
-
+{%- for block in section.blocks -%}
     {% case block.type %}
         {% when 'single' %}
            <div class="home_img">
                   <img alt="{{ block.settings.single.alt}}" src="{{ block.settings.single | img_url: 'master' }}" />
            </div>
     {% endcase %}
-
-
-  {% case block.type %}
-      {% when 'video' %}
-      <video class="video-home" muted autoplay playsinline loop>
-          <source src="{{ block.settings.video }}">
-      </video>
-  {% endcase %}
 {% endfor %}
 
 {% schema %}
