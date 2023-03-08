@@ -834,7 +834,7 @@ div#related >.product:first-child{
   padding: 4px 5px 2px 5px;
 }
 .layer{
-  z-index: 100;
+  z-index: 1;
   height: 100%;
   width: 100%;
   position: absolute;
