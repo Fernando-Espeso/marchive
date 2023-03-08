@@ -925,6 +925,9 @@ footer{
 .go-cart-item__image{
   margin-bottom: 12px!important;
 }
+.go-cart-drawer__close {
+  display: none!important;
+}
 .go-cart__drawer {
   position: fixed;
   top: 0;
