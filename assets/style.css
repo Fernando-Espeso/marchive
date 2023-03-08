@@ -838,7 +838,7 @@ div#related >.product:first-child{
   background-color: var(--black);
   color: var(--white);
   border: 0.5px solid var(--black);
-  padding: 2px 5px 2px 5px;
+  padding: 4px 5px 2px 5px;
 }
 .layer{
   z-index: 100;
