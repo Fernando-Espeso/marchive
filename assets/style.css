@@ -1134,6 +1134,18 @@ div#related {
 /* RESPONSIVE
 ================================================== */
 @media (max-width: 800px){
+
+
+  .go-cart__drawer {
+    position: fixed;
+    top: 0;
+    right: -100vw!important;
+    max-width: 100vw!important;
+  }
+  .go-cart__drawer.is-open {
+    -webkit-transform: translateX(-100vw)!important;
+    transform: translateX(-100vw)!important;
+  }
 body{
 font-size: 13px;
 line-height: 16px;
@@ -1236,6 +1248,7 @@ div#related {
 .link{
   grid-column: span 2;
 }
+
 }
 /*BIGGER DESKTOP*/
 @media (min-width: 1920px){
