@@ -310,13 +310,10 @@ header{
   padding: 20px 20px 20px 20px;
   grid-gap:12px;
 }
-
 .logo{
   grid-column: span 3;
 }
-
 .logo svg{
-
   height: auto;
   display: block;
   width: 100%;
