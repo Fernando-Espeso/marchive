@@ -1202,7 +1202,6 @@ div#related {
 .go-cart-drawer__content {
     height: var(--h)!important;
     overflow: hidden;
-    
     overflow-y: scroll;
     padding-top: var(--m)!important;
 }
