@@ -931,6 +931,9 @@ padding: 20px 30px;
 }
 .go-cart-item__image{
   margin-bottom: 12px!important;
+  background-size: inherit!important;;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 .go-cart-drawer__close {
   display: none!important;
