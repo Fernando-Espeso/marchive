@@ -504,13 +504,6 @@ header{
     position: relative;
     display: grid!important;;
 }
-.go-cart-drawer__content {
-    height: 100vh;
-    overflow: hidden;
-    overflow-y: scroll;
-    padding: 0!important;
-    margin-top: var(--m);
-}
 .product{
   height: fit-content;
   position:relative;
@@ -1212,8 +1205,6 @@ div#related {
     overflow-y: scroll;
     padding-top: var(--m)!important;
 }
-
-
 .info_cart {
     display: grid;
     grid-column: span 12;
