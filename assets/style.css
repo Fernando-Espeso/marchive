@@ -317,7 +317,7 @@ header{
 
 .logo svg{
 
-  height: fit-content;
+  height: auto;
   display: block;
   width: 100%;
   fill:var(--black)!important;
