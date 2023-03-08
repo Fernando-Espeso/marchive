@@ -84,11 +84,23 @@
             "settings": {
               "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9b89f923ee91439daefce256c59387fe.mp4"
             }
+          },
+          "60ab78ae-bdbe-4b1c-a3cd-356d60c7c9cc": {
+            "type": "single",
+            "settings": {
+              "single": "shopify:\/\/shop_images\/MARCHIVE_CARECARD_AW.jpg"
+            }
           }
         },
         "block_order": [
-          "5c76189f-381d-4155-a7fa-2fd7ba0904c4"
+          "5c76189f-381d-4155-a7fa-2fd7ba0904c4",
+          "60ab78ae-bdbe-4b1c-a3cd-356d60c7c9cc"
         ],
+        "settings": {
+        }
+      },
+      "go-cart": {
+        "type": "go-cart",
         "settings": {
         }
       }
