@@ -892,6 +892,16 @@ flex-direction: column;
 height: 170px;
 padding: 20px 30px;
 }
+.home_img {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.home_img img {
+    object-fit: cover;
+    height: 100vh;
+}
 /* ABOUT
 ================================================== */
 /* CART
@@ -1248,6 +1258,7 @@ div#related {
 .link{
   grid-column: span 1;
 }
+
 
 }
 /*BIGGER DESKTOP*/
