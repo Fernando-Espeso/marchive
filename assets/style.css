@@ -891,7 +891,14 @@ footer{
 .main_page>div{
   height: fit-content;
 }
-
+.go-cart-drawer__footer{
+bottom: 10px!important;
+width: calc(100% - 40px)!important;
+position: absolute!important;
+flex-direction: column;
+height: 170px;
+padding: 20px 30px;
+}
 /* ABOUT
 ================================================== */
 /* CART
@@ -1199,6 +1206,13 @@ div#related {
 .page_title, .page_content {
   grid-column: span 12;
 }
+.go-cart-drawer__content {
+    height: var(--h)!important;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-top: var(--m)!important;
+}
+
 
 .info_cart {
     display: grid;
