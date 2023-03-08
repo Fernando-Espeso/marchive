@@ -906,6 +906,7 @@ footer{
 .go-cart-item__remove {
   top: 0px!important;
   position: relative!important;
+  padding: 3px 2px 5px 0px;
 }
 .go-cart-item__info{
   width: 100%!important;;
