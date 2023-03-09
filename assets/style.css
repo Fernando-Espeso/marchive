@@ -957,6 +957,7 @@ padding: 20px 30px;
   border-left: 0.5px solid var(--white);
 }
 .closecart {
+  right:0px;
   position: absolute;
   top: 0px;
   padding: 3px;
