@@ -957,13 +957,12 @@ padding: 20px 30px;
   border-left: 0.5px solid var(--white);
 }
 .closecart {
-  line-height: inherit;
-  right:0px;
+  line-height: initial;
+  right: 0px;
   position: absolute;
   top: 0px;
-  padding: 3px;
-  border:0.5px solid var(--white);
-
+  padding: 3px 5px 3px 5px;
+  border: 0.5px solid var(--white);
 }
 .go-cart__drawer {
   position: fixed;
