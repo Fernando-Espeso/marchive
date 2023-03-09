@@ -947,9 +947,6 @@ padding: 20px 30px;
   background-position: 50%;
   background-repeat: no-repeat;
 }
-.go-cart-drawer__close {
-  display: none!important;
-}
 .go-cart__drawer {
   position: fixed;
   top: 0;
