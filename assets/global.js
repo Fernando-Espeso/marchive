@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function(){
     		},
         autoplay:
         {
-        delay: 200,
+        delay: 400,
 
         },
         loop: true,
