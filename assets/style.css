@@ -961,7 +961,7 @@ padding: 20px 30px;
   right: 0px;
   position: absolute;
   top: 0px;
-  padding: 3px 5px 3px 5px;
+  padding: 3px 5px 2px 5px;
   border: 0.5px solid var(--white);
 }
 .go-cart__drawer {
