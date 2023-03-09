@@ -918,6 +918,7 @@ padding: 20px 30px;
     padding: 0px!important;
     overflow-y: scroll;
     padding-top: var(--m)!important;
+    padding-bottom: var(--fc)!important;
 }
 .go-cart-item__remove {
   top: 0px!important;

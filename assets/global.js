@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", function(){
         m = document.getElementById("header").offsetHeight;
         document.documentElement.style.setProperty('--m', m + 'px');
 
+        fc = document.getElementById(".go-cart-drawer__footer").offsetHeight;
+        document.documentElement.style.setProperty('--fc', fc + 'px');
+
   });
 
   window.addEventListener("resize", onResizeFunction);
