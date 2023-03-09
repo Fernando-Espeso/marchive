@@ -424,6 +424,7 @@ header{
 }
 
 #cart{
+  line-height: initial;
   border:0.5px solid var(--black);
   display: flex;
   justify-content: space-between;
@@ -446,6 +447,7 @@ header{
 
 }
 .baggie{
+  line-height: initial;
   width: 100%;
   padding: 2px;
   padding-top: 3px!important;
