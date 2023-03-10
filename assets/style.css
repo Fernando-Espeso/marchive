@@ -1059,6 +1059,7 @@ padding: 20px 30px;
   content: "Item";
   color:grey;
   display: inline-block;
+  
   width: 78px!important;
 }
 .go-cart-item__price::before {
