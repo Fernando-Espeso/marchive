@@ -903,6 +903,7 @@ height: 170px;
 padding: 20px 30px;
 }
 
+
 /* ABOUT
 ================================================== */
 /* CART
@@ -1083,9 +1084,16 @@ padding: 20px 30px;
 .go-cart-drawer__subtotal {
   align-items: center;
   margin-bottom: 5px;
-  padding: 3px 2px 2px 5px!important;
+
   height: auto!important;
 }
+.go-cart-drawer__subtotal span{
+    padding: 3px 2px 2px 5px!important;
+}
+.go-cart-drawer__subtotal-price js-go-cart-drawer-subtotal{
+      border-left: 0.5px solid;
+}
+
 .item-title{
   grid-column:span 3;
 }
