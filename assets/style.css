@@ -1059,13 +1059,13 @@ padding: 20px 30px;
   content: "Item";
   color:grey;
   display: inline-block;
-  width: 80px!important;
+  width: 78px!important;
 }
 .go-cart-item__price::before {
   content: "Price";
   color:grey;
   display: inline-block;
-  width: 80px!important;
+  width: 78px!important;
 }
 .go-cart-item__title{
   padding: 3px 2px 2px 0px;
