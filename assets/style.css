@@ -1088,10 +1088,8 @@ padding: 20px 30px;
   height: auto!important;
 }
 .go-cart-drawer__subtotal span{
-    padding: 3px 2px 2px 5px!important;
-}
-.go-cart-drawer__subtotal-price js-go-cart-drawer-subtotal{
       border-left: 0.5px solid;
+    padding: 3px 2px 2px 5px!important;
 }
 
 .item-title{
