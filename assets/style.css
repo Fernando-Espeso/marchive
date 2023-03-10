@@ -1282,7 +1282,17 @@ div#related {
 .go-cart-drawer__content {
   padding-top: 100px!important;
 }
-
+.icon-marchive svg {
+  display: block;
+  width: 70px;
+  position: fixed;
+  right: 20px;
+  bottom:20px;
+  height: fit-content;
+}
+.icon-marchive  {
+  z-index: 100;
+}
 }
 /*BIGGER DESKTOP*/
 @media (min-width: 1920px){
