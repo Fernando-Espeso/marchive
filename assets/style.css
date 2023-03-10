@@ -1059,7 +1059,7 @@ padding: 20px 30px;
   content: "Item";
   color:grey;
   display: inline-block;
-  
+
   width: 78px!important;
 }
 .go-cart-item__price::before {
@@ -1088,8 +1088,11 @@ padding: 20px 30px;
 
   height: auto!important;
 }
+.go-cart-drawer__subtotal-price{
+        border-left: 0.5px solid;
+}
 .go-cart-drawer__subtotal span{
-      border-left: 0.5px solid;
+
     padding: 3px 2px 2px 5px!important;
 }
 
