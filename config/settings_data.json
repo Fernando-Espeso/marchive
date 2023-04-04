@@ -118,25 +118,11 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/2023.03.16_Maryam_Al_Rafi_lookbook137451.jpg"
             }
-          },
-          "e4514ead-8052-4016-9525-d0d907e84c3e": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/2023.03.16_Maryam_Al_Rafi_lookbook135270.jpg"
-            }
-          },
-          "67889765-ee07-4904-84d6-e49392544d36": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/2023.03.16_Maryam_Al_Rafi_lookbook137280.jpg"
-            }
           }
         },
         "block_order": [
           "83c86617-d65d-476f-b0e5-55a7ab0c4487",
-          "d5d46d40-ca9a-4d6d-b9ef-0f1536e6ae79",
-          "e4514ead-8052-4016-9525-d0d907e84c3e",
-          "67889765-ee07-4904-84d6-e49392544d36"
+          "d5d46d40-ca9a-4d6d-b9ef-0f1536e6ae79"
         ],
         "settings": {
         }
