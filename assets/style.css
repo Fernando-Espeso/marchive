@@ -334,6 +334,9 @@ header{
   grid-template-columns: repeat(5, 1fr);
   grid-column: 5/ span 5;
 }
+.menu-open{
+  display: none; 
+}
 
 .drop{
   column-gap: 12px;
