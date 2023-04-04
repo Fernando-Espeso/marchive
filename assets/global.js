@@ -89,9 +89,9 @@ document.addEventListener("DOMContentLoaded", function(){
     $('.sort').click(function(){
              var t = $(this),
              k = t.data('sort');
-             t.parent().siblings().children().toggleClass('active');
+             t.parent().siblings().children().removeClass('active');
              if(!t.hasClass('active')){
-                     t.toggleClass('active');
+                     t.addClass('active');
                      $('.product:not([data-'+ k +'="null"])').sort(function(a, b){
                              if(!t.hasClass('invert')){
                                      return $(b).data(k) < $(a).data(k) ? 1 : -1;
