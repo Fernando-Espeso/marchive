@@ -58,21 +58,21 @@ document.addEventListener("DOMContentLoaded", function(){
 
     $('#description').click(function(){
       $(".nav-info div").removeClass("active");
-      $(".show-description").hide();
+      $(".show-description").removeClass("show");
   		$("."+this.id).toggleClass("show");
     });
 
     $('#size').click(function(){
       $(".nav-info div").removeClass("active");
       $(this).toggleClass("active");
-      $(".show-description").hide();
+      $(".show-description").removeClass("show");
   		$("."+this.id).toggleClass("show");
     });
 
     $('#condition').click(function(){
       $(".nav-info div").removeClass("active");
       $(this).toggleClass("active");
-      $(".show-description").hide();
+      $(".show-description").removeClass("show");
   		$("."+this.id).toggleClass("show");
     });
     var mySwiper = new Swiper ('.home',
