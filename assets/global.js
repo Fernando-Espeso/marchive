@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     $('#description').click(function(){
       $(".nav-info div").removeClass("active");
+      $(this).toggleClass("active");
       $(".show-description").removeClass("show");
   		$("."+this.id).toggleClass("show");
     });
