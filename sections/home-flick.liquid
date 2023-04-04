@@ -1,7 +1,7 @@
 
 {%- for block in section.blocks -%}
     {% case block.type %}
-        {% when 'single' %}
+        {% when 'image' %}
            <div class="swiper-slide">
              <div class="thumbnail-randmon">
                <img alt="{{ block.settings.single.alt}}" src="{{ block.settings.single | img_url: 'master' }}" />
