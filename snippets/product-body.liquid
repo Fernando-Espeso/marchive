@@ -1,9 +1,9 @@
 <!--Product-->
 <div class="product"
-      id="{%- if product.has_only_default_variant -%}
-              {%- elsif variants > 1 -%}
-              class="product-variants"
-              {%- endif -%}"
+      id="
+      {% for collection in product.collections %}
+      {{ collection.title }}
+      {% endfor %}"
 >
     <a class="thumbnail" href="{{ product.url }}">
       <div class="box"></div>
