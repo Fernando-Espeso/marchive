@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     $('.new').click(function(){
       $(".product").hide();
-      $(".product.Newest").show();
+      $(".product.newest").show();
     });
 
 
