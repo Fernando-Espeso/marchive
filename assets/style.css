@@ -700,9 +700,13 @@ header{
 	background-size: contain;
 }
 
-.thumbnail-randmon img{
+.thumbnail-randmon{
   height: calc(100vh - 10px)!important;
   width: calc(100vw - 10px)!important;
+}
+.thumbnail-randmon img{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border:0.5px solid var(--black);
   width: auto!important;
