@@ -335,7 +335,7 @@ header{
   grid-column: 5/ span 5;
 }
 .menu-open{
-  display: none; 
+  display: none;
 }
 
 .drop{
@@ -1233,6 +1233,7 @@ header{
 
 }
 .menu-open{
+  display: block;
   padding-top: 3px!important;
   padding-left: 5px!important;
 }
