@@ -50,6 +50,10 @@ document.addEventListener("DOMContentLoaded", function(){
        $(this).next(".dropdown").toggleClass("dropped");
     });
 
+    $('.sort').click(function(){
+       $(this).toggleClass("active");
+    });
+
     $('.menu-open').click(function(){
        $(this).toggleClass("active");
        $(".drop").toggle();
