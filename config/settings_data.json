@@ -107,6 +107,12 @@
       "home-flick": {
         "type": "home-flick",
         "blocks": {
+          "78b3699e-4c53-41b4-b964-81f9c2792993": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screenshot_2022-11-10_at_10.06.21_AM-2.png"
+            }
+          },
           "83c86617-d65d-476f-b0e5-55a7ab0c4487": {
             "type": "image",
             "settings": {
@@ -133,6 +139,7 @@
           }
         },
         "block_order": [
+          "78b3699e-4c53-41b4-b964-81f9c2792993",
           "83c86617-d65d-476f-b0e5-55a7ab0c4487",
           "d5d46d40-ca9a-4d6d-b9ef-0f1536e6ae79",
           "e4514ead-8052-4016-9525-d0d907e84c3e",
