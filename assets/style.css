@@ -1224,7 +1224,7 @@ header{
 }
 .switch-view {
   width: 20px;
-  height: 20px;;
+  height: 20px;
   background-color: var(--black);
   grid-column: span 3;
   border: 0px;
