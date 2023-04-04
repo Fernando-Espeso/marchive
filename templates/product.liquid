@@ -1,28 +1,5 @@
 <div id="single-product">
     <div class="product_info">
-      <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
-      id="add-to-cart-{{ product.handle }}-{{ collection.handle }}-{{ section.id }}"
-          {%- if product.has_only_default_variant -%}
-          class="product-simple"
-          {%- elsif variants > 1 -%}
-          class="product-variants"
-          {%- endif -%}>
-              <div id="bag">
-                <!--Variations Dropdown-->
-                <select id="product-select" name="id">
-                  {% for variant in product.variants %}
-                  <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
-                  {% endfor %}
-                </select>
-                <!--Actions-->
-                {% if product.available %}
-                      <div class="js-go-cart-add-to-cart addtocart hov">ADD TO CART</div>
-                  {% else %}
-                    <div class="addtocart hov"><button id="produ" type="submit" name="add">SOLD OUT</button></div>
-                  {% endif %}
-
-              </div>
-          </form>
           <div class="main-information">
             <div class="info-product">
               <div>Designer</div>
@@ -55,6 +32,29 @@
                 </div>
             </div>
           </div>
+          <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+          id="add-to-cart-{{ product.handle }}-{{ collection.handle }}-{{ section.id }}"
+              {%- if product.has_only_default_variant -%}
+              class="product-simple"
+              {%- elsif variants > 1 -%}
+              class="product-variants"
+              {%- endif -%}>
+                  <div id="bag">
+                    <!--Variations Dropdown-->
+                    <select id="product-select" name="id">
+                      {% for variant in product.variants %}
+                      <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
+                      {% endfor %}
+                    </select>
+                    <!--Actions-->
+                    {% if product.available %}
+                          <div class="js-go-cart-add-to-cart addtocart hov">ADD TO CART</div>
+                      {% else %}
+                        <div class="addtocart hov"><button id="produ" type="submit" name="add">SOLD OUT</button></div>
+                      {% endif %}
+
+                  </div>
+              </form>
           <div class="nav-info">
             {%- if product.metafields.custom.description != blank -%}<div id="description" class="button">Description</div>{%- endif -%}
             {%- if product.metafields.custom.size != blank -%}<div id="size" class="button">Size</div>{%- endif -%}
