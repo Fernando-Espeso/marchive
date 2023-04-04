@@ -50,6 +50,11 @@ document.addEventListener("DOMContentLoaded", function(){
        $(this).next(".dropdown").toggleClass("dropped");
     });
 
+    $('.menu-open').click(function(){
+       $(this).toggleClass("active");
+       $(".dropd").show();
+    });
+
     $('.switch-view').click(function(){
       $(this).toggleClass("active");
       $(".product").toggleClass("dropped");
