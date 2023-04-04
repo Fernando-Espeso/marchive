@@ -701,7 +701,10 @@ header{
 }
 
 .thumbnail-randmon img{
-  height: 60vh;
+  height: calc(100vh - 10px)!important;
+  width: calc(100vw - 10px)!important;
+  object-fit: cover;
+  border:0.5px solid var(--black);
   width: auto!important;
   border:0.5px solid var(--black);
 }
@@ -1285,7 +1288,7 @@ div#related {
   grid-column: span 1;
 }
 .thumbnail-randmon img{
-  
+
   height: calc(100vh - 10px)!important;
   width: calc(100vw - 10px)!important;
   object-fit: cover;
