@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     $('.feat').click(function(){
       $(".product").hide();
-      $(".prduct.featured").show();
+      $(".product.featured").show();
     });
 
 
