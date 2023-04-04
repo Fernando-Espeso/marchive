@@ -1285,8 +1285,9 @@ div#related {
   grid-column: span 1;
 }
 .thumbnail-randmon img{
-  height: auto!important;
-  width: 80vw!important;
+  height: calc(100vh - 10px)!important;
+  width: calc(100vw - 10px)!important;
+  object-fit: cover;
   border:0.5px solid var(--black);
 }
 .go-cart-drawer__content {
