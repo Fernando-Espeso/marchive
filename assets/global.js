@@ -81,6 +81,23 @@ document.addEventListener("DOMContentLoaded", function(){
       $(".show-description").removeClass("show");
   		$("."+this.id).toggleClass("show");
     });
+
+    $('.sort').click(function(){
+             var t = $(this),
+             k = t.data('sort');
+             t.parent().siblings().children().removeClass('active');
+             if(!t.hasClass('active')){
+                     t.addClass('active');
+                     $('.product:not([data-'+ k +'="null"])').sort(function(a, b){
+                             if(!t.hasClass('invert')){
+                                     return $(b).data(k) < $(a).data(k) ? 1 : -1;
+                             }else{
+                                     return $(b).data(k) > $(a).data(k) ? 1 : -1;
+                             }
+                     }).prependTo('#products');
+             }
+     });
+
     var mySwiper = new Swiper ('.home',
     	{
         speed:0,
