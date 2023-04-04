@@ -1,14 +1,16 @@
 {%- for block in section.blocks -%}
     {% case block.type %}
         {% when 'image' %}
-               <img alt="{{ block.settings.image.alt}}" src="{{ block.settings.image | img_url: 'master' }}" />
+               <div class="swiper-slide">
+                 <img alt="{{ block.settings.image.alt}}" src="{{ block.settings.image | img_url: 'master' }}" />
+               </div>
     {% endcase %}
 {% endfor %}
 {% schema %}
 {
-  "name": "swiper-slide",
+  "name": "swiper-wrapper",
   "tag": "div",
-  "class":"randmon-thumb",
+  "class":"swiper-wrapper",
   "blocks": [
     {
       "type": "image",
