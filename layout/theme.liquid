@@ -84,9 +84,7 @@ fernandoepeso.info
   </div>
   <!--Header-->
   <header id="header" class="header">
-
     <div class="logo">
-
       <a href="../index">
         <svg id="uuid-00d08a67-11e5-46c1-aaf1-3924bc15e6af" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="281" height="36.6" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 281 36.6">
         <defs>
@@ -112,7 +110,9 @@ fernandoepeso.info
       </svg>
       </a>
     </div>
+
     <div class="menu">
+      <div class="menu-open">MENU</div>
       <div class="drop">
         <div class="link">DESIGNERS</div>
         <div class="dropdown">
@@ -130,28 +130,10 @@ fernandoepeso.info
         </div>
       </div>
       <div class="link-about"><a href="../pages/about">About</a></div>
-
-            <!-- {% for link in linklists.main-menu.links %}
-            <li {% if link.active %}class="active"{% endif %}><a class="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a></li>
-            {% endfor %} -->
     </div>
     <div class="cart-part">
       {%- section 'go-cart' -%}
       {%- include "go-cart-button" -%}
-
-
-        <!-- <div id="cart">
-          <div {% if template == 'cart' %}  class="active baggie hov" {% endif %} class="baggie hov">
-              <a href="/cart">Cart</a>
-          </div>
-          <div class="cart-total">
-                {%- if cart.item_count == 0 -%}
-                0
-                {%- else -%}
-                {{- cart.item_count -}}
-                {%- endif -%}
-          </div>
-        </div> -->
   	 </div>
      <div class="link-about-mobile"><a href="../pages/about">About</a></div>
      <div class="switch-view hov"></div>
