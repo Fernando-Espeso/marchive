@@ -1223,6 +1223,9 @@ header{
   grid-column: span 6;
 }
 .switch-view {
+  width: 20px;
+  height: auto;
+  background-color: black;
   grid-column: span 3;
   border: 0px;
 }
