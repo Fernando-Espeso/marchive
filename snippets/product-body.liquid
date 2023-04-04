@@ -1,10 +1,5 @@
 <!--Product-->
-<div class="product"
-      id="
-      {% for collection in product.collections %}
-      {{ collection.title }}
-      {% endfor %}"
->
+<div class="product {% for collection in product.collections % {{ collection.title }} {% endfor %}">
     <a class="thumbnail" href="{{ product.url }}">
       <div class="box"></div>
       <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"

@@ -62,9 +62,8 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     $('.featured').click(function(){
-      $(this).toggleClass("active");
-      $(".product").toggleClass("dropped");
-      $("#products").toggleClass("dropped");
+      $("#products").hide();
+      $("featured").show();
     });
 
     $('#description').click(function(){
