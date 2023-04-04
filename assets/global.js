@@ -61,6 +61,12 @@ document.addEventListener("DOMContentLoaded", function(){
       $("#products").toggleClass("dropped");
     });
 
+    $('.featured').click(function(){
+      $(this).toggleClass("active");
+      $(".product").toggleClass("dropped");
+      $("#products").toggleClass("dropped");
+    });
+
     $('#description').click(function(){
       $(".nav-info div").removeClass("active");
       $(this).toggleClass("active");
