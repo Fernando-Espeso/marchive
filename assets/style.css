@@ -389,12 +389,11 @@ header{
 
 .switch-view{
   padding: 4px 2px 2px 5px;
-  background-color: var(--black);
   width: 19px;
   float: right;
   height: 19px;
   border: 0.5px solid black;
-  
+
 }
 
 .dropdown.dropped{
