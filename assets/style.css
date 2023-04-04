@@ -1230,6 +1230,7 @@ header{
 .switch-view {
   grid-column: span 3;
   border: 0px;
+  display: none;
 
 }
 .menu-open{
