@@ -1321,6 +1321,9 @@ div#related {
 .icon-marchive  {
   z-index: 100;
 }
+.drop{
+  display: none;
+}
 }
 /*BIGGER DESKTOP*/
 @media (min-width: 1920px){
