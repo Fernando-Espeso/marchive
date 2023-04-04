@@ -701,6 +701,7 @@ header{
 }
 
 .thumbnail-randmon{
+  z-index: -1;
   position: absolute;
   height: calc(100vh - 10px)!important;
   width: calc(100vw - 10px)!important;
