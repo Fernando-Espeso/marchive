@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function(){
     $('.menu-open').click(function(){
        $(this).toggleClass("active");
        $(".drop").toggle();
+       
     });
 
     $('.switch-view').click(function(){
