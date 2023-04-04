@@ -66,10 +66,6 @@ document.addEventListener("DOMContentLoaded", function(){
       $(".prduct.featured").show();
     });
 
-    $('.sort').click(function(){
-      $(".product").show();
-      $(".prduct.featured").show();
-    });
 
     $('#description').click(function(){
       $(".nav-info div").removeClass("active");
