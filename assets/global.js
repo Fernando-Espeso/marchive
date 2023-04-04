@@ -62,8 +62,8 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     $('.featured').click(function(){
-      $("#products").hide();
-      $("featured").show();
+      $(".product").hide();
+      $(".prduct.featured").show();
     });
 
     $('#description').click(function(){
