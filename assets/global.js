@@ -57,16 +57,18 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     $('#description').click(function(){
-      $(this).toggleClass("active");
+      $(".nav-info div").toggleClass("active");
   		$("."+this.id).toggleClass("show");
     });
 
     $('#size').click(function(){
+      $(".nav-info div").toggleClass("active");
       $(this).toggleClass("active");
   		$("."+this.id).toggleClass("show");
     });
 
     $('#condition').click(function(){
+      $(".nav-info div").toggleClass("active");
       $(this).toggleClass("active");
   		$("."+this.id).toggleClass("show");
     });
