@@ -710,7 +710,6 @@ header{
   height: 100%;
   object-fit: cover;
   border:0.5px solid var(--black);
-  width: auto!important;
   border:0.5px solid var(--black);
 }
 
