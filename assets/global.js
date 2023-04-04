@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(){
       $("#products").toggleClass("dropped");
     });
 
-    $('.featured').click(function(){
+    $('.feat').click(function(){
       $(".product").hide();
       $(".prduct.featured").show();
     });
