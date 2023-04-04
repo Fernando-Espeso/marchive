@@ -1,14 +1,3 @@
-<a href="../collections/all" class="container-fixed">
-    <div class="swiper home">
-      <div class="swiper-wrapper" >
-        {%- for product in collections.all.products -%}
-          {%- if product.id != current_product and product.available -%}
-            {% include 'product-body-random' %}
-          {%- endif -%}
-        {%- endfor -%}
-      </div>
-    </div>
-</a>
 <div class="icon-marchive">
   <svg id="uuid-c7c19a21-d345-4847-a67b-5140c155ddd7" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="183.33" height="181" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 183.33 181">
     <defs>
@@ -21,6 +10,17 @@
     </g>
   </svg>
 </div>
+<a href="../collections/all" class="container-fixed">
+    <div class="swiper home">
+      <div class="swiper-wrapper" >
+        {%- for product in collections.all.products -%}
+          {%- if product.id != current_product and product.available -%}
+            {% include 'product-body-random' %}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+</a>
 <style>
   header, footer{
     z-index: -1;
