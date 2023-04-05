@@ -607,6 +607,7 @@ header{
 }
 .drop.filt {
     grid-column: 5/ span 2;
+    
 }
 .dropped .info-product>div:nth-child(even) {
     grid-column: span 2!important;
