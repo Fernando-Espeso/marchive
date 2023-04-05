@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   $(document).ready(function() {
+
     $('.link').click(function(){
        $(this).toggleClass("active");
        $(this).next(".dropdown").toggleClass("dropped");
@@ -65,18 +66,16 @@ document.addEventListener("DOMContentLoaded", function(){
     $('.feat').click(function(){
       $(this).addClass("active");
       $('.new').removeClass("active");
-      $(".product").hide();
-      $(".product.featured").show();
+      $(".product").toggle();
+      $(".product.featured").toggle();
     });
 
     $('.new').click(function(){
       $(this).addClass("active");
       $('.feat').removeClass("active");
-      $(".product").hide();
-      $(".product.newest").show();
+      $(".product").toggle();
+      $(".product.newest").toggle();
     });
-
-
 
     $('#description').click(function(){
       $(".nav-info div").removeClass("active");
