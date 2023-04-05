@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function(){
              k = t.data('sort');
              t.parent().siblings().children().removeClass('activen');
              if(!t.hasClass('activen')){
-                     t.addClass('activen');
+                     t.toggleClass('activen');
                      $('.product:not([data-'+ k +'="null"])').sort(function(a, b){
                              if(!t.hasClass('invert')){
                                      return $(b).data(k) < $(a).data(k) ? 1 : -1;
