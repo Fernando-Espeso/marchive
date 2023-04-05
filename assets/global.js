@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     $('.sort').click(function(){
       $(this).addClass("active");
-      $("sort").addClass("active");
+      $("sort").removeClass("active");
     });
 
     $('#description').click(function(){
