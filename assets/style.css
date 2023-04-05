@@ -534,6 +534,9 @@ header{
   grid-template-columns: repeat(4, 1fr);
   display:grid;
 }
+.activer{
+  background-color: var(--black);
+}
 .product.dropped .product-info{
   grid-column: span 3;
 }

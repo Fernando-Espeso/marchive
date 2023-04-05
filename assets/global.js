@@ -73,9 +73,8 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     $('.filter-sort').click(function(){
-      $(this).addClass("active");
-      $('.filter-sort').removeClass("active");
-
+      $(this).addClass("activer");
+      $('.filter-sort').removeClass("activer");
     });
 
 
