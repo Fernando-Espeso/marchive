@@ -535,6 +535,7 @@ header{
   display:grid;
 }
 .activen{
+  color: var(--white);
   background-color: var(--black);
 }
 .product.dropped .product-info{
