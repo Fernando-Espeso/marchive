@@ -389,20 +389,16 @@ header{
   height: fit-content;
   grid-column: span 2;
 }
-
 .switch-view{
   padding: 4px 2px 2px 5px;
   width: 19px;
   float: right;
   height: 19px;
   border: 0.5px solid black;
-
 }
-
 .dropdown.dropped{
   display: block;
 }
-
 .dropdown{
   display: none;
   margin-top: -1px;
@@ -412,7 +408,6 @@ header{
   background-color: white;
   grid-column: span 2;
 }
-
 .dropdown>div{
   padding-left: 5px!important;
   border-bottom:0.5px solid black;
@@ -442,11 +437,9 @@ header{
   background-color: var(--black);
   color: var(--white);;
 }
-
 .cart-part{
   grid-column: span 2;
 }
-
 #cart{
   line-height: initial;
   border:0.5px solid var(--black);
