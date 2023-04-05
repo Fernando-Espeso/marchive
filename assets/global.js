@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     $('.filter-sort').click(function(){
       $(this).addClass("active");
-      $('.filter-sort').removeclass("active");
+      $('.filter-sort').removeClass("active");
 
     });
 
