@@ -77,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 
+
     $('#description').click(function(){
       $(".nav-info div").removeClass("active");
       $(this).toggleClass("active");
