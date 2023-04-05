@@ -73,10 +73,9 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     $('.filter-sort').click(function(){
-      $(this).addClass("activer");
-      $('.filter-sort').removeClass("activer");
+      $(this).addClass("active");
+      $('.filter-sort').removeClass("active");
     });
-
 
     $('#description').click(function(){
       $(".nav-info div").removeClass("active");
