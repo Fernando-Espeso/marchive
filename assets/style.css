@@ -1344,6 +1344,9 @@ div#related {
 .drop{
   display: none;
 }
+.drop.filt {
+    grid-column: span 6;
+}
 }
 /*BIGGER DESKTOP*/
 @media (min-width: 1920px){
