@@ -72,9 +72,9 @@ document.addEventListener("DOMContentLoaded", function(){
       $(".product.newest").show();
     });
 
-    $('.filter-sort').click(function(){
+    $('.fsort').click(function(){
       $(this).addClass("active");
-      $('a.filter-sort').removeClass("active");
+      $('a.fsort').removeClass("active");
     });
 
     $('#description').click(function(){
