@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 
-
     $('#description').click(function(){
       $(".nav-info div").removeClass("active");
       $(this).toggleClass("active");
@@ -102,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function(){
     $('.sort').click(function(){
              var t = $(this),
              k = t.data('sort');
-             t.parent().removeClass('active');
+             t.parent().siblings().children().removeClass('active');
              if(!t.hasClass('active')){
                      t.addClass('active');
                      $('.product:not([data-'+ k +'="null"])').sort(function(a, b){
