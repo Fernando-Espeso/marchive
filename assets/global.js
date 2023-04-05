@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     $('.fsort').click(function(){
       $(this).addClass("active");
-      $('a.fsort').removeClass("active");
+      $('.fsort').removeClass("active");
     });
 
     $('#description').click(function(){
