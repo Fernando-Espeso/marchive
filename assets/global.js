@@ -63,19 +63,20 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     $('.feat').click(function(){
+      $(this).addClass("active");
+      $('.new').removeClass("active");
       $(".product").hide();
       $(".product.featured").show();
     });
 
     $('.new').click(function(){
+      $(this).addClass("active");
+      $('.feat').removeClass("active");
       $(".product").hide();
       $(".product.newest").show();
     });
 
-    $('.fsort').click(function(){
-      $(this).addClass("active");
-      $('.fsort').removeClass("active");
-    });
+
 
     $('#description').click(function(){
       $(".nav-info div").removeClass("active");
@@ -101,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function(){
     $('.sort').click(function(){
              var t = $(this),
              k = t.data('sort');
-             t.parent().siblings().children().removeClass('active');
+             t.parent().removeClass('active');
              if(!t.hasClass('active')){
                      t.addClass('active');
                      $('.product:not([data-'+ k +'="null"])').sort(function(a, b){
