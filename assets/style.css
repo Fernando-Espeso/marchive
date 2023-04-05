@@ -527,7 +527,7 @@ header{
   display:grid;
   row-gap:10px;
   display: grid;
-  grid-column:span 4;
+  grid-column:span 6;
 }
 .product.dropped{
   grid-gap:12px;
@@ -607,7 +607,7 @@ header{
 }
 .drop.filt {
     grid-column: 5/ span 2;
-    
+
 }
 .dropped .info-product>div:nth-child(even) {
     grid-column: span 2!important;
