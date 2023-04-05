@@ -75,11 +75,12 @@ document.addEventListener("DOMContentLoaded", function(){
       $('.feat').removeClass("active");
       $(".product").toggle();
       $(".product.newest").toggle();
+
     });
 
     $('.sort').click(function(){
       $(this).addClass("active");
-      $("sort").removeClass("active");
+      $(".sort").removeClass("active");
     });
 
     $('#description').click(function(){
