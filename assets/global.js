@@ -64,14 +64,14 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     $('.feat').click(function(){
-      $(this).addClass("active");
+      $(this).toggleClass("active");
       $('.new').removeClass("active");
       $(".product").toggle();
       $(".product.featured").toggle();
     });
 
     $('.new').click(function(){
-      $(this).addClass("active");
+      $(this).toggleClass("active");
       $('.feat').removeClass("active");
       $(".product").toggle();
       $(".product.newest").toggle();
