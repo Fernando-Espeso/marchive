@@ -72,6 +72,12 @@ document.addEventListener("DOMContentLoaded", function(){
       $(".product.newest").show();
     });
 
+    $('.filter-short').click(function(){
+      $(this).addclass("active");
+      $('.filter-short').removeclass("active");
+
+    });
+
 
     $('#description').click(function(){
       $(".nav-info div").removeClass("active");
