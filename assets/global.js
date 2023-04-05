@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function(){
     $('.sort').click(function(){
              var t = $(this),
              k = t.data('sort');
-             t.parent().removeClass('active');
+             t.siblings().children().removeClass('active');
              if(!t.hasClass('active')){
                      t.addClass('active');
                      $('.product:not([data-'+ k +'="null"])').sort(function(a, b){
