@@ -75,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function(){
       $('.feat').removeClass("active");
       $(".product").toggle();
       $(".product.newest").toggle();
-
     });
 
     $('.sort').click(function(){
@@ -109,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function(){
              k = t.data('sort');
              t.parent().siblings().children().removeClass('activen');
              if(!t.hasClass('activen')){
-                     t.toggleClass('activen');
+                     t.addClass('activen');
                      $('.product:not([data-'+ k +'="null"])').sort(function(a, b){
                              if(!t.hasClass('invert')){
                                      return $(b).data(k) < $(a).data(k) ? 1 : -1;
