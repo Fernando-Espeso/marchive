@@ -612,6 +612,9 @@ header{
 .drop.filt {
   grid-column: 5/ span 2;
 }
+.drop.filt .link.active {
+  background-color: lightgrey;
+}
 .drop.filt .dropdown.dropped {
 
 }
