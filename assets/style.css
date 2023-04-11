@@ -389,6 +389,7 @@ header{
   height: fit-content;
   grid-column: span 2;
 }
+.filt{display: none;}
 .switch-view{
   padding: 4px 2px 2px 5px;
   width: 19px;
