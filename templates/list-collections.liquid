@@ -7,22 +7,22 @@
 $(document).ready(function() {
   var width = $(window).width();
   if (width < 600){
-    $(".drop .dropdown").removeClass("dropped");
-    $(".drop .link").removeClass("active"); }
+    $(".normal .dropdown").removeClass("dropped");
+    $(".normal .link").removeClass("active"); }
   else{
-    $(".filt .drop .dropdown").removeClass("dropped");
-    $(".drop .dropdown").addClass("dropped");
-    $(".drop .link").addClass("active");
+    $(".filt .dropdown").removeClass("dropped");
+    $(".normal .dropdown").addClass("dropped");
+    $(".normal .link").addClass("active");
   }
 });
 $(window).resize(function() {
   var width = $(window).width();
   if (width < 600){
-    $(".drop .dropdown").removeClass("dropped");
-    $(".drop .link").removeClass("active"); }
+    $(".normal .dropdown").removeClass("dropped");
+    $(".normal .link").removeClass("active"); }
   else{
-    $(".drop .dropdown").addClass("dropped");
-    $(".drop .link").addClass("active");
+    $(".normal .dropdown").addClass("dropped");
+    $(".normal .link").addClass("active");
   }
 });
 </script>
