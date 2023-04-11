@@ -617,7 +617,7 @@ header{
   color:var(--black)!important;
 }
 .filt .link.active {
-  background-color: transparent;
+  background-color: lightgrey!important;
   color:var(--black)!important;
 }
 .filt .dropdown.filter>div:hover {
