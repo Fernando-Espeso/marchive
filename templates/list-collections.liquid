@@ -7,11 +7,11 @@
 $(document).ready(function() {
   var width = $(window).width();
   if (width < 600){
-    $(".filt .dropdown").removeClass("dropped");
+    $(".filt .dropdown.filter").removeClass("dropped");
     $(".normal .dropdown").removeClass("dropped");
     $(".normal .link").removeClass("active"); }
   else{
-    $(".filt .dropdown").removeClass("dropped");
+    $(".filt ..dropdown.filter").removeClass("dropped");
     $(".normal .dropdown").addClass("dropped");
     $(".normal .link").addClass("active");
   }
@@ -19,11 +19,11 @@ $(document).ready(function() {
 $(window).resize(function() {
   var width = $(window).width();
   if (width < 600){
-    $(".filt .dropdown").removeClass("dropped");
+    $(".filt .dropdown.filter").removeClass("dropped");
     $(".normal .dropdown").removeClass("dropped");
     $(".normal .link").removeClass("active"); }
   else{
-    $(".filt .dropdown").removeClass("dropped");
+    $(".filt .dropdown.filter").removeClass("dropped");
     $(".normal .dropdown").addClass("dropped");
     $(".normal .link").addClass("active");
   }
