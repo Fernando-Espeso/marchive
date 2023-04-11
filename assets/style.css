@@ -614,10 +614,9 @@ header{
 }
 .filt .link.active {
   background-color: lightgrey;
+
   color:black!important;
 }
-
-
 .dropped .info-product>div:nth-child(even) {
     grid-column: span 2!important;
     padding: 2px 2px 2px 5px;
