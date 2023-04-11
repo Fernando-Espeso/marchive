@@ -7,7 +7,6 @@
 $(document).ready(function() {
   var width = $(window).width();
   if (width < 600){
-    $(".filt .drop .dropdown.filter").removeClass("dropped");
     $(".drop .dropdown").removeClass("dropped");
     $(".drop .link").removeClass("active"); }
   else{
@@ -19,11 +18,9 @@ $(document).ready(function() {
 $(window).resize(function() {
   var width = $(window).width();
   if (width < 600){
-    $(".filt .drop .dropdown.filter").removeClass("dropped");
     $(".drop .dropdown").removeClass("dropped");
     $(".drop .link").removeClass("active"); }
   else{
-    $(".filt .drop .dropdown.filter").removeClass("dropped");
     $(".drop .dropdown").addClass("dropped");
     $(".drop .link").addClass("active");
   }
