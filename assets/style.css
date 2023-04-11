@@ -614,6 +614,7 @@ header{
 }
 .filt .link.active {
   background-color: transparent;
+  color: black;
 }
 
 .dropped .info-product>div:nth-child(even) {
