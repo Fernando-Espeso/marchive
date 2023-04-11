@@ -616,6 +616,7 @@ header{
   border: 0.5px 0.5px 0.5px 0px solid var(--black);
 
   background-color: white;
+  
   color:var(--black)!important;
 }
 .dropped .info-product>div:nth-child(even) {
