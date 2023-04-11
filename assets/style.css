@@ -399,6 +399,9 @@ header{
 .normal .dropdown.dropped{
   display: block;
 }
+.filt .dropdown.dropped{
+  display: block;
+}
 .dropdown{
   display: none;
   margin-top: -1px;
