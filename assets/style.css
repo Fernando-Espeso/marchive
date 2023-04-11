@@ -626,7 +626,7 @@ header{
   color:var(--black)!important;
 }
 .filt .dropdown.filter>div:hover {
-  background-color: lightgrey
+  background-color: lightgrey;
   color: var(--black)!important;
 }
 .dropped .info-product>div:nth-child(even) {
