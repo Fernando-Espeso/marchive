@@ -1,4 +1,5 @@
 <div id="products">
+  hello
   {% for product in collection.products %}
 		  {% include 'product-body' %}
   {% endfor %}
@@ -25,3 +26,8 @@ $(window).resize(function() {
   }
 });
 </script>
+<style>
+.filt{
+  display: grid;
+}
+</style>
