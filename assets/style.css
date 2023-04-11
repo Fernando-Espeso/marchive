@@ -627,7 +627,7 @@ header{
 }
 .filt .dropdown.filter>div:hover {
   background-color: lightgrey
-  color: var(--black);
+  color: var(--black)!important;
 }
 .dropped .info-product>div:nth-child(even) {
     grid-column: span 2!important;
