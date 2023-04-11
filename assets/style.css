@@ -613,7 +613,8 @@ header{
   grid-column: 5/ span 2;
 }
 .filt .link.active {
-  border: 0.5px 0.5px 0.5px 0px;
+  border: 0.5px 0.5px 0.5px 0px solid var(--black);
+
   background-color: red;
   color:var(--black)!important;
 }
