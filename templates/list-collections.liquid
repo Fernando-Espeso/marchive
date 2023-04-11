@@ -4,24 +4,26 @@
   {% endfor %}
 </div>
 <script>
+    $(".drop.filt .dropdown.dropped").removeClass("dropped");
+
 $(document).ready(function() {
   var width = $(window).width();
   if (width < 600){
-    $("drop .dropdown").removeClass("dropped");
-    $("drop .link").removeClass("active"); }
+    $(".drop .dropdown").removeClass("dropped");
+    $(".drop .link").removeClass("active"); }
   else{
-    $("drop .dropdown").addClass("dropped");
-    $("drop.link").addClass("active");
+    $(".drop .dropdown").addClass("dropped");
+    $(".drop .link").addClass("active");
   }
 });
 $(window).resize(function() {
   var width = $(window).width();
   if (width < 600){
-    $("drop .dropdown").removeClass("dropped");
-    $("drop .link").removeClass("active"); }
+    $(".drop .dropdown").removeClass("dropped");
+    $(".drop .link").removeClass("active"); }
   else{
-    $("drop .dropdown").addClass("dropped");
-    $("drop .link").addClass("active");
+    $(".drop .dropdown").addClass("dropped");
+    $(".drop .link").addClass("active");
   }
 });
 </script>
