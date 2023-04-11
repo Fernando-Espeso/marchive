@@ -618,6 +618,7 @@ header{
   color:var(--black)!important;
 }
 .filt .link.active {
+  background-color: transparent;
   color:var(--black)!important;
 }
 .dropped .info-product>div:nth-child(even) {
