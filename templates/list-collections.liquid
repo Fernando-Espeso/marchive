@@ -7,6 +7,7 @@
 $(document).ready(function() {
   var width = $(window).width();
   if (width < 600){
+    $(".filt .dropdown").removeClass("dropped");
     $(".normal .dropdown").removeClass("dropped");
     $(".normal .link").removeClass("active"); }
   else{
@@ -18,9 +19,11 @@ $(document).ready(function() {
 $(window).resize(function() {
   var width = $(window).width();
   if (width < 600){
+    $(".filt .dropdown").removeClass("dropped");
     $(".normal .dropdown").removeClass("dropped");
     $(".normal .link").removeClass("active"); }
   else{
+    $(".filt .dropdown").removeClass("dropped");
     $(".normal .dropdown").addClass("dropped");
     $(".normal .link").addClass("active");
   }
