@@ -610,8 +610,10 @@ header{
   margin-left: -12px;
 }
 .drop.filt {
-    grid-column: 5/ span 2;
-
+  grid-column: 5/ span 2;
+}
+.drop.filt .dropdown.dropped {
+  display: none;
 }
 .dropped .info-product>div:nth-child(even) {
     grid-column: span 2!important;
