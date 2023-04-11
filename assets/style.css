@@ -613,8 +613,7 @@ header{
   grid-column: 5/ span 2;
 }
 .filt .link.active {
-  background-color: transparent;
-  color: black;
+  background-color: grey;
 }
 
 .dropped .info-product>div:nth-child(even) {
