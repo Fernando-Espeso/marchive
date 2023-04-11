@@ -609,15 +609,13 @@ header{
   display: grid;
   margin-left: -12px;
 }
-.drop.filt {
+.filt {
   grid-column: 5/ span 2;
 }
-.drop.filt .link.active {
+.filt .link.active {
   background-color: lightgrey;
 }
-.drop.filt .dropdown.dropped {
 
-}
 .dropped .info-product>div:nth-child(even) {
     grid-column: span 2!important;
     padding: 2px 2px 2px 5px;
