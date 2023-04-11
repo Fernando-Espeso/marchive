@@ -613,7 +613,7 @@ header{
   grid-column: 5/ span 2;
 }
 .drop.filt .dropdown.dropped {
-  display: none;
+
 }
 .dropped .info-product>div:nth-child(even) {
     grid-column: span 2!important;
