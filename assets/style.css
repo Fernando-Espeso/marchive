@@ -1368,6 +1368,7 @@ div#related {
   display: none;
 }
 .drop.filt {
+  display: none;
     grid-column: span 6;
 }
 .dropdown{
