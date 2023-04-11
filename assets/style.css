@@ -613,7 +613,6 @@ header{
   grid-column: 5/ span 2;
 }
 .filt .link:hover {
-  border: 0.5px solid ;
   background-color: grey!important;
   color:var(--black)!important;
 }
