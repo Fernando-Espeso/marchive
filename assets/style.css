@@ -396,7 +396,7 @@ header{
   height: 19px;
   border: 0.5px solid black;
 }
-.dropdown.dropped{
+.normal .dropdown.dropped{
   display: block;
 }
 .dropdown{
@@ -618,7 +618,7 @@ header{
 }
 .filt .link.active {
   background-color: lightgrey!important;
-  
+
   color:var(--black)!important;
 }
 .filt .dropdown.filter>div:hover {
