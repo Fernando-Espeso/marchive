@@ -618,6 +618,7 @@ header{
 }
 .filt .link.active {
   background-color: lightgrey!important;
+  
   color:var(--black)!important;
 }
 .filt .dropdown.filter>div:hover {
