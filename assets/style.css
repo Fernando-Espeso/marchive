@@ -617,6 +617,9 @@ header{
   text-transform: capitalize;
   grid-column: 5/ span 2;
 }
+.filt .link{
+  color: grey!important;
+}
 .filt .link:hover {
   background-color: lightgrey!important;
   color:var(--black)!important;
