@@ -614,6 +614,7 @@ header{
   margin-left: -12px;
 }
 .filt {
+  text-transform: capitalize;
   grid-column: 5/ span 2;
 }
 .filt .link:hover {
@@ -1369,7 +1370,7 @@ div#related {
 }
 .drop.filt {
   display: none;
-    grid-column: span 6;
+  grid-column: span 6;
 }
 .dropdown{
   display: block;
