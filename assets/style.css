@@ -207,7 +207,7 @@ select:disabled{
 }
 
 body{
- font-size: 10px;
+ font-size: 11px;
  font-family: 'BastardoGrotesk-Regular';
  display: flex;
  background-color: var(--white);
