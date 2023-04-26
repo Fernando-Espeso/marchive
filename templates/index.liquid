@@ -16,7 +16,7 @@
  <div class="swiper-slide">
                  <div class="thumbnail-randmon">
                   {% unless page.metafields.custom.home == blank %}
-                    {% assign gallery = article.metafields.custom.gallerycollection.value %}
+                    {% assign gallery = page.metafields.custom.home.value %}
                       {% if gallery %}
                        {% for gallery in gallery %}
                         <img class="lazy" src="{{ gallery | image_url: 'thumb' }}"  data-src="{{ gallery | image_url:: 'master' }}">
