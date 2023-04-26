@@ -425,7 +425,7 @@ header{
 }
 .dropdown>div:last-child{
   padding-left: 5px!important;
-  border-bottom:0px solid black;
+  border-bottom:0px solid black!important;
   padding: 2px;
   padding-top: 3px!important;
   cursor: pointer;
