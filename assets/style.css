@@ -1378,6 +1378,7 @@ div#related {
   grid-column: span 6;
 }
 .dropdown{
+  max-height: 129px;
   display: block;
 }
 }
