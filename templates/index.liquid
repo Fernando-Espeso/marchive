@@ -10,19 +10,23 @@
     </g>
   </svg>
 </div>
-{% unless page.metafields.custom.home == blank %}
-                    {% assign gallery = page.metafields.custom.home.value %}
+<a href="../collections/all" class="container-fixed">
+    <div class="swiper home">
+          {% section 'home-flick' %}
+    </div>
+</a>
+<a href="../collections/all" class="container-fixed">
+<div class="swiper home">
+ <div class="swiper-slide">
+                 <div class="thumbnail-randmon">
+                  {% unless page.metafields.custom.home == blank %}
+                    {% assign gallery = article.metafields.custom.gallerycollection.value %}
                       {% if gallery %}
                        {% for gallery in gallery %}
                         <img class="lazy" src="{{ gallery | image_url: 'thumb' }}"  data-src="{{ gallery | image_url:: 'master' }}">
                        {% endfor %}
                       {% endif %}
-                  {% endunless %}
-<a href="../collections/all" class="container-fixed">
-<div class="swiper home">
- <div class="swiper-slide">
-                 <div class="thumbnail-randmon">
-                      
+                  {% endunless %}    
                  </div>
  </div>
 </div>
