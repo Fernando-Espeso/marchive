@@ -10,28 +10,24 @@
     </g>
   </svg>
 </div>
-<a href="../collections/all" class="container-fixed">
-    <div class="swiper home">
-          {% section 'home-flick' %}
-    </div>
-</a>
+
 <a href="../collections/all" class="container-fixed">
 <div class="swiper home">
  <div class="swiper-slide">
                  <div class="thumbnail-randmon">
-                    <img alt="{{ block.settings.image.alt}}" src="{{ block.settings.image | img_url: 'master' }}" />
+                  {% unless page.metafields.custom.home == blank %}
+                    {% assign gallery = page.metafields.custom.home.value %}
+                      {% if gallery %}
+                       {% for gallery in gallery %}
+                        <img class="lazy" src="{{ gallery | image_url: 'thumb' }}"  data-src="{{ gallery | image_url:: 'master' }}">
+                       {% endfor %}
+                      {% endif %}
+                  {% endunless %}    
                  </div>
  </div>
 </div>
- </a> 
-    {% unless article.metafields.custom.gallerycollection == blank %}
-          {% assign gallery = article.metafields.custom.gallerycollection.value %}
-          {% if gallery %}
-             {% for gallery in gallery %}
-                  <img class="lazy" src="{{ gallery | image_url: 'thumb' }}"  data-src="{{ gallery | image_url:: 'master' }}">
-               {% endfor %}
-          {% endif %}
-{% endunless %}    
+</a> 
+    
 <style>
   header, footer{
     z-index: -1;
