@@ -151,6 +151,7 @@
           },
           "0fca3d38-8e14-4ff7-99ae-1a129bc9248d": {
             "type": "image",
+            "disabled": true,
             "settings": {
             }
           }
