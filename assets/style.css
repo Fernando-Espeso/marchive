@@ -1237,7 +1237,7 @@ div#related {
 ================================================== */
 @media (max-width: 800px){
 .swiper.mobile {
-  display:block;
+  display:flex;
   top: 0px;
   overflow: hidden;
   position: absolute;
