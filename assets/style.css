@@ -1247,12 +1247,6 @@ div#related {
 }
 .swiper.home {
   display:none;
-  top: 0px;
-  overflow: hidden;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  padding: 20px!important;
 }
   .go-cart__drawer {
     position: fixed;
