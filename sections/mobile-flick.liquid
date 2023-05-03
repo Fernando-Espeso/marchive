@@ -1,12 +1,30 @@
+{%- for block in section.blocks -%}
+    {% case block.type %}
+        {% when 'image' %}
+               <div class="swiper-slide">
+                 <div class="thumbnail-randmon">
+                    <img alt="{{ block.settings.image.alt}}" src="{{ block.settings.image | img_url: 'master' }}" />
+                 </div>
+               </div>
+    {% endcase %}
+{% endfor %}
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "swiper-wrapper",
+  "tag": "div",
+  "class":"swiper-wrapper",
+  "blocks": [
+    {
+      "type": "image",
+      "name": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "item"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
