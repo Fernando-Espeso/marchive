@@ -134,6 +134,23 @@ document.addEventListener("DOMContentLoaded", function(){
         },
         loop: true,
     	});
+
+       var mySwiper = new Swiper ('.mobile',
+    	{
+        speed:0,
+        slidesPerView: 1,
+    		direction: 'horizontal',
+    		mousewheel:
+    		{
+    		invert: true,
+    		},
+        autoplay:
+        {
+        delay: 400,
+        },
+        loop: true,
+    	});
+    
     var mySwiper = new Swiper ('.relatedd',
       {
         slidesPerView: 1,
