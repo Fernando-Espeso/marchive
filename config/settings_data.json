@@ -177,10 +177,17 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Screenshot_2023-05-03_at_23.41.21.png"
             }
+          },
+          "4700d8df-3199-43ef-9553-cb1e42c14eec": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screenshot_2023-05-03_at_23.41.31.png"
+            }
           }
         },
         "block_order": [
-          "1a458ed9-ebd6-4569-bfe1-fa155856374e"
+          "1a458ed9-ebd6-4569-bfe1-fa155856374e",
+          "4700d8df-3199-43ef-9553-cb1e42c14eec"
         ],
         "settings": {
         }
