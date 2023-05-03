@@ -666,6 +666,7 @@ header{
 
 .thumbnail:hover img.none{
   display: block;
+  background-color:white;
 }
 
 .thumbnail img{
