@@ -701,6 +701,7 @@ header{
   padding: 20px!important;
 }
 .swiper.mobile {
+  display:none;
   top: 0px;
   overflow: hidden;
   position: absolute;
