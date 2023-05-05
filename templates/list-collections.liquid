@@ -5,7 +5,7 @@
 </div>
 <script>
 $(document).ready(function() {
-  $(".normal .dropdown").removeClass("dropped");
+
 
   
   var width = $(window).width();
@@ -13,8 +13,8 @@ $(document).ready(function() {
     $(".normal .dropdown").removeClass("dropped");
     $(".normal .link").removeClass("active"); }
   else{
-    $(".normal .dropdown").addClass("dropped");
-    $(".normal .link").addClass("active");
+     $(".normal .dropdown").removeClass("dropped");
+    $(".normal .link").removeClass("active");
   }
 });
 $(window).resize(function() {
@@ -23,8 +23,8 @@ $(window).resize(function() {
     $(".normal .dropdown").removeClass("dropped");
     $(".normal .link").removeClass("active"); }
   else{
-    $(".normal .dropdown").addClass("dropped");
-    $(".normal .link").addClass("active");
+    $(".normal .dropdown").removeClass("dropped");
+    $(".normal .link").removeClass("active");
   }
 });
 </script>
