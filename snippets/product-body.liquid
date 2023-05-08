@@ -39,20 +39,23 @@
             <div class="info-product">
               <div><a>Price</a></div>
               <div class="product-price">
-                   {% if product.available %}
-                    {% if product.price_varies %}
-                      <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
-                    {% else %}
-                      {% if product.compare_at_price > product.price %}
-                      <li><s>{{ product.compare_at_price | money }}</s> – {{ product.price | money }}<li>
-                      {% else %}
-                    <span> {{ product.price | money }}</span>
-
-                      {% endif %}
-                    {% endif %}
+                     {% if product.available %}
+              {% if product.price_varies %}
+                {% else %}
+                 {% if product.compare_at_price > product.price %}
                   {% else %}
-                    <span> {{ product.price | money }}</span>
                   {% endif %}
+                {% endif %}
+            {% else %}
+        {% endif %}
+
+        {% assign date_created = product.created_at | date:'%d' %}
+        {% assign     date_now = 'now' | date:'%d' %}
+        {% assign   difference = date_now | plus: date_created %}
+
+        {% if difference < 5 %}
+
+        {% endif %}
                 </div>
             </div>
           </div>
