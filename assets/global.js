@@ -77,6 +77,10 @@ document.addEventListener("DOMContentLoaded", function(){
       $(".product.newest").toggle();
     });
 
+    $('.sort').click(function(){
+      $(this).addClass("active");
+      $(".sort").removeClass("active");
+    });
 
     $('#description').click(function(){
       $(".nav-info div").removeClass("active");
