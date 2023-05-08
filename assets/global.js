@@ -86,21 +86,21 @@ document.addEventListener("DOMContentLoaded", function(){
       $(".nav-info div").removeClass("active");
       $(this).toggleClass("active");
       $(".show-description").removeClass("show");
-  		$("."+this.id).toggleClass("show");
+  	  $("."+this.id).toggleClass("show");
     });
 
     $('#size').click(function(){
       $(".nav-info div").removeClass("active");
       $(this).toggleClass("active");
       $(".show-description").removeClass("show");
-  		$("."+this.id).toggleClass("show");
+  	  $("."+this.id).toggleClass("show");
     });
 
     $('#condition').click(function(){
       $(".nav-info div").removeClass("active");
       $(this).toggleClass("active");
       $(".show-description").removeClass("show");
-  		$("."+this.id).toggleClass("show");
+      $("."+this.id).toggleClass("show");
     });
 
     $('.sort').click(function(){
