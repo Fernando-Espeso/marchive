@@ -108,6 +108,7 @@ td{
 input,
 button,
 select{
+      font-family: 'BastardoGrotesk-Regular';
   padding-bottom: 0px!important;
   font-size: 100%;
   padding: 0;
