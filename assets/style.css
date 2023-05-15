@@ -1411,6 +1411,19 @@ div#related {
   max-height: 129px;
   display: block;
 }
+  .page_content {
+    z-index: 1;
+    width: 96vw;
+    grid-column: span 9;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 17px;
+}
 }
 /*BIGGER DESKTOP*/
 @media (min-width: 1920px){
